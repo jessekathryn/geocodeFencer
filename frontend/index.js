@@ -1,4 +1,4 @@
-const endPoint = 'http://localhost:3000/fields'
+const endPoint = 'http://localhost:3000/api/v1/fields'
 
 document.addEventListener('DOMContentLoaded', () => {
   const endPoint = 'http://localhost:3000/fields';
@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
       json.forEach(note => {
         const markup = `
         <li>
-          <h3>${field.id}
+          <h3>${field.name}
             <button>edit</button>
           </h3>
         </li>`;
