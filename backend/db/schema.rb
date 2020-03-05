@@ -13,6 +13,7 @@
 ActiveRecord::Schema.define(version: 2020_03_05_055501) do
 
   create_table "fields", force: :cascade do |t|
+    t.string "name"
     t.string "latitude"
     t.string "longitude"
     t.datetime "created_at", precision: 6, null: false

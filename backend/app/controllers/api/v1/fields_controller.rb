@@ -1,5 +1,5 @@
 class Api::V1::FieldsController < ApplicationController
-    before_action :find_field, only: [:update]
+    before_action :find_field, only: [:update, :show]
     def index
       @fields = Field.all
       render json: @fields
@@ -17,10 +17,10 @@ class Api::V1::FieldsController < ApplicationController
     private
   
     def field_params
-      params.permit(:latitude, :longitude)
+      params.permit(:name, :latitude, :longitude)
     end
   
     def find_field
-      @field = Field.find(params[:id])
+      @field = Field.find(params[:id, :name, :latitude, :longtitude])
     end
 end
