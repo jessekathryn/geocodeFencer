@@ -1,0 +1,65 @@
+:root {
+    --jumbotron-padding-y: 1rem;
+  }
+  
+  .jumbotron {
+    padding-top: var(--jumbotron-padding-y);
+    padding-bottom: var(--jumbotron-padding-y);
+    margin-bottom: 0;
+    background-color: #fff;
+  }
+  @media (min-width: 800px) {
+    .jumbotron {
+      padding-top: calc(var(--jumbotron-padding-y) * 2);
+      padding-bottom: calc(var(--jumbotron-padding-y) * 2);
+    }
+  }
+  
+  .bg-dark {
+    background-color: #254945!important; 
+  }
+
+  .jumbotron p:last-child {
+    margin-bottom: 0;
+  }
+  
+  .jumbotron-heading {
+    font-weight: 300;
+  }
+  
+  .jumbotron .container {
+    max-width: 50rem;
+  }
+
+  footer {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+  
+  footer p {
+    margin-bottom: .25rem;
+  }
+  
+  .box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
+
+  .album {
+      padding-top: 3rem;
+      padding-bottom: 3rem;
+      background-color: #f7f7f7;
+  }
+
+
+  .google-maps {
+      position: relative;
+      padding-bottom: 75%;
+      height: 0;
+      overflow: hidden;
+  }
+
+  .google-maps iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 200% !important;
+      height: 100% !important;
+  }
