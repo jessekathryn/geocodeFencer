@@ -20,7 +20,7 @@ class Api::V1::FieldsController < ApplicationController
       params.permit(:latitude, :longitude)
     end
   
-    def find_note
+    def find_field
       @field = Field.find(params[:id])
     end
 end
