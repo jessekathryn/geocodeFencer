@@ -9,7 +9,7 @@ class Field {
     this.coordinates = coordinates;
   }
 
-  renderListItem() {
+  renderFieldItem() {
     return `
       <p>${this.coordinates}
         <button data-id=${this.id}>submit</button>
@@ -23,7 +23,7 @@ class Field {
 
   renderUpdateForm() {
     return `
-    <form data-id=${this.id}>
+    <form id=${this.id}>
       <p>
         <input type="text" value="${this.coordinates}" />
       </p>

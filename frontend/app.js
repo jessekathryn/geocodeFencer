@@ -1,29 +1,49 @@
 class App {
-    attachEventListeners() {
-      document.querySelector('#fields').addEventListener('click', e => {
-          const id = parseInt(e.target.dataset.id)
-          const field = Field.findById(id);
-          document.querySelector('#update').innerHTML = Field.renderUpdateForm();
-      });
+    constructor() {
+        this.adapter = new Adapter();
 
-      document.querySelector('#update').addEventListener('submit', e => {
+        this.handleEditClick = this.handleEditClick.bind(this);
+        this.handleFormSubmit = this.handleFormSubmit.bind(this);
+        this.createFields = this.createFields.bind(this);
+        this.addFields = this.addFields.bind(this);
+    }
+
+    attachEventListeners() {
+        document.querySelector('#fields').addEventListener('click', this.handleEditClick);
+        document.querySelector('#fields-update').addEventListener('save', this.handleFormSubmit);
+    }
+
+    createFields(fields) {
+        fields.forEach(field => {
+            new Field(field);
+        });
+        this.addFields();
+    }
+
+    addFields() {
+        document.querySelector('#fields').innerHTML = '';
+        Field.all.forEach(
+            field => (document.querySelector('#fields').innerHTML += field.renderFieldItem())
+        );
+    }
+
+    handleFormSubmit(e) {
         e.preventDefault();
         const id = parseInt(e.target.dataset.id);
         const field = Field.findById(id);
         const coordinates = e.target.querySelector('input').value;
-  
-        const bodyJSON = { coordinates };
-        fetch(`http://localhost:3000/api/v1/fields/${field.id}`, {
-          method: 'PATCH',
-          headers: {
-            'Content-Type': 'application/json',
-            Accept: 'application/json',
-          },
-          body: JSON.stringify(bodyJSON),
-        })
-          .then(res => res.json())
-          // our backend responds with the updated note instance represented as JSON
-          .then(updatedField => console.log(updatedField));
-      });
+
+        const locationJSON = { field, coordinates };
+        this.adapter.updateField(field.id, locationJSON).then(updatedField =>  {
+            const field = Field.fiendById(updatedField.id);
+            field.update(updatedField);
+            this.addFields();
+        });
     }
-  }
+
+    handleEditClick(e) {
+        const id = parseInt(e.target.dataset.id);
+        const field = Field.findById(id);
+        document.querySelector('#field update').innerHTML = field.renderUpdateForm();
+    }
+}
