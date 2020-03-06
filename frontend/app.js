@@ -10,7 +10,7 @@ class App {
 
     attachEventListeners() {
         document.querySelector('#fields').addEventListener('click', this.handleEditClick);
-        document.querySelector('#fields-update').addEventListener('save', this.handleFormSubmit);
+        document.querySelector('#fields').addEventListener('save', this.handleFormSubmit);
     }
 
     createFields(fields) {
@@ -23,7 +23,7 @@ class App {
     addFields() {
         document.querySelector('#fields').innerHTML = '';
         Field.all.forEach(
-            field => (document.querySelector('#fields').innerHTML += field.renderFieldItem())
+            field => (document.querySelector('#fields-new').innerHTML += field.renderFieldItem())
         );
     }
 
