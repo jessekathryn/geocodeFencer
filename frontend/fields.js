@@ -8,9 +8,9 @@ class Field {
 
   renderCoordinatesElement() {
     return `
-      <h3>${this.coordinates}
+      <p>${this.coordinates}
         <button data-id=${this.id}>edit</button>
-      </h3>`;
+      </p>`;
   }
 }
 

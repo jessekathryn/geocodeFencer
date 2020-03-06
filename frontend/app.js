@@ -1,7 +1,9 @@
 class App {
     attachEventListeners() {
       document.querySelector('#fields').addEventListener('click', e => {
-        console.log('clicked');
+          const id = parseInt(e.target.dataset.id)
+          const field = Field.findById(id);
+          console.log('field');
       });
     }
   }
