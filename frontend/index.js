@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
     .then(json => {
       json.forEach(field => {
         const newField = new Field(field);
-        document.querySelector('#fields').innerHTML += newField.renderListItem();
+        document.querySelector('#fields').innerHTML += newField.renderCoordinatesElement();
       });
     });
 });

@@ -6,13 +6,11 @@ class Field {
     Field.all.push(this);
   }
 
-  renderListItem() {
+  renderCoordinatesElement() {
     return `
-    <li>
       <h3>${this.coordinates}
         <button data-id=${this.id}>edit</button>
-      </h3>
-    </li>`;
+      </h3>`;
   }
 }
 
