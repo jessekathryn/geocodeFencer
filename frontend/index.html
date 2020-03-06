@@ -3,6 +3,7 @@
 
 <head>
     <script src="index.js" charset="utf-8"></script>
+    <script src="cooridnates.js" charset="utf-8"></script>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
@@ -16,7 +17,8 @@
 <!-- NavBar -->
 <body>
     <header>
-      <div class="fields"></div>
+        <!-- #Fields div -->
+      <div class="fields">
         <div class="collapse bg-dark" id="navbarHeader">
             <div class="container">
                 <div class="row">
@@ -25,8 +27,10 @@
                         <p class="text-white">
                             Enter coordinates and press submit to view your farm.
                         </p>
-                        <input class="form-control form-control-xsm" type="text" placeholder="Latitude, Longitude">
+                        <!-- #Fields div input form-->
+                        <input class="form-control form-control-xsm" type="text" id="fields" placeholder="Latitude, Longitude">
                         <button type="button" class="btn btn-light btn-sm btn-block">Submit</button>
+                    </div>
                     </div>
                     <div class="col-sm-3 offset-md-4 py-4">
                         <h4 class="text-white">Documentation</h4>
