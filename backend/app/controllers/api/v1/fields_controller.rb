@@ -17,10 +17,10 @@ class Api::V1::FieldsController < ApplicationController
     private
   
     def field_params
-      params.permit(:name, :latitude, :longitude)
+      params.permit(:name, :coordinates)
     end
   
     def find_field
-      @field = Field.find(params[:id, :name, :latitude, :longtitude])
+      @field = Field.find(params[:id])
     end
 end

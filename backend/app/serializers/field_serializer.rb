@@ -1,4 +1,4 @@
 class FieldSerializer < ActiveModel::Serializer
-  has_many :longitude, :latitude
-  attributes :id, :longitude, :latitude
+  has_many :coordinates
+  attributes :id 
 end
