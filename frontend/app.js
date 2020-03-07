@@ -32,15 +32,14 @@ class App {
         const id = parseInt(e.target.dataset.id);
         const field = Field.findById(id);
         const coordinates = e.target.querySelector('input').value;
-
         const inputJSON = { coordinates };
-        this.adapter.updateField(field.id, inputJSON).then(updatedField => console.log(updatedField));
-        }
-            // const field = Field.findById(updatedField.id);
-            // field.update(updatedField.id);
-            // this.addFields();
-        // });
- 
+
+        this.adapter.updateField(field.id, inputJSON).then(updatedField => {
+            const field = Field.findById(updatedField.id);
+            field.update(updatedField);
+            this.addFields();
+        });
+    }
 
     handleEditClick(e) {
         const id = parseInt(e.target.dataset.id);
