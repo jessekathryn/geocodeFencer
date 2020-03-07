@@ -5,31 +5,31 @@ class Field {
     Field.all.push(this);
   }
 
-  update({coordinates}){
+  update({id, coordinates}){
+    this.id = id;
     this.coordinates = coordinates;
   }
 
   renderFieldItem() {
     return `
-      <p>${this.coordinates}
-        <button data-id=${this.id}>submit</button>
-      </p>
-      `;
-  }
-
-  static findById() {
-    return this.all.find(field => field.id === id);
+    ${this.coordinates}
+    <button data-id=${this.id}>Select</button>
+    `;
   }
 
   renderUpdateForm() {
     return `
-    <form id=${this.id}>
-      <p>
-        <input type="text" value="${this.coordinates}" />
-      </p>
-      <button type='submit'>Submit</button>
+    <form data-id=${this.id}>
+    <p>
+    <input type="text" value="${this.coordinates}" />
+    </p>
+    <button data-id=${this.id}type='submit'>Save</button>
     </form>
     `;
+  }
+
+ static findById(id) {
+    return this.all.find(field => field.id === id);
   }
 }
 

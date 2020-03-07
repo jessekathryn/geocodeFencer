@@ -10,7 +10,7 @@ class App {
 
     attachEventListeners() {
         document.querySelector('#fields-list').addEventListener('click', this.handleEditClick);
-        document.querySelector('#update').addEventListener('save', this.handleFormSubmit);
+        document.querySelector('#update').addEventListener('submit', this.handleFormSubmit);
     }
 
     createFields(fields) {
@@ -33,13 +33,14 @@ class App {
         const field = Field.findById(id);
         const coordinates = e.target.querySelector('input').value;
 
-        const bodyJSON = { field, coordinates };
-        this.adapter.updateField(field.id, bodyJSON).then(updatedField =>  {
-            const field = Field.fiendById(updatedField.id);
-            field.update(updatedField);
-            this.addFields();
-        });
-    }
+        const inputJSON = { coordinates };
+        this.adapter.updateField(field.id, inputJSON).then(updatedField => console.log(updatedField));
+        }
+            // const field = Field.findById(updatedField.id);
+            // field.update(updatedField.id);
+            // this.addFields();
+        // });
+ 
 
     handleEditClick(e) {
         const id = parseInt(e.target.dataset.id);

@@ -13,7 +13,6 @@
 ActiveRecord::Schema.define(version: 2020_03_06_002005) do
 
   create_table "fields", force: :cascade do |t|
-    t.string "name"
     t.string "coordinates"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
