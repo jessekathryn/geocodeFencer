@@ -9,8 +9,8 @@ class App {
     }
 
     attachEventListeners() {
-        document.querySelector('#fields').addEventListener('click', this.handleEditClick);
-        document.querySelector('#fields').addEventListener('save', this.handleFormSubmit);
+        document.querySelector('#fields-list').addEventListener('click', this.handleEditClick);
+        document.querySelector('#update').addEventListener('save', this.handleFormSubmit);
     }
 
     createFields(fields) {
@@ -21,9 +21,9 @@ class App {
     }
 
     addFields() {
-        document.querySelector('#fields').innerHTML = '';
+        document.querySelector('#fields-list').innerHTML = '';
         Field.all.forEach(
-            field => (document.querySelector('#fields-new').innerHTML += field.renderFieldItem())
+            field => (document.querySelector('#fields-list').innerHTML += field.renderFieldItem())
         );
     }
 
@@ -33,8 +33,8 @@ class App {
         const field = Field.findById(id);
         const coordinates = e.target.querySelector('input').value;
 
-        const locationJSON = { field, coordinates };
-        this.adapter.updateField(field.id, locationJSON).then(updatedField =>  {
+        const bodyJSON = { field, coordinates };
+        this.adapter.updateField(field.id, bodyJSON).then(updatedField =>  {
             const field = Field.fiendById(updatedField.id);
             field.update(updatedField);
             this.addFields();
@@ -44,6 +44,6 @@ class App {
     handleEditClick(e) {
         const id = parseInt(e.target.dataset.id);
         const field = Field.findById(id);
-        document.querySelector('#field update').innerHTML = field.renderUpdateForm();
+        document.querySelector('#update').innerHTML = field.renderUpdateForm();
     }
 }

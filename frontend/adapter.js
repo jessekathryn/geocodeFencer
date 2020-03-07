@@ -12,18 +12,18 @@ class Adapter {
     }
 
     updateField(id, body) {
-        return this.patch(`${this.baseUrl}/fields/${id}`, location);
+        return this.patch(`${this.baseUrl}/fields/${id}`, body);
     }
 
     get(url) {
         return fetch(url).then(res => res.json());
     }
 
-    patch(url, location) {
+    patch(url, body) {
         return fetch(url, {
             method: 'PATCH',
             headers: this.headers,
-            location: JSON.stringify(location),
+            location: JSON.stringify(body),
         }).then(res => res.json());
     }
 }
