@@ -6198,3 +6198,40 @@ Completed 200 OK in 16ms (Views: 14.2ms | ActiveRecord: 0.6ms | Allocations: 742
   [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
   [1m[36mField Create (0.4ms)[0m  [1m[32mINSERT INTO "fields" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2020-03-08 23:58:00.778721"], ["updated_at", "2020-03-08 23:58:00.778721"]]
   [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/api/v1/fields" for ::1 at 2020-03-08 19:58:42 -0400
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::FieldsController#index as HTML
+  [1m[36mField Load (0.2ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:6:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.85ms)
+Completed 200 OK in 15ms (Views: 13.1ms | ActiveRecord: 0.6ms | Allocations: 7560)
+
+
+Started GET "/api/v1/fields" for ::1 at 2020-03-08 19:59:02 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Api::V1::FieldsController#index as */*
+  [1m[36mField Load (0.1ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:6:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.71ms)
+Completed 200 OK in 8ms (Views: 6.3ms | ActiveRecord: 0.7ms | Allocations: 5391)
+
+
+Started GET "/api/v1/fields" for ::1 at 2020-03-08 19:59:04 -0400
+Processing by Api::V1::FieldsController#index as */*
+  [1m[36mField Load (0.1ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:6:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.42ms)
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.1ms | Allocations: 1210)
+
+
+Started PATCH "/api/v1/fields/1" for ::1 at 2020-03-08 19:59:06 -0400
+Processing by Api::V1::FieldsController#update as JSON
+  Parameters: {"id"=>"1", "field"=>{}}
+  [1m[36mField Load (0.2ms)[0m  [1m[34mSELECT "fields".* FROM "fields" WHERE "fields"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/fields_controller.rb:10:in `update'
+[31mUnpermitted parameter: :field[0m
+[active_model_serializers] Rendered FieldSerializer with ActiveModelSerializers::Adapter::Attributes (0.22ms)
+Completed 202 Accepted in 3ms (Views: 0.6ms | ActiveRecord: 0.2ms | Allocations: 1584)
+
+

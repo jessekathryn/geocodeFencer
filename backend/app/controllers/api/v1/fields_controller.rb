@@ -1,5 +1,5 @@
 class Api::V1::FieldsController < ApplicationController
-    before_action :find_field, only: [:update] 
+    # before_action :find_field, only: [:update] 
 
     def index
       @fields = Field.all
