@@ -44,6 +44,6 @@ class App {
     handleEditClick(e) {
         const id = parseInt(e.target.dataset.id);
         const field = Field.findById(id);
-        document.querySelector('#update').innerHTML = field.renderUpdateForm();
+        document.querySelector('#update').innerHTML = field.renderUpdateForm(id);
     }
 }
