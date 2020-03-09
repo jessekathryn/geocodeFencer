@@ -29,14 +29,11 @@ class App {
 
     handleFormSubmit(e) {
         e.preventDefault();
-        const id = parseInt(e.target.dataset.id);
-        const field = Field.findById(id);
+        const id = e.target.dataset.id;
         const coordinates = e.target.querySelector('input').value;
-        const inputJSON = { coordinates };
+        const inputJSON = { name, coordinates };
 
-        this.adapter.updateField(field.id, inputJSON).then(updatedField => {
-            const field = Field.findById(updatedField.id);
-            field.update(updatedField);
+        this.adapter.updateField(id, inputJSON).then(updatedField => {field = Field.findById(updatedField.id);
             this.addFields();
         });
     }
@@ -44,6 +41,6 @@ class App {
     handleEditClick(e) {
         const id = parseInt(e.target.dataset.id);
         const field = Field.findById(id);
-        document.querySelector('#update').innerHTML = field.renderUpdateForm(id);
+        document.querySelector('#update').innerHTML = field.renderUpdateForm();
     }
 }

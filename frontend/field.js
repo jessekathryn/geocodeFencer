@@ -1,18 +1,20 @@
 class Field {
   constructor(data) {
     this.id = data.id;
+    this.name = data.name;
     this.coordinates = data.coordinates;
     Field.all.push(this);
   }
 
-  update({id, coordinates}){
+  update({name, coordinates}){
     this.id = id;
+    this.name = name;
     this.coordinates = coordinates;
   }
 
   renderFieldItem() {
     return `
-    ${this.coordinates}
+    <h3>${this.name}</h3>
     <button data-id=${this.id}>Select</button>
     `;
   }
@@ -20,10 +22,8 @@ class Field {
   renderUpdateForm() {
     return `
     <form data-id=${this.id}>
-    <p>
-    <input type="text" value="${this.coordinates}" />
-    </p>
-    <button data-id=${this.id}type='submit'>Save</button>
+    <input type="text" class="form-control" name="${this.coordinates}" />
+    <button type="submit" data-id=${this.id}>Save</button>
     </form>
     `;
   }
