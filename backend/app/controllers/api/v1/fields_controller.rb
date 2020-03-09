@@ -6,8 +6,6 @@ class Api::V1::FieldsController < ApplicationController
     end
   
     def update
-      binding.pry
-
       @field = Field.find_by(id: params[:id])
       @field.update(field_params)
      
@@ -21,8 +19,7 @@ class Api::V1::FieldsController < ApplicationController
     private
   
     def field_params
-      params.permit(:id, :name, :coordinates)
+      params.permit(:id, :name, :coordinates, :locations)
     end
-  
 
 end

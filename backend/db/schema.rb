@@ -14,7 +14,9 @@ ActiveRecord::Schema.define(version: 2020_03_09_001905) do
 
   create_table "fields", force: :cascade do |t|
     t.string "name"
+    t.string "locations"
     t.string "coordinates"
+    t.string "field"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

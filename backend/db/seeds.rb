@@ -5,4 +5,4 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first) 
-field_1 = Field.create(name: 'Silo', coordinates: '32.989181, -81.015845')
+field_1 = Field.create(name: 'Silo', locations: '1', field: "1", coordinates: '32.989181, 81.015845')
