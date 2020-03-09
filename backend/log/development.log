@@ -6235,3 +6235,58 @@ Processing by Api::V1::FieldsController#update as JSON
 Completed 202 Accepted in 3ms (Views: 0.6ms | ActiveRecord: 0.2ms | Allocations: 1584)
 
 
+Started GET "/api/v1/fields" for ::1 at 2020-03-08 19:59:51 -0400
+Processing by Api::V1::FieldsController#index as */*
+  [1m[36mField Load (0.2ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:6:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.41ms)
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.2ms | Allocations: 1210)
+
+
+Started GET "/api/v1/fields" for ::1 at 2020-03-08 19:59:52 -0400
+Processing by Api::V1::FieldsController#index as */*
+  [1m[36mField Load (0.2ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:6:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.41ms)
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.2ms | Allocations: 1192)
+
+
+Started GET "/" for ::1 at 2020-03-08 19:59:56 -0400
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/jessebarnes/.rvm/gems/ruby-2.6.3/gems/railties-6.0.2.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/jessebarnes/.rvm/gems/ruby-2.6.3/gems/railties-6.0.2.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 5.1ms | Allocations: 315)
+Completed 200 OK in 8ms (Views: 6.4ms | ActiveRecord: 0.0ms | Allocations: 1589)
+
+
+Started GET "/api/v1/fields" for ::1 at 2020-03-08 20:00:00 -0400
+Processing by Api::V1::FieldsController#index as HTML
+  [1m[36mField Load (0.1ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:6:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.64ms)
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.1ms | Allocations: 1190)
+
+
+Started GET "/api/v1/fields" for ::1 at 2020-03-08 20:00:03 -0400
+Processing by Api::V1::FieldsController#index as HTML
+  [1m[36mField Load (0.1ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:6:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.39ms)
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.1ms | Allocations: 1190)
+
+
+Started GET "/api/v1/fields" for ::1 at 2020-03-08 20:00:04 -0400
+Processing by Api::V1::FieldsController#index as HTML
+  [1m[36mField Load (0.1ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:6:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.44ms)
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.1ms | Allocations: 1190)
+
+
+Started GET "/api/v1/fields" for ::1 at 2020-03-08 20:00:05 -0400
+Processing by Api::V1::FieldsController#index as HTML
+  [1m[36mField Load (0.1ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:6:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.46ms)
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.1ms | Allocations: 1190)
+
+
