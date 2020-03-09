@@ -14,9 +14,9 @@ class Field {
 
   renderFieldItem() {
     return `
-    <h3>${this.name}</h3>
-    <button data-id=${this.id}>Select</button>
-    `;
+    <h3>${this.coordinates} 
+   <button data-id=${this.id}>Select </button>
+    </h3>`;
   }
 
   renderUpdateForm() {

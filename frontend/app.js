@@ -30,10 +30,11 @@ class App {
     handleFormSubmit(e) {
         e.preventDefault();
         const id = e.target.dataset.id;
+        const field = Field.findById(id)
         const coordinates = e.target.querySelector('input').value;
         const inputJSON = { name, coordinates };
 
-        this.adapter.updateField(id, inputJSON).then(updatedField => {field = Field.findById(updatedField.id);
+        this.adapter.updateField(field.id, inputJSON).then(updatedField => { field = Field.findById(updatedField.id);
             this.addFields();
         });
     }
