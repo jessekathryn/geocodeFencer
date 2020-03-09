@@ -1,5 +1,5 @@
 class Api::V1::FieldsController < ApplicationController
-    # before_action :find_field, only: [:update] 
+    before_action :find_field, only: [:update] 
 
     def index
       @fields = Field.all
@@ -7,8 +7,6 @@ class Api::V1::FieldsController < ApplicationController
     end
   
     def update
-    @field = Field.find_by(id: params[:id])
-
     @field.update(field_params)
       if @field.save
         render json: @field, status: :accepted
@@ -20,7 +18,7 @@ class Api::V1::FieldsController < ApplicationController
     private
   
     def field_params
-      params.permit(:id, :coordinates, :name)
+      params.permit(:name, :coordinates)
     end
   
     def find_field
