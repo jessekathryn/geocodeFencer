@@ -9558,3 +9558,972 @@ Processing by Api::V1::FieldsController#index as */*
 Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.1ms | Allocations: 1220)
 
 
+Started GET "/api/v1/fields" for ::1 at 2020-03-09 02:09:50 -0400
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::FieldsController#index as HTML
+  [1m[36mField Load (0.2ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:5:in `index'
+Completed 200 OK in 8ms (Views: 5.6ms | ActiveRecord: 0.6ms | Allocations: 6344)
+
+
+Started GET "/api/v1/fields" for ::1 at 2020-03-09 02:10:02 -0400
+Processing by Api::V1::FieldsController#index as */*
+  [1m[36mField Load (0.2ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.2ms | Allocations: 1238)
+
+
+Started GET "/api/v1/fields" for ::1 at 2020-03-09 02:15:13 -0400
+Processing by Api::V1::FieldsController#index as */*
+  [1m[36mField Load (0.1ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.1ms | Allocations: 1237)
+
+
+Started GET "/api/v1/fields" for ::1 at 2020-03-09 02:15:20 -0400
+Processing by Api::V1::FieldsController#index as */*
+  [1m[36mField Load (0.3ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.3ms | Allocations: 1237)
+
+
+Started GET "/api/v1/fields" for ::1 at 2020-03-09 02:15:21 -0400
+Processing by Api::V1::FieldsController#index as */*
+  [1m[36mField Load (0.1ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:5:in `index'
+Completed 200 OK in 1ms (Views: 1.2ms | ActiveRecord: 0.1ms | Allocations: 1237)
+
+
+Started GET "/api/v1/fields" for ::1 at 2020-03-09 02:15:45 -0400
+Processing by Api::V1::FieldsController#index as */*
+  [1m[36mField Load (0.1ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.1ms | Allocations: 1220)
+
+
+Started GET "/api/v1/fields" for ::1 at 2020-03-09 02:17:26 -0400
+Processing by Api::V1::FieldsController#index as */*
+  [1m[36mField Load (0.2ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.2ms | Allocations: 1220)
+
+
+Started GET "/api/v1/fields" for ::1 at 2020-03-09 02:18:30 -0400
+Processing by Api::V1::FieldsController#index as */*
+  [1m[36mField Load (0.1ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.1ms | Allocations: 1220)
+
+
+Started GET "/api/v1/fields" for ::1 at 2020-03-09 02:21:02 -0400
+Processing by Api::V1::FieldsController#index as */*
+  [1m[36mField Load (0.1ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.1ms | Allocations: 1220)
+
+
+Started GET "/api/v1/fields" for ::1 at 2020-03-09 02:22:15 -0400
+Processing by Api::V1::FieldsController#index as */*
+  [1m[36mField Load (0.1ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.1ms | Allocations: 1220)
+
+
+Started GET "/api/v1/fields" for ::1 at 2020-03-09 02:23:01 -0400
+Processing by Api::V1::FieldsController#index as */*
+  [1m[36mField Load (0.2ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.2ms | Allocations: 1220)
+
+
+Started GET "/api/v1/fields" for ::1 at 2020-03-09 02:23:31 -0400
+Processing by Api::V1::FieldsController#index as */*
+  [1m[36mField Load (0.1ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.1ms | Allocations: 1220)
+
+
+Started PATCH "/api/v1/fields/undefined" for ::1 at 2020-03-09 02:23:35 -0400
+Processing by Api::V1::FieldsController#update as JSON
+  Parameters: {"id"=>"undefined", "field"=>{}}
+  [1m[36mField Load (0.2ms)[0m  [1m[34mSELECT "fields".* FROM "fields" WHERE "fields"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/fields_controller.rb:9:in `update'
+Completed 400 Bad Request in 8ms (ActiveRecord: 0.2ms | Allocations: 2452)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: field):
+  
+app/controllers/api/v1/fields_controller.rb:22:in `field_params'
+app/controllers/api/v1/fields_controller.rb:10:in `update'
+Started GET "/api/v1/fields" for ::1 at 2020-03-09 02:24:10 -0400
+Processing by Api::V1::FieldsController#index as */*
+  [1m[36mField Load (0.2ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.2ms | Allocations: 1219)
+
+
+Started GET "/api/v1/fields" for ::1 at 2020-03-09 02:26:11 -0400
+Processing by Api::V1::FieldsController#index as */*
+  [1m[36mField Load (0.1ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.1ms | Allocations: 1220)
+
+
+Started GET "/api/v1/fields" for ::1 at 2020-03-09 02:26:46 -0400
+Processing by Api::V1::FieldsController#index as */*
+  [1m[36mField Load (0.1ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.1ms | Allocations: 1220)
+
+
+Started GET "/api/v1/fields" for ::1 at 2020-03-09 02:28:09 -0400
+Processing by Api::V1::FieldsController#index as */*
+  [1m[36mField Load (0.1ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.1ms | Allocations: 1220)
+
+
+Started GET "/api/v1/fields" for ::1 at 2020-03-09 02:28:17 -0400
+Processing by Api::V1::FieldsController#index as */*
+  [1m[36mField Load (0.1ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:5:in `index'
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.1ms | Allocations: 1220)
+
+
+Started GET "/api/v1/fields" for ::1 at 2020-03-09 02:28:18 -0400
+Processing by Api::V1::FieldsController#index as */*
+  [1m[36mField Load (0.1ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.1ms | Allocations: 1220)
+
+
+Started GET "/api/v1/fields" for ::1 at 2020-03-09 02:28:19 -0400
+Processing by Api::V1::FieldsController#index as */*
+  [1m[36mField Load (0.1ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.1ms | Allocations: 1220)
+
+
+Started GET "/api/v1/fields" for ::1 at 2020-03-09 02:28:47 -0400
+Processing by Api::V1::FieldsController#index as */*
+  [1m[36mField Load (0.1ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:5:in `index'
+Completed 200 OK in 1ms (Views: 1.2ms | ActiveRecord: 0.1ms | Allocations: 1220)
+
+
+Started GET "/api/v1/fields" for ::1 at 2020-03-09 02:29:24 -0400
+Processing by Api::V1::FieldsController#index as */*
+  [1m[36mField Load (0.1ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.1ms | Allocations: 1220)
+
+
+Started GET "/api/v1/fields" for ::1 at 2020-03-09 02:30:31 -0400
+Processing by Api::V1::FieldsController#index as */*
+  [1m[36mField Load (0.2ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.2ms | Allocations: 1220)
+
+
+Started GET "/api/v1/fields" for ::1 at 2020-03-09 02:30:55 -0400
+Processing by Api::V1::FieldsController#index as */*
+  [1m[36mField Load (0.1ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.1ms | Allocations: 1220)
+
+
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mField Load (0.2ms)[0m  [1m[34mSELECT "fields".* FROM "fields" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mField Load (0.2ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  [1m[36mField Load (0.1ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+Started GET "/api/v1/fields" for ::1 at 2020-03-09 02:33:23 -0400
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::FieldsController#index as */*
+  [1m[36mField Load (0.2ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:5:in `index'
+Completed 200 OK in 8ms (Views: 6.2ms | ActiveRecord: 0.7ms | Allocations: 6346)
+
+
+Started GET "/api/v1/fields" for ::1 at 2020-03-09 02:34:38 -0400
+Processing by Api::V1::FieldsController#index as */*
+  [1m[36mField Load (0.2ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.2ms | Allocations: 1237)
+
+
+Started GET "/api/v1/fields" for ::1 at 2020-03-09 02:35:55 -0400
+Processing by Api::V1::FieldsController#index as */*
+  [1m[36mField Load (0.2ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.2ms | Allocations: 1237)
+
+
+Started PATCH "/api/v1/fields/3" for ::1 at 2020-03-09 02:35:59 -0400
+Processing by Api::V1::FieldsController#update as JSON
+  Parameters: {"id"=>"3", "field"=>{}}
+  [1m[36mField Load (0.1ms)[0m  [1m[34mSELECT "fields".* FROM "fields" WHERE "fields"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/fields_controller.rb:9:in `update'
+Completed 400 Bad Request in 6ms (ActiveRecord: 0.1ms | Allocations: 2486)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: field):
+  
+app/controllers/api/v1/fields_controller.rb:22:in `field_params'
+app/controllers/api/v1/fields_controller.rb:10:in `update'
+Started GET "/api/v1/fields" for ::1 at 2020-03-09 02:36:53 -0400
+Processing by Api::V1::FieldsController#index as */*
+  [1m[36mField Load (0.1ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.1ms | Allocations: 1236)
+
+
+Started GET "/api/v1/fields" for ::1 at 2020-03-09 17:36:16 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Api::V1::FieldsController#index as */*
+  [1m[36mField Load (0.5ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:5:in `index'
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.5ms | Allocations: 1243)
+
+
+Started GET "/api/v1/fields" for ::1 at 2020-03-09 17:45:27 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Api::V1::FieldsController#index as */*
+  [1m[36mField Load (0.4ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.4ms | Allocations: 1242)
+
+
+Started GET "/api/v1/fields" for ::1 at 2020-03-09 17:46:53 -0400
+Processing by Api::V1::FieldsController#index as */*
+  [1m[36mField Load (0.1ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.1ms | Allocations: 1220)
+
+
+Started GET "/api/v1/fields" for ::1 at 2020-03-09 17:47:17 -0400
+Processing by Api::V1::FieldsController#index as */*
+  [1m[36mField Load (0.2ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.2ms | Allocations: 1220)
+
+
+Started GET "/api/v1/fields" for ::1 at 2020-03-09 17:47:30 -0400
+Processing by Api::V1::FieldsController#index as */*
+  [1m[36mField Load (0.1ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.1ms | Allocations: 1220)
+
+
+Started GET "/api/v1/fields" for ::1 at 2020-03-09 17:50:51 -0400
+Processing by Api::V1::FieldsController#index as */*
+  [1m[36mField Load (0.1ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.1ms | Allocations: 1220)
+
+
+Started GET "/api/v1/fields" for ::1 at 2020-03-09 17:57:21 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Api::V1::FieldsController#index as */*
+  [1m[36mField Load (0.7ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:5:in `index'
+Completed 200 OK in 17ms (Views: 15.9ms | ActiveRecord: 0.7ms | Allocations: 1245)
+
+
+Started GET "/api/v1/fields" for ::1 at 2020-03-09 17:59:44 -0400
+Processing by Api::V1::FieldsController#index as HTML
+  [1m[36mField Load (0.1ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:5:in `index'
+Completed 200 OK in 1ms (Views: 1.2ms | ActiveRecord: 0.1ms | Allocations: 1218)
+
+
+Started GET "/api/v1/fields" for ::1 at 2020-03-09 18:01:38 -0400
+Processing by Api::V1::FieldsController#index as */*
+  [1m[36mField Load (0.1ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.1ms | Allocations: 1220)
+
+
+Started GET "/api/v1/fields" for ::1 at 2020-03-09 18:10:54 -0400
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Api::V1::FieldsController#index as */*
+  [1m[36mField Load (0.4ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.4ms | Allocations: 1242)
+
+
+Started GET "/api/v1/fields" for ::1 at 2020-03-09 18:12:33 -0400
+Processing by Api::V1::FieldsController#index as */*
+  [1m[36mField Load (0.1ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.1ms | Allocations: 1220)
+
+
+Started GET "/api/v1/fields" for ::1 at 2020-03-09 18:13:17 -0400
+Processing by Api::V1::FieldsController#index as */*
+  [1m[36mField Load (0.1ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:5:in `index'
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.1ms | Allocations: 1220)
+
+
+Started GET "/api/v1/fields" for ::1 at 2020-03-09 18:17:06 -0400
+Processing by Api::V1::FieldsController#index as */*
+  [1m[36mField Load (0.1ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.1ms | Allocations: 1220)
+
+
+Started PATCH "/api/v1/fields/undefined" for ::1 at 2020-03-09 18:20:27 -0400
+Processing by Api::V1::FieldsController#update as JSON
+  Parameters: {"id"=>"undefined", "field"=>{}}
+  [1m[36mField Load (0.1ms)[0m  [1m[34mSELECT "fields".* FROM "fields" WHERE "fields"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/fields_controller.rb:9:in `update'
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.1ms | Allocations: 611)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: field):
+  
+app/controllers/api/v1/fields_controller.rb:22:in `field_params'
+app/controllers/api/v1/fields_controller.rb:10:in `update'
+Started GET "/api/v1/fields" for ::1 at 2020-03-09 18:20:29 -0400
+Processing by Api::V1::FieldsController#index as */*
+  [1m[36mField Load (0.1ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.1ms | Allocations: 1219)
+
+
+Started GET "/api/v1/fields" for ::1 at 2020-03-09 18:21:42 -0400
+Processing by Api::V1::FieldsController#index as */*
+  [1m[36mField Load (0.1ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:5:in `index'
+Completed 200 OK in 1ms (Views: 1.2ms | ActiveRecord: 0.1ms | Allocations: 1220)
+
+
+Started GET "/api/v1/fields" for ::1 at 2020-03-09 18:23:23 -0400
+Processing by Api::V1::FieldsController#index as */*
+  [1m[36mField Load (0.1ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.1ms | Allocations: 1220)
+
+
+Started GET "/api/v1/fields" for ::1 at 2020-03-09 18:34:37 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Api::V1::FieldsController#index as */*
+  [1m[36mField Load (0.2ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.2ms | Allocations: 1242)
+
+
+Started GET "/api/v1/fields" for ::1 at 2020-03-09 18:35:10 -0400
+Processing by Api::V1::FieldsController#index as */*
+  [1m[36mField Load (0.1ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.1ms | Allocations: 1220)
+
+
+Started PATCH "/api/v1/fields/3" for ::1 at 2020-03-09 18:35:13 -0400
+Processing by Api::V1::FieldsController#update as JSON
+  Parameters: {"id"=>"3", "field"=>{}}
+  [1m[36mField Load (0.2ms)[0m  [1m[34mSELECT "fields".* FROM "fields" WHERE "fields"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/fields_controller.rb:9:in `update'
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.2ms | Allocations: 623)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: field):
+  
+app/controllers/api/v1/fields_controller.rb:22:in `field_params'
+app/controllers/api/v1/fields_controller.rb:10:in `update'
+Started GET "/api/v1/fields" for ::1 at 2020-03-09 18:39:15 -0400
+Processing by Api::V1::FieldsController#index as */*
+  [1m[36mField Load (0.1ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.1ms | Allocations: 1219)
+
+
+Started PATCH "/api/v1/fields/3" for ::1 at 2020-03-09 18:39:18 -0400
+Processing by Api::V1::FieldsController#update as JSON
+  Parameters: {"id"=>"3", "field"=>{}}
+  [1m[36mField Load (0.1ms)[0m  [1m[34mSELECT "fields".* FROM "fields" WHERE "fields"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/fields_controller.rb:9:in `update'
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.1ms | Allocations: 603)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: field):
+  
+app/controllers/api/v1/fields_controller.rb:22:in `field_params'
+app/controllers/api/v1/fields_controller.rb:10:in `update'
+Started GET "/api/v1/fields/3" for ::1 at 2020-03-09 18:39:50 -0400
+  
+AbstractController::ActionNotFound (The action 'show' could not be found for Api::V1::FieldsController):
+  
+actionpack (6.0.2.1) lib/abstract_controller/base.rb:131:in `process'
+actionpack (6.0.2.1) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (6.0.2.1) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (6.0.2.1) lib/action_dispatch/routing/route_set.rb:51:in `dispatch'
+actionpack (6.0.2.1) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.2.1) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.2.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.2.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.2.1) lib/action_dispatch/routing/route_set.rb:837:in `call'
+rack (2.2.2) lib/rack/etag.rb:27:in `call'
+rack (2.2.2) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.2) lib/rack/head.rb:12:in `call'
+activerecord (6.0.2.1) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.2.1) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.2.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/api/v1/fields/3" for ::1 at 2020-03-09 18:40:05 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Api::V1::FieldsController#show as HTML
+  Parameters: {"id"=>"3"}
+Completed 204 No Content in 0ms (ActiveRecord: 0.0ms | Allocations: 50)
+
+
+Started GET "/api/v1/fields/3" for ::1 at 2020-03-09 18:40:06 -0400
+Processing by Api::V1::FieldsController#show as HTML
+  Parameters: {"id"=>"3"}
+Completed 204 No Content in 0ms (ActiveRecord: 0.0ms | Allocations: 25)
+
+
+Started GET "/api/v1/fields/3" for ::1 at 2020-03-09 18:40:24 -0400
+Processing by Api::V1::FieldsController#show as HTML
+  Parameters: {"id"=>"3"}
+Completed 204 No Content in 0ms (ActiveRecord: 0.0ms | Allocations: 25)
+
+
+Started GET "/api/v1/fields" for ::1 at 2020-03-09 18:41:37 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Api::V1::FieldsController#index as */*
+  [1m[36mField Load (0.2ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:5:in `index'
+Completed 200 OK in 12ms (Views: 9.1ms | ActiveRecord: 0.8ms | Allocations: 6031)
+
+
+Started PATCH "/api/v1/fields/3" for ::1 at 2020-03-09 18:41:44 -0400
+Processing by Api::V1::FieldsController#update as JSON
+  Parameters: {"id"=>"3", "field"=>{}}
+  [1m[36mField Load (0.1ms)[0m  [1m[34mSELECT "fields".* FROM "fields" WHERE "fields"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/fields_controller.rb:14:in `update'
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.1ms | Allocations: 725)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: field):
+  
+app/controllers/api/v1/fields_controller.rb:27:in `field_params'
+app/controllers/api/v1/fields_controller.rb:15:in `update'
+Started GET "/api/v1/fields" for ::1 at 2020-03-09 18:43:09 -0400
+Processing by Api::V1::FieldsController#index as */*
+  [1m[36mField Load (0.1ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.1ms | Allocations: 1219)
+
+
+Started PATCH "/api/v1/fields/3" for ::1 at 2020-03-09 18:43:12 -0400
+Processing by Api::V1::FieldsController#update as JSON
+  Parameters: {"id"=>"3", "field"=>{}}
+  [1m[36mField Load (0.2ms)[0m  [1m[34mSELECT "fields".* FROM "fields" WHERE "fields"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/fields_controller.rb:14:in `update'
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.2ms | Allocations: 603)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: field):
+  
+app/controllers/api/v1/fields_controller.rb:27:in `field_params'
+app/controllers/api/v1/fields_controller.rb:15:in `update'
+Started GET "/api/v1/fields" for ::1 at 2020-03-09 18:43:46 -0400
+Processing by Api::V1::FieldsController#index as */*
+  [1m[36mField Load (0.2ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.2ms | Allocations: 1219)
+
+
+Started PATCH "/api/v1/fields/3" for ::1 at 2020-03-09 18:45:50 -0400
+Processing by Api::V1::FieldsController#update as JSON
+  Parameters: {"id"=>"3", "field"=>{}}
+  [1m[36mField Load (0.1ms)[0m  [1m[34mSELECT "fields".* FROM "fields" WHERE "fields"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/fields_controller.rb:14:in `update'
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.1ms | Allocations: 603)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: field):
+  
+app/controllers/api/v1/fields_controller.rb:27:in `field_params'
+app/controllers/api/v1/fields_controller.rb:15:in `update'
+Started GET "/api/v1/fields" for ::1 at 2020-03-09 18:46:22 -0400
+Processing by Api::V1::FieldsController#index as */*
+  [1m[36mField Load (0.1ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.1ms | Allocations: 1219)
+
+
+Started GET "/api/v1/fields" for ::1 at 2020-03-09 18:46:23 -0400
+Processing by Api::V1::FieldsController#index as */*
+  [1m[36mField Load (0.1ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.1ms | Allocations: 1220)
+
+
+Started GET "/api/v1/fields" for ::1 at 2020-03-09 18:46:27 -0400
+Processing by Api::V1::FieldsController#index as */*
+  [1m[36mField Load (0.1ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:5:in `index'
+Completed 200 OK in 1ms (Views: 1.2ms | ActiveRecord: 0.1ms | Allocations: 1220)
+
+
+Started PATCH "/api/v1/fields/1" for ::1 at 2020-03-09 18:47:00 -0400
+Processing by Api::V1::FieldsController#update as JSON
+  Parameters: {"id"=>"1", "field"=>{}}
+  [1m[36mField Load (0.1ms)[0m  [1m[34mSELECT "fields".* FROM "fields" WHERE "fields"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/fields_controller.rb:14:in `update'
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.1ms | Allocations: 603)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: field):
+  
+app/controllers/api/v1/fields_controller.rb:27:in `field_params'
+app/controllers/api/v1/fields_controller.rb:15:in `update'
+Started GET "/api/v1/fields" for ::1 at 2020-03-09 18:48:07 -0400
+Processing by Api::V1::FieldsController#index as */*
+  [1m[36mField Load (0.1ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.1ms | Allocations: 1219)
+
+
+Started PATCH "/api/v1/fields/2" for ::1 at 2020-03-09 18:48:32 -0400
+Processing by Api::V1::FieldsController#update as JSON
+  Parameters: {"id"=>"2", "field"=>{}}
+  [1m[36mField Load (0.1ms)[0m  [1m[34mSELECT "fields".* FROM "fields" WHERE "fields"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/fields_controller.rb:14:in `update'
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.1ms | Allocations: 603)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: field):
+  
+app/controllers/api/v1/fields_controller.rb:27:in `field_params'
+app/controllers/api/v1/fields_controller.rb:15:in `update'
+Started GET "/api/v1/fields" for ::1 at 2020-03-09 18:49:36 -0400
+Processing by Api::V1::FieldsController#index as */*
+  [1m[36mField Load (0.2ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.2ms | Allocations: 1219)
+
+
+Started PATCH "/api/v1/fields/2" for ::1 at 2020-03-09 18:49:39 -0400
+Processing by Api::V1::FieldsController#update as JSON
+  Parameters: {"id"=>"2", "field"=>{}}
+  [1m[36mField Load (0.1ms)[0m  [1m[34mSELECT "fields".* FROM "fields" WHERE "fields"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/fields_controller.rb:14:in `update'
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.1ms | Allocations: 604)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: field):
+  
+app/controllers/api/v1/fields_controller.rb:27:in `field_params'
+app/controllers/api/v1/fields_controller.rb:15:in `update'
+Started GET "/api/v1/fields" for ::1 at 2020-03-09 18:50:45 -0400
+Processing by Api::V1::FieldsController#index as */*
+  [1m[36mField Load (0.1ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:5:in `index'
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.1ms | Allocations: 1219)
+
+
+Started PATCH "/api/v1/fields/1" for ::1 at 2020-03-09 18:50:48 -0400
+Processing by Api::V1::FieldsController#update as JSON
+  Parameters: {"id"=>"1", "field"=>{}}
+  [1m[36mField Load (0.2ms)[0m  [1m[34mSELECT "fields".* FROM "fields" WHERE "fields"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/fields_controller.rb:14:in `update'
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.2ms | Allocations: 603)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: field):
+  
+app/controllers/api/v1/fields_controller.rb:27:in `field_params'
+app/controllers/api/v1/fields_controller.rb:15:in `update'
+Started GET "/api/v1/fields" for ::1 at 2020-03-09 18:51:51 -0400
+Processing by Api::V1::FieldsController#index as */*
+  [1m[36mField Load (0.1ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:5:in `index'
+Completed 200 OK in 1ms (Views: 1.2ms | ActiveRecord: 0.1ms | Allocations: 1219)
+
+
+Started GET "/api/v1/fields" for ::1 at 2020-03-09 18:52:36 -0400
+Processing by Api::V1::FieldsController#index as */*
+  [1m[36mField Load (0.2ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.2ms | Allocations: 1220)
+
+
+Started GET "/api/v1/fields" for ::1 at 2020-03-09 18:53:06 -0400
+Processing by Api::V1::FieldsController#index as */*
+  [1m[36mField Load (0.1ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.1ms | Allocations: 1220)
+
+
+Started PATCH "/api/v1/fields/2" for ::1 at 2020-03-09 18:53:08 -0400
+Processing by Api::V1::FieldsController#update as JSON
+  Parameters: {"id"=>"2", "field"=>{}}
+  [1m[36mField Load (0.1ms)[0m  [1m[34mSELECT "fields".* FROM "fields" WHERE "fields"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/fields_controller.rb:14:in `update'
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.1ms | Allocations: 603)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: field):
+  
+app/controllers/api/v1/fields_controller.rb:27:in `field_params'
+app/controllers/api/v1/fields_controller.rb:15:in `update'
+Started GET "/api/v1/fields" for ::1 at 2020-03-09 18:53:45 -0400
+Processing by Api::V1::FieldsController#index as */*
+  [1m[36mField Load (0.2ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.2ms | Allocations: 1219)
+
+
+Started GET "/api/v1/fields" for ::1 at 2020-03-09 18:54:13 -0400
+Processing by Api::V1::FieldsController#index as */*
+  [1m[36mField Load (0.2ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.2ms | Allocations: 1220)
+
+
+Started GET "/api/v1/fields" for ::1 at 2020-03-09 18:54:13 -0400
+Processing by Api::V1::FieldsController#index as */*
+  [1m[36mField Load (0.2ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.2ms | Allocations: 1220)
+
+
+Started GET "/api/v1/fields" for ::1 at 2020-03-09 18:54:59 -0400
+Processing by Api::V1::FieldsController#index as */*
+  [1m[36mField Load (0.1ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.1ms | Allocations: 1220)
+
+
+Started GET "/api/v1/fields" for ::1 at 2020-03-09 18:55:19 -0400
+Processing by Api::V1::FieldsController#index as */*
+  [1m[36mField Load (0.1ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:5:in `index'
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.1ms | Allocations: 1220)
+
+
+Started GET "/api/v1/fields" for ::1 at 2020-03-09 18:55:50 -0400
+Processing by Api::V1::FieldsController#index as */*
+  [1m[36mField Load (0.3ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.3ms | Allocations: 1220)
+
+
+Started PATCH "/api/v1/fields/3" for ::1 at 2020-03-09 18:56:15 -0400
+Processing by Api::V1::FieldsController#update as JSON
+  Parameters: {"id"=>"3", "field"=>{}}
+  [1m[36mField Load (0.1ms)[0m  [1m[34mSELECT "fields".* FROM "fields" WHERE "fields"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/fields_controller.rb:14:in `update'
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.1ms | Allocations: 603)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: field):
+  
+app/controllers/api/v1/fields_controller.rb:27:in `field_params'
+app/controllers/api/v1/fields_controller.rb:15:in `update'
+Started GET "/api/v1/fields" for ::1 at 2020-03-09 18:56:16 -0400
+Processing by Api::V1::FieldsController#index as */*
+  [1m[36mField Load (0.1ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.1ms | Allocations: 1219)
+
+
+Started GET "/api/v1/fields" for ::1 at 2020-03-09 18:56:39 -0400
+Processing by Api::V1::FieldsController#index as */*
+  [1m[36mField Load (0.2ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.2ms | Allocations: 1220)
+
+
+Started GET "/api/v1/fields" for ::1 at 2020-03-09 18:56:53 -0400
+Processing by Api::V1::FieldsController#index as */*
+  [1m[36mField Load (0.1ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.1ms | Allocations: 1220)
+
+
+Started GET "/api/v1/fields" for ::1 at 2020-03-09 19:02:00 -0400
+Processing by Api::V1::FieldsController#index as */*
+  [1m[36mField Load (0.1ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.1ms | Allocations: 1221)
+
+
+Started GET "/api/v1/fields" for ::1 at 2020-03-09 19:04:02 -0400
+Processing by Api::V1::FieldsController#index as */*
+  [1m[36mField Load (0.2ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.2ms | Allocations: 1220)
+
+
+Started GET "/api/v1/fields" for ::1 at 2020-03-09 19:04:03 -0400
+Processing by Api::V1::FieldsController#index as */*
+  [1m[36mField Load (0.1ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:5:in `index'
+Completed 200 OK in 1ms (Views: 1.2ms | ActiveRecord: 0.1ms | Allocations: 1220)
+
+
+Started PATCH "/api/v1/fields/2" for ::1 at 2020-03-09 19:04:36 -0400
+Processing by Api::V1::FieldsController#update as JSON
+  Parameters: {"id"=>"2", "field"=>{}}
+  [1m[36mField Load (0.1ms)[0m  [1m[34mSELECT "fields".* FROM "fields" WHERE "fields"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/fields_controller.rb:14:in `update'
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.1ms | Allocations: 603)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: field):
+  
+app/controllers/api/v1/fields_controller.rb:27:in `field_params'
+app/controllers/api/v1/fields_controller.rb:15:in `update'
+Started GET "/api/v1/fields" for ::1 at 2020-03-09 19:08:04 -0400
+Processing by Api::V1::FieldsController#index as */*
+  [1m[36mField Load (0.2ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.2ms | Allocations: 1219)
+
+
+Started GET "/api/v1/fields" for ::1 at 2020-03-09 19:08:38 -0400
+Processing by Api::V1::FieldsController#index as */*
+  [1m[36mField Load (0.1ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.1ms | Allocations: 1220)
+
+
+Started GET "/api/v1/fields" for ::1 at 2020-03-09 19:11:33 -0400
+Processing by Api::V1::FieldsController#index as */*
+  [1m[36mField Load (0.1ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.1ms | Allocations: 1220)
+
+
+Started GET "/api/v1/fields" for ::1 at 2020-03-09 19:11:33 -0400
+Processing by Api::V1::FieldsController#index as */*
+  [1m[36mField Load (0.1ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:5:in `index'
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.1ms | Allocations: 1220)
+
+
+Started PATCH "/api/v1/fields/1" for ::1 at 2020-03-09 19:11:35 -0400
+Processing by Api::V1::FieldsController#update as JSON
+  Parameters: {"id"=>"1", "field"=>{}}
+  [1m[36mField Load (0.1ms)[0m  [1m[34mSELECT "fields".* FROM "fields" WHERE "fields"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/fields_controller.rb:14:in `update'
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.1ms | Allocations: 603)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: field):
+  
+app/controllers/api/v1/fields_controller.rb:27:in `field_params'
+app/controllers/api/v1/fields_controller.rb:15:in `update'
+Started GET "/api/v1/fields/1" for ::1 at 2020-03-09 19:11:48 -0400
+Processing by Api::V1::FieldsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mField Load (0.2ms)[0m  [1m[34mSELECT "fields".* FROM "fields" WHERE "fields"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/fields_controller.rb:9:in `show'
+Completed 204 No Content in 2ms (ActiveRecord: 0.2ms | Allocations: 518)
+
+
+Started GET "/api/v1/fields" for ::1 at 2020-03-09 19:12:26 -0400
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (69.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::FieldsController#index as */*
+  [1m[36mField Load (0.2ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:5:in `index'
+Completed 200 OK in 9ms (Views: 6.2ms | ActiveRecord: 0.7ms | Allocations: 6346)
+
+
+Started PATCH "/api/v1/fields/2" for ::1 at 2020-03-09 19:12:30 -0400
+Processing by Api::V1::FieldsController#update as JSON
+  Parameters: {"id"=>"2", "field"=>{}}
+  [1m[36mField Load (0.2ms)[0m  [1m[34mSELECT "fields".* FROM "fields" WHERE "fields"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/fields_controller.rb:13:in `update'
+Completed 400 Bad Request in 7ms (ActiveRecord: 0.2ms | Allocations: 1065)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: field):
+  
+app/controllers/api/v1/fields_controller.rb:26:in `field_params'
+app/controllers/api/v1/fields_controller.rb:14:in `update'
+Started GET "/api/v1/fields/2" for ::1 at 2020-03-09 19:12:41 -0400
+Processing by Api::V1::FieldsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mField Load (0.2ms)[0m  [1m[34mSELECT "fields".* FROM "fields" WHERE "fields"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/fields_controller.rb:9:in `show'
+Completed 204 No Content in 1ms (ActiveRecord: 0.2ms | Allocations: 539)
+
+
+Started GET "/api/v1/fields/2" for ::1 at 2020-03-09 19:13:09 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Api::V1::FieldsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mField Load (0.2ms)[0m  [1m[34mSELECT "fields".* FROM "fields" WHERE "fields"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/fields_controller.rb:9:in `show'
+Completed 200 OK in 7ms (Views: 0.3ms | ActiveRecord: 0.8ms | Allocations: 5633)
+
+
+Started GET "/api/v1/fields" for ::1 at 2020-03-09 19:13:21 -0400
+Processing by Api::V1::FieldsController#index as */*
+  [1m[36mField Load (0.1ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.1ms | Allocations: 1257)
+
+
+Started PATCH "/api/v1/fields/2" for ::1 at 2020-03-09 19:13:24 -0400
+Processing by Api::V1::FieldsController#update as JSON
+  Parameters: {"id"=>"2", "field"=>{}}
+  [1m[36mField Load (0.1ms)[0m  [1m[34mSELECT "fields".* FROM "fields" WHERE "fields"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/fields_controller.rb:14:in `update'
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.1ms | Allocations: 603)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: field):
+  
+app/controllers/api/v1/fields_controller.rb:27:in `field_params'
+app/controllers/api/v1/fields_controller.rb:15:in `update'
+Started GET "/api/v1/fields" for ::1 at 2020-03-09 19:15:11 -0400
+Processing by Api::V1::FieldsController#index as */*
+  [1m[36mField Load (0.1ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:5:in `index'
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.1ms | Allocations: 1219)
+
+
+Started PATCH "/api/v1/fields/2" for ::1 at 2020-03-09 19:15:14 -0400
+Processing by Api::V1::FieldsController#update as JSON
+  Parameters: {"id"=>"2", "field"=>{}}
+  [1m[36mField Load (0.1ms)[0m  [1m[34mSELECT "fields".* FROM "fields" WHERE "fields"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/fields_controller.rb:14:in `update'
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.1ms | Allocations: 603)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: field):
+  
+app/controllers/api/v1/fields_controller.rb:27:in `field_params'
+app/controllers/api/v1/fields_controller.rb:15:in `update'
+Started GET "/api/v1/fields" for ::1 at 2020-03-09 19:16:30 -0400
+Processing by Api::V1::FieldsController#index as */*
+  [1m[36mField Load (0.1ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.1ms | Allocations: 1221)
+
+
+Started PATCH "/api/v1/fields/2" for ::1 at 2020-03-09 19:16:33 -0400
+Processing by Api::V1::FieldsController#update as JSON
+  Parameters: {"id"=>"2", "field"=>{}}
+  [1m[36mField Load (0.1ms)[0m  [1m[34mSELECT "fields".* FROM "fields" WHERE "fields"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/fields_controller.rb:14:in `update'
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.1ms | Allocations: 603)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: field):
+  
+app/controllers/api/v1/fields_controller.rb:27:in `field_params'
+app/controllers/api/v1/fields_controller.rb:15:in `update'
+Started GET "/api/v1/fields/2" for ::1 at 2020-03-09 19:16:55 -0400
+Processing by Api::V1::FieldsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mField Load (0.1ms)[0m  [1m[34mSELECT "fields".* FROM "fields" WHERE "fields"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/fields_controller.rb:9:in `show'
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.1ms | Allocations: 705)
+
+
+Started GET "/api/v1/fields/2" for ::1 at 2020-03-09 19:16:56 -0400
+Processing by Api::V1::FieldsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mField Load (0.1ms)[0m  [1m[34mSELECT "fields".* FROM "fields" WHERE "fields"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/fields_controller.rb:9:in `show'
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.1ms | Allocations: 705)
+
+
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mField Create (0.7ms)[0m  [1m[32mINSERT INTO "fields" ("name", "locations", "coordinates", "field", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Silo"], ["locations", "1"], ["coordinates", "32.989181, 81.015845"], ["field", "1"], ["created_at", "2020-03-09 23:17:21.462477"], ["updated_at", "2020-03-09 23:17:21.462477"]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/api/v1/fields" for ::1 at 2020-03-09 19:17:32 -0400
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::FieldsController#index as */*
+  [1m[36mField Load (0.2ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:5:in `index'
+Completed 200 OK in 12ms (Views: 8.8ms | ActiveRecord: 0.7ms | Allocations: 6514)
+
+
+Started GET "/api/v1/fields" for ::1 at 2020-03-09 19:17:41 -0400
+Processing by Api::V1::FieldsController#index as HTML
+  [1m[36mField Load (0.1ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.1ms | Allocations: 1403)
+
+
+Started GET "/api/v1/fields" for ::1 at 2020-03-09 19:17:56 -0400
+Processing by Api::V1::FieldsController#index as */*
+  [1m[36mField Load (0.1ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.1ms | Allocations: 1404)
+
+
+Started PATCH "/api/v1/fields/4" for ::1 at 2020-03-09 19:18:00 -0400
+Processing by Api::V1::FieldsController#update as JSON
+  Parameters: {"id"=>"4", "field"=>{}}
+  [1m[36mField Load (0.1ms)[0m  [1m[34mSELECT "fields".* FROM "fields" WHERE "fields"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/fields_controller.rb:14:in `update'
+Completed 400 Bad Request in 7ms (ActiveRecord: 0.1ms | Allocations: 2467)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: field):
+  
+app/controllers/api/v1/fields_controller.rb:27:in `field_params'
+app/controllers/api/v1/fields_controller.rb:15:in `update'

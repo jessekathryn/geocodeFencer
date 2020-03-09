@@ -1,24 +1,33 @@
-# README
+# CattleLog Farm Maker
+Field Maker SAP with Java inside Rails API 
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A single page Javascript application for creating and saving field locations with a Google API enabling user to create farm attributes.
 
-Things you may want to cover:
+As an extension of CattleLog App, the farm maker is used to test run the ability to draw and edit fields given the longitude and latitude coordinates.  The satellite image is provided via Google's Map API and front-end design is built with JavaScript. This project will ultimately belong to the Rails App, Cattlelog and will later be published to Heroku.
 
-* Ruby version
+The front-end design is based off of Farm apps and a boostrap theme created in Cattlelog and will remain consistent, as if  user logs into his/her dashboard, but this SAP will not use authentication; rather, be acclamated into the auth of Cattelog Rails App, which uses bcrpyt gem. The icons and colors are custom.
 
-* System dependencies
+# Installation
+front end:
 
-* Configuration
+OS X & Linux:
 
-* Database creation
+```npm install```
 
-* Database initialization
+back end:
 
-* How to run the test suite
+```bundle install```
 
-* Services (job queues, cache servers, search engines, etc.)
+# Development setup
+front end:
 
-* Deployment instructions
+```npm start```
 
-* ...
+back end:
+
+```
+rails db:create 
+
+rails db:migrate 
+
+rails s

@@ -5,8 +5,14 @@ class Api::V1::FieldsController < ApplicationController
       render json: @fields
     end
   
+    def show
+      @field = Field.find_by(params[:id])
+      render json: @field
+    end
+
     def update
-      @field = Field.find_by(id: params[:id])
+      @field = Field.find_by(params[:id])
+      
       @field.update(field_params)
      
       if @field.save
@@ -19,7 +25,7 @@ class Api::V1::FieldsController < ApplicationController
     private
   
     def field_params
-      params.permit(:id, :name, :coordinates, :locations)
+      params.require(:field).permit(:id, :name, :coordinates, :locations)
     end
 
 end

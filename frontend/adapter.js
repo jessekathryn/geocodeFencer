@@ -15,14 +15,15 @@ class Adapter {
         return this.patch(`${this.baseUrl}/fields/${id}`, input);
     }
 
-    get(url) {
-        return fetch(url).then(res => res.json());
+    get(baseUrl) {
+        return fetch(baseUrl).then(res => res.json());
     }
 
-    patch(url, input) {
-        return fetch(url, {
+    patch(baseUrl, input) {
+        return fetch(baseUrl, {
             method: 'PATCH',
             headers: this.headers,
+            id: this.id,
             input: JSON.stringify(input),
         }).then(res => res.json());
     }

@@ -6,7 +6,7 @@ class Field {
     Field.all.push(this);
   }
 
-  update({name, coordinates}){
+  update({id, name, coordinates}){
     this.id = id;
     this.name = name;
     this.coordinates = coordinates;
@@ -14,16 +14,16 @@ class Field {
 
   renderFieldItem() {
     return `
-    <h3>${this.coordinates} 
-   <button data-id=${this.id}>Select </button>
+    <h3>${this.coordinates} ${this.name}
+    <button data-id=${this.id}>Select </button>
     </h3>`;
   }
 
   renderUpdateForm() {
     return `
     <form data-id=${this.id}>
-    <input type="text" class="form-control" name="${this.coordinates}" />
-    <button type="submit" data-id=${this.id}>Save</button>
+    <input class="form-control" name="${this.coordinates}" />
+    <button type="submit">Save</button>
     </form>
     `;
   }

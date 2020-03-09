@@ -1,4 +1,5 @@
 class App {
+    
     constructor() {
         this.adapter = new Adapter();
 
@@ -30,14 +31,14 @@ class App {
     handleFormSubmit(e) {
         e.preventDefault();
         const id = e.target.dataset.id;
-        const field = Field.findById(id)
-        const coordinates = e.target.querySelector('input').value;
+        const coordinates= e.target.querySelector('input').value
         const inputJSON = { name, coordinates };
-
-        this.adapter.updateField(field.id, inputJSON).then(updatedField => { field = Field.findById(updatedField.id);
-            this.addFields();
+        this.adapter.updateField(id, inputJSON).then(updatedField => {
+          const field = Field.findById(updatedField.id);
+          field.update(updatedField);
+          this.addFields();
         });
-    }
+      }
 
     handleEditClick(e) {
         const id = parseInt(e.target.dataset.id);
