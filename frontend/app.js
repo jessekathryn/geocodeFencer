@@ -10,7 +10,6 @@ class App {
     }
 
     attachEventListeners() {
-        document.querySelector('#fields-list').addEventListener('click', this.handleEditClick);
         document.querySelector('#update').addEventListener('submit', this.handleFormSubmit);
     }
 
@@ -26,14 +25,16 @@ class App {
         Field.all.forEach(
             field => (document.querySelector('#fields-list').innerHTML += field.renderFieldItem())
         );
+        document.querySelector('#fields-list').addEventListener('click', this.handleEditClick);
     }
 
     handleFormSubmit(e) {
         e.preventDefault();
-        const id = e.target.dataset.id;
+        const id = parseInt(e.target.dataset.id);
+        const field = Field.findById(id);
         const coordinates= e.target.querySelector('input').value
         const inputJSON = { name, coordinates };
-        this.adapter.updateField(id, inputJSON).then(updatedField => {
+        this.adapter.updateField(field.id, inputJSON).then(updatedField => {
           const field = Field.findById(updatedField.id);
           field.update(updatedField);
           this.addFields();

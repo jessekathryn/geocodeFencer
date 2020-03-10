@@ -18,7 +18,7 @@ class Field {
     <button data-id=${this.id}>Select </button>
     </h3>`;
   }
-
+  
   renderUpdateForm() {
     return `
     <form data-id=${this.id}>

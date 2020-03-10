@@ -11,6 +11,7 @@ class Api::V1::FieldsController < ApplicationController
     end
 
     def update
+
       @field = Field.find_by(params[:id])
       
       @field.update(field_params)
@@ -25,7 +26,7 @@ class Api::V1::FieldsController < ApplicationController
     private
   
     def field_params
-      params.require(:field).permit(:id, :name, :coordinates, :locations)
+      params.require(:field).permit(:name, :coordinates)
     end
 
 end
