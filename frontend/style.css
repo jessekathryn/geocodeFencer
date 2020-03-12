@@ -6,7 +6,7 @@
     padding-top: var(--jumbotron-padding-y);
     padding-bottom: var(--jumbotron-padding-y);
     margin-bottom: 0;
-    background-color: #fff;
+    background-color: rgb(255, 255, 255);
   }
   @media (min-width: 800px) {
     .jumbotron {
@@ -17,6 +17,10 @@
   
   .bg-dark {
     background-color: #254945!important; 
+  }
+
+  .bg-info {
+    background-color: #345B4D!important;
   }
 
   .jumbotron p:last-child {
@@ -51,7 +55,7 @@
 
   .google-maps {
       position: relative;
-      padding-bottom: 75%;
+      padding-bottom: 100%;
       height: 0;
       overflow: hidden;
   }
