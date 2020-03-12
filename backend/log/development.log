@@ -11159,3 +11159,614 @@ Processing by Api::V1::FieldsController#update as JSON
 Completed 202 Accepted in 8ms (Views: 0.2ms | ActiveRecord: 4.7ms | Allocations: 3025)
 
 
+Started GET "/api/v1/fields" for ::1 at 2020-03-11 18:25:41 -0400
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Api::V1::FieldsController#index as HTML
+  [1m[36mField Load (0.6ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:5:in `index'
+Completed 200 OK in 9ms (Views: 7.2ms | ActiveRecord: 0.6ms | Allocations: 1408)
+
+
+Started GET "/api/v1/fields" for ::1 at 2020-03-11 19:25:11 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Api::V1::FieldsController#index as */*
+  [1m[36mField Load (0.5ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:5:in `index'
+Completed 200 OK in 4ms (Views: 2.8ms | ActiveRecord: 0.5ms | Allocations: 1409)
+
+
+Started PATCH "/api/v1/fields/3" for ::1 at 2020-03-11 19:25:14 -0400
+Processing by Api::V1::FieldsController#update as JSON
+  Parameters: {"name"=>"", "coordinates"=>"1111", "id"=>"3", "field"=>{"name"=>"", "coordinates"=>"1111"}}
+  [1m[36mField Load (0.3ms)[0m  [1m[34mSELECT "fields".* FROM "fields" WHERE (3) LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/v1/fields_controller.rb:15:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:17:in `update'
+  [1m[36mField Update (2.5ms)[0m  [1m[33mUPDATE "fields" SET "coordinates" = ?, "updated_at" = ? WHERE "fields"."id" = ?[0m  [["coordinates", "1111"], ["updated_at", "2020-03-11 23:25:14.337868"], ["id", 1]]
+  ↳ app/controllers/api/v1/fields_controller.rb:17:in `update'
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:17:in `update'
+Completed 202 Accepted in 12ms (Views: 0.2ms | ActiveRecord: 3.7ms | Allocations: 3026)
+
+
+Started PATCH "/api/v1/fields/3" for ::1 at 2020-03-11 19:26:07 -0400
+Processing by Api::V1::FieldsController#update as JSON
+  Parameters: {"name"=>"", "coordinates"=>"1111", "id"=>"3", "field"=>{"name"=>"", "coordinates"=>"1111"}}
+  [1m[36mField Load (0.2ms)[0m  [1m[34mSELECT "fields".* FROM "fields" WHERE (3) LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/v1/fields_controller.rb:15:in `update'
+Completed 202 Accepted in 2ms (Views: 0.3ms | ActiveRecord: 0.2ms | Allocations: 1087)
+
+
+Started GET "/api/v1/fields" for ::1 at 2020-03-11 19:27:04 -0400
+Processing by Api::V1::FieldsController#index as */*
+  [1m[36mField Load (0.1ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.1ms | Allocations: 1387)
+
+
+Started GET "/api/v1/fields" for ::1 at 2020-03-11 19:29:06 -0400
+Processing by Api::V1::FieldsController#index as */*
+  [1m[36mField Load (0.1ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.1ms | Allocations: 1387)
+
+
+Started GET "/api/v1/fields" for ::1 at 2020-03-11 19:30:14 -0400
+Processing by Api::V1::FieldsController#index as */*
+  [1m[36mField Load (0.2ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.2ms | Allocations: 1387)
+
+
+Started GET "/api/v1/fields" for ::1 at 2020-03-11 19:30:35 -0400
+Processing by Api::V1::FieldsController#index as */*
+  [1m[36mField Load (0.1ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 2.1ms | ActiveRecord: 0.1ms | Allocations: 1387)
+
+
+Started GET "/api/v1/fields" for ::1 at 2020-03-11 19:31:14 -0400
+Processing by Api::V1::FieldsController#index as */*
+  [1m[36mField Load (0.2ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 3.0ms | ActiveRecord: 0.2ms | Allocations: 1387)
+
+
+Started GET "/api/v1/fields" for ::1 at 2020-03-11 19:31:40 -0400
+Processing by Api::V1::FieldsController#index as */*
+  [1m[36mField Load (0.3ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:5:in `index'
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.3ms | Allocations: 1387)
+
+
+Started GET "/api/v1/fields" for ::1 at 2020-03-11 19:31:57 -0400
+Processing by Api::V1::FieldsController#index as */*
+  [1m[36mField Load (0.1ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:5:in `index'
+Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.1ms | Allocations: 1387)
+
+
+Started GET "/api/v1/fields" for ::1 at 2020-03-11 19:36:25 -0400
+Processing by Api::V1::FieldsController#index as */*
+  [1m[36mField Load (0.2ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 3.0ms | ActiveRecord: 0.2ms | Allocations: 1387)
+
+
+Started GET "/api/v1/fields" for ::1 at 2020-03-11 19:37:53 -0400
+Processing by Api::V1::FieldsController#index as */*
+  [1m[36mField Load (0.1ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.1ms | Allocations: 1388)
+
+
+Started PATCH "/api/v1/fields/2" for ::1 at 2020-03-11 19:39:28 -0400
+Processing by Api::V1::FieldsController#update as JSON
+  Parameters: {"name"=>"", "coordinates"=>"32.989181, 81.015845", "id"=>"2", "field"=>{"name"=>"", "coordinates"=>"32.989181, 81.015845"}}
+  [1m[36mField Load (0.1ms)[0m  [1m[34mSELECT "fields".* FROM "fields" WHERE (2) LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/v1/fields_controller.rb:15:in `update'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:17:in `update'
+  [1m[36mField Update (1.8ms)[0m  [1m[33mUPDATE "fields" SET "coordinates" = ?, "updated_at" = ? WHERE "fields"."id" = ?[0m  [["coordinates", "32.989181, 81.015845"], ["updated_at", "2020-03-11 23:39:28.421470"], ["id", 1]]
+  ↳ app/controllers/api/v1/fields_controller.rb:17:in `update'
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:17:in `update'
+Completed 202 Accepted in 7ms (Views: 0.2ms | ActiveRecord: 3.3ms | Allocations: 3025)
+
+
+Started GET "/api/v1/fields" for ::1 at 2020-03-11 19:41:50 -0400
+Processing by Api::V1::FieldsController#index as */*
+  [1m[36mField Load (0.1ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.1ms | Allocations: 1387)
+
+
+Started GET "/api/v1/fields" for ::1 at 2020-03-11 19:43:05 -0400
+Processing by Api::V1::FieldsController#index as */*
+  [1m[36mField Load (0.2ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.2ms | Allocations: 1387)
+
+
+Started GET "/api/v1/fields" for ::1 at 2020-03-11 19:43:35 -0400
+Processing by Api::V1::FieldsController#index as */*
+  [1m[36mField Load (0.2ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.2ms | Allocations: 1387)
+
+
+Started GET "/api/v1/fields" for ::1 at 2020-03-11 19:44:27 -0400
+Processing by Api::V1::FieldsController#index as */*
+  [1m[36mField Load (0.1ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.1ms | Allocations: 1387)
+
+
+Started GET "/api/v1/fields" for ::1 at 2020-03-11 19:46:02 -0400
+Processing by Api::V1::FieldsController#index as */*
+  [1m[36mField Load (0.2ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.2ms | Allocations: 1387)
+
+
+Started GET "/api/v1/fields" for ::1 at 2020-03-11 19:47:08 -0400
+Processing by Api::V1::FieldsController#index as */*
+  [1m[36mField Load (0.2ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.2ms | Allocations: 1387)
+
+
+Started GET "/api/v1/fields" for ::1 at 2020-03-11 19:49:56 -0400
+Processing by Api::V1::FieldsController#index as */*
+  [1m[36mField Load (0.1ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.1ms | Allocations: 1387)
+
+
+Started GET "/api/v1/fields" for ::1 at 2020-03-11 19:50:34 -0400
+Processing by Api::V1::FieldsController#index as */*
+  [1m[36mField Load (0.2ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.2ms | Allocations: 1387)
+
+
+Started GET "/api/v1/fields" for ::1 at 2020-03-11 20:04:11 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Api::V1::FieldsController#index as */*
+  [1m[36mField Load (0.3ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.3ms | Allocations: 1409)
+
+
+Started GET "/api/v1/fields" for ::1 at 2020-03-11 20:08:33 -0400
+Processing by Api::V1::FieldsController#index as */*
+  [1m[36mField Load (0.1ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:5:in `index'
+Completed 200 OK in 1ms (Views: 1.2ms | ActiveRecord: 0.1ms | Allocations: 1387)
+
+
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.2ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (1.5ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateFields (20200309001905)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "fields" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "locations" varchar, "coordinates" varchar, "field" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mprimary::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20200309001905"]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-03-12 00:11:17.818202"], ["updated_at", "2020-03-12 00:11:17.818202"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mField Create (0.4ms)[0m  [1m[32mINSERT INTO "fields" ("name", "locations", "coordinates", "field", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Silo"], ["locations", "1"], ["coordinates", "32.989181, 81.015845"], ["field", "1"], ["created_at", "2020-03-12 00:12:07.740614"], ["updated_at", "2020-03-12 00:12:07.740614"]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/api/v1/fields" for ::1 at 2020-03-11 20:12:54 -0400
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::FieldsController#index as HTML
+  [1m[36mField Load (0.2ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:5:in `index'
+Completed 200 OK in 10ms (Views: 7.7ms | ActiveRecord: 0.8ms | Allocations: 6033)
+
+
+Started GET "/api/v1/fields" for ::1 at 2020-03-11 20:13:00 -0400
+Processing by Api::V1::FieldsController#index as */*
+  [1m[36mField Load (0.1ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.1ms | Allocations: 927)
+
+
+Started GET "/api/v1/fields" for ::1 at 2020-03-11 20:13:47 -0400
+Processing by Api::V1::FieldsController#index as */*
+  [1m[36mField Load (0.1ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.1ms | Allocations: 926)
+
+
+Started GET "/api/v1/fields" for ::1 at 2020-03-11 20:13:56 -0400
+Processing by Api::V1::FieldsController#index as */*
+  [1m[36mField Load (0.3ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.3ms | Allocations: 926)
+
+
+Started GET "/api/v1/fields" for ::1 at 2020-03-11 20:14:06 -0400
+Processing by Api::V1::FieldsController#index as */*
+  [1m[36mField Load (0.2ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.2ms | Allocations: 926)
+
+
+Started GET "/api/v1/fields" for ::1 at 2020-03-11 20:17:46 -0400
+Processing by Api::V1::FieldsController#index as */*
+  [1m[36mField Load (0.2ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.2ms | Allocations: 909)
+
+
+Started GET "/api/v1/fields" for ::1 at 2020-03-11 20:18:19 -0400
+Processing by Api::V1::FieldsController#index as */*
+  [1m[36mField Load (0.1ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.1ms | Allocations: 909)
+
+
+Started GET "/api/v1/fields" for ::1 at 2020-03-11 20:18:40 -0400
+Processing by Api::V1::FieldsController#index as */*
+  [1m[36mField Load (0.2ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.2ms | Allocations: 909)
+
+
+Started GET "/api/v1/fields" for ::1 at 2020-03-11 20:19:18 -0400
+Processing by Api::V1::FieldsController#index as */*
+  [1m[36mField Load (0.1ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.1ms | Allocations: 909)
+
+
+Started PATCH "/api/v1/fields/1" for ::1 at 2020-03-11 20:19:22 -0400
+Processing by Api::V1::FieldsController#update as JSON
+  Parameters: {"name"=>"", "coordinates"=>"", "id"=>"1", "field"=>{"name"=>"", "coordinates"=>""}}
+  [1m[36mField Load (0.1ms)[0m  [1m[34mSELECT "fields".* FROM "fields" WHERE (1) LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/v1/fields_controller.rb:15:in `update'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:17:in `update'
+  [1m[36mField Update (0.3ms)[0m  [1m[33mUPDATE "fields" SET "name" = ?, "coordinates" = ?, "updated_at" = ? WHERE "fields"."id" = ?[0m  [["name", ""], ["coordinates", ""], ["updated_at", "2020-03-12 00:19:22.119895"], ["id", 1]]
+  ↳ app/controllers/api/v1/fields_controller.rb:17:in `update'
+  [1m[35m (9.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:17:in `update'
+Completed 202 Accepted in 19ms (Views: 0.4ms | ActiveRecord: 10.0ms | Allocations: 4957)
+
+
+Started PATCH "/api/v1/fields/1" for ::1 at 2020-03-11 20:19:23 -0400
+Processing by Api::V1::FieldsController#update as JSON
+  Parameters: {"name"=>"", "coordinates"=>"", "id"=>"1", "field"=>{"name"=>"", "coordinates"=>""}}
+  [1m[36mField Load (0.2ms)[0m  [1m[34mSELECT "fields".* FROM "fields" WHERE (1) LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/v1/fields_controller.rb:15:in `update'
+Completed 202 Accepted in 2ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 1098)
+
+
+Started PATCH "/api/v1/fields/1" for ::1 at 2020-03-11 20:19:25 -0400
+Processing by Api::V1::FieldsController#update as JSON
+  Parameters: {"name"=>"", "coordinates"=>"32.989181, 81.015845", "id"=>"1", "field"=>{"name"=>"", "coordinates"=>"32.989181, 81.015845"}}
+  [1m[36mField Load (0.1ms)[0m  [1m[34mSELECT "fields".* FROM "fields" WHERE (1) LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/v1/fields_controller.rb:15:in `update'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:17:in `update'
+  [1m[36mField Update (0.2ms)[0m  [1m[33mUPDATE "fields" SET "coordinates" = ?, "updated_at" = ? WHERE "fields"."id" = ?[0m  [["coordinates", "32.989181, 81.015845"], ["updated_at", "2020-03-12 00:19:25.906766"], ["id", 1]]
+  ↳ app/controllers/api/v1/fields_controller.rb:17:in `update'
+  [1m[35m (32.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:17:in `update'
+Completed 202 Accepted in 36ms (Views: 0.2ms | ActiveRecord: 32.8ms | Allocations: 3036)
+
+
+Started PATCH "/api/v1/fields/1" for ::1 at 2020-03-11 20:19:26 -0400
+Processing by Api::V1::FieldsController#update as JSON
+  Parameters: {"name"=>"", "coordinates"=>"32.989181, 81.015845", "id"=>"1", "field"=>{"name"=>"", "coordinates"=>"32.989181, 81.015845"}}
+  [1m[36mField Load (0.1ms)[0m  [1m[34mSELECT "fields".* FROM "fields" WHERE (1) LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/v1/fields_controller.rb:15:in `update'
+Completed 202 Accepted in 2ms (Views: 0.2ms | ActiveRecord: 0.1ms | Allocations: 1098)
+
+
+Started PATCH "/api/v1/fields/1" for ::1 at 2020-03-11 20:19:32 -0400
+Processing by Api::V1::FieldsController#update as JSON
+  Parameters: {"name"=>"", "coordinates"=>"32.989181, 81.0158777", "id"=>"1", "field"=>{"name"=>"", "coordinates"=>"32.989181, 81.0158777"}}
+  [1m[36mField Load (0.2ms)[0m  [1m[34mSELECT "fields".* FROM "fields" WHERE (1) LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/v1/fields_controller.rb:15:in `update'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:17:in `update'
+  [1m[36mField Update (0.3ms)[0m  [1m[33mUPDATE "fields" SET "coordinates" = ?, "updated_at" = ? WHERE "fields"."id" = ?[0m  [["coordinates", "32.989181, 81.0158777"], ["updated_at", "2020-03-12 00:19:32.809216"], ["id", 1]]
+  ↳ app/controllers/api/v1/fields_controller.rb:17:in `update'
+  [1m[35m (9.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:17:in `update'
+Completed 202 Accepted in 14ms (Views: 0.3ms | ActiveRecord: 10.0ms | Allocations: 3036)
+
+
+Started PATCH "/api/v1/fields/1" for ::1 at 2020-03-11 20:19:33 -0400
+Processing by Api::V1::FieldsController#update as JSON
+  Parameters: {"name"=>"", "coordinates"=>"32.989181, 81.0158777", "id"=>"1", "field"=>{"name"=>"", "coordinates"=>"32.989181, 81.0158777"}}
+  [1m[36mField Load (0.2ms)[0m  [1m[34mSELECT "fields".* FROM "fields" WHERE (1) LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/v1/fields_controller.rb:15:in `update'
+Completed 202 Accepted in 2ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 1096)
+
+
+Started PATCH "/api/v1/fields/1" for ::1 at 2020-03-11 20:19:35 -0400
+Processing by Api::V1::FieldsController#update as JSON
+  Parameters: {"name"=>"", "coordinates"=>"32.989181, 81.015877", "id"=>"1", "field"=>{"name"=>"", "coordinates"=>"32.989181, 81.015877"}}
+  [1m[36mField Load (0.1ms)[0m  [1m[34mSELECT "fields".* FROM "fields" WHERE (1) LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/v1/fields_controller.rb:15:in `update'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:17:in `update'
+  [1m[36mField Update (0.2ms)[0m  [1m[33mUPDATE "fields" SET "coordinates" = ?, "updated_at" = ? WHERE "fields"."id" = ?[0m  [["coordinates", "32.989181, 81.015877"], ["updated_at", "2020-03-12 00:19:35.956278"], ["id", 1]]
+  ↳ app/controllers/api/v1/fields_controller.rb:17:in `update'
+  [1m[35m (9.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:17:in `update'
+Completed 202 Accepted in 13ms (Views: 0.2ms | ActiveRecord: 9.6ms | Allocations: 3034)
+
+
+Started PATCH "/api/v1/fields/1" for ::1 at 2020-03-11 20:19:36 -0400
+Processing by Api::V1::FieldsController#update as JSON
+  Parameters: {"name"=>"", "coordinates"=>"32.989181, 81.015877", "id"=>"1", "field"=>{"name"=>"", "coordinates"=>"32.989181, 81.015877"}}
+  [1m[36mField Load (0.2ms)[0m  [1m[34mSELECT "fields".* FROM "fields" WHERE (1) LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/v1/fields_controller.rb:15:in `update'
+Completed 202 Accepted in 2ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 1097)
+
+
+Started GET "/api/v1/fields" for ::1 at 2020-03-11 20:20:14 -0400
+Processing by Api::V1::FieldsController#index as */*
+  [1m[36mField Load (0.2ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.2ms | Allocations: 909)
+
+
+Started PATCH "/api/v1/fields/1" for ::1 at 2020-03-11 20:20:30 -0400
+Processing by Api::V1::FieldsController#update as JSON
+  Parameters: {"name"=>"", "coordinates"=>"32.9924145,-81.016398", "id"=>"1", "field"=>{"name"=>"", "coordinates"=>"32.9924145,-81.016398"}}
+  [1m[36mField Load (0.2ms)[0m  [1m[34mSELECT "fields".* FROM "fields" WHERE (1) LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/v1/fields_controller.rb:15:in `update'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:17:in `update'
+  [1m[36mField Update (0.3ms)[0m  [1m[33mUPDATE "fields" SET "coordinates" = ?, "updated_at" = ? WHERE "fields"."id" = ?[0m  [["coordinates", "32.9924145,-81.016398"], ["updated_at", "2020-03-12 00:20:30.038782"], ["id", 1]]
+  ↳ app/controllers/api/v1/fields_controller.rb:17:in `update'
+  [1m[35m (3.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:17:in `update'
+Completed 202 Accepted in 8ms (Views: 0.3ms | ActiveRecord: 3.7ms | Allocations: 3035)
+
+
+Started PATCH "/api/v1/fields/1" for ::1 at 2020-03-11 20:20:31 -0400
+Processing by Api::V1::FieldsController#update as JSON
+  Parameters: {"name"=>"", "coordinates"=>"32.9924145,-81.016398", "id"=>"1", "field"=>{"name"=>"", "coordinates"=>"32.9924145,-81.016398"}}
+  [1m[36mField Load (0.2ms)[0m  [1m[34mSELECT "fields".* FROM "fields" WHERE (1) LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/v1/fields_controller.rb:15:in `update'
+Completed 202 Accepted in 2ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 1096)
+
+
+Started PATCH "/api/v1/fields/1" for ::1 at 2020-03-11 20:20:40 -0400
+Processing by Api::V1::FieldsController#update as JSON
+  Parameters: {"name"=>"", "coordinates"=>"32.9924145,-81.016398", "id"=>"1", "field"=>{"name"=>"", "coordinates"=>"32.9924145,-81.016398"}}
+  [1m[36mField Load (0.2ms)[0m  [1m[34mSELECT "fields".* FROM "fields" WHERE (1) LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/v1/fields_controller.rb:15:in `update'
+Completed 202 Accepted in 2ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 1096)
+
+
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mField Create (0.4ms)[0m  [1m[32mINSERT INTO "fields" ("name", "locations", "coordinates", "field", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Silo"], ["locations", "1"], ["coordinates", "32.989181, -81.015845"], ["field", "1"], ["created_at", "2020-03-12 00:21:02.699263"], ["updated_at", "2020-03-12 00:21:02.699263"]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/api/v1/fields" for ::1 at 2020-03-11 20:21:19 -0400
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::FieldsController#index as */*
+  [1m[36mField Load (0.3ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:5:in `index'
+Completed 200 OK in 11ms (Views: 8.4ms | ActiveRecord: 1.0ms | Allocations: 6201)
+
+
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (9.8ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (1.1ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateFields (20200309001905)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "fields" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "locations" varchar, "coordinates" varchar, "field" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mprimary::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20200309001905"]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-03-12 00:22:27.213636"], ["updated_at", "2020-03-12 00:22:27.213636"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mField Create (0.3ms)[0m  [1m[32mINSERT INTO "fields" ("name", "locations", "coordinates", "field", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Silo"], ["locations", "1"], ["coordinates", "32.989181, -81.015845"], ["field", "1"], ["created_at", "2020-03-12 00:22:32.808547"], ["updated_at", "2020-03-12 00:22:32.808547"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/api/v1/fields" for ::1 at 2020-03-11 20:22:57 -0400
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::FieldsController#index as */*
+  [1m[36mField Load (0.2ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:5:in `index'
+Completed 200 OK in 9ms (Views: 6.3ms | ActiveRecord: 0.9ms | Allocations: 6035)
+
+
+Started GET "/api/v1/fields" for ::1 at 2020-03-11 20:23:35 -0400
+Processing by Api::V1::FieldsController#index as */*
+  [1m[36mField Load (0.2ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.2ms | Allocations: 926)
+
+
+Started GET "/api/v1/fields" for ::1 at 2020-03-11 20:23:49 -0400
+Processing by Api::V1::FieldsController#index as */*
+  [1m[36mField Load (0.2ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.2ms | Allocations: 926)
+
+
+Started PATCH "/api/v1/fields/1" for ::1 at 2020-03-11 20:24:24 -0400
+Processing by Api::V1::FieldsController#update as JSON
+  Parameters: {"name"=>"", "coordinates"=>"32.9924145,-81.016398", "id"=>"1", "field"=>{"name"=>"", "coordinates"=>"32.9924145,-81.016398"}}
+  [1m[36mField Load (0.1ms)[0m  [1m[34mSELECT "fields".* FROM "fields" WHERE (1) LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/v1/fields_controller.rb:15:in `update'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:17:in `update'
+  [1m[36mField Update (0.3ms)[0m  [1m[33mUPDATE "fields" SET "name" = ?, "coordinates" = ?, "updated_at" = ? WHERE "fields"."id" = ?[0m  [["name", ""], ["coordinates", "32.9924145,-81.016398"], ["updated_at", "2020-03-12 00:24:24.531473"], ["id", 1]]
+  ↳ app/controllers/api/v1/fields_controller.rb:17:in `update'
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:17:in `update'
+Completed 202 Accepted in 11ms (Views: 0.3ms | ActiveRecord: 1.4ms | Allocations: 4977)
+
+
+Started GET "/api/v1/fields" for ::1 at 2020-03-11 20:25:24 -0400
+Processing by Api::V1::FieldsController#index as */*
+  [1m[36mField Load (0.1ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.1ms | Allocations: 926)
+
+
+Started GET "/api/v1/fields" for ::1 at 2020-03-11 20:25:42 -0400
+Processing by Api::V1::FieldsController#index as */*
+  [1m[36mField Load (0.1ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.1ms | Allocations: 909)
+
+
+Started GET "/api/v1/fields" for ::1 at 2020-03-11 20:27:12 -0400
+Processing by Api::V1::FieldsController#index as */*
+  [1m[36mField Load (0.1ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:5:in `index'
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.1ms | Allocations: 909)
+
+
+Started GET "/api/v1/fields" for ::1 at 2020-03-11 20:28:30 -0400
+Processing by Api::V1::FieldsController#index as */*
+  [1m[36mField Load (0.2ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.2ms | Allocations: 909)
+
+
+Started GET "/api/v1/fields" for ::1 at 2020-03-11 20:29:16 -0400
+Processing by Api::V1::FieldsController#index as */*
+  [1m[36mField Load (0.1ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.1ms | Allocations: 909)
+
+
+Started GET "/api/v1/fields" for ::1 at 2020-03-11 20:30:07 -0400
+Processing by Api::V1::FieldsController#index as */*
+  [1m[36mField Load (0.1ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:5:in `index'
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.1ms | Allocations: 909)
+
+
+Started PATCH "/api/v1/fields/1" for ::1 at 2020-03-11 20:30:32 -0400
+Processing by Api::V1::FieldsController#update as JSON
+  Parameters: {"name"=>"", "coordinates"=>"32.989181, -81.015849", "id"=>"1", "field"=>{"name"=>"", "coordinates"=>"32.989181, -81.015849"}}
+  [1m[36mField Load (0.1ms)[0m  [1m[34mSELECT "fields".* FROM "fields" WHERE (1) LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/v1/fields_controller.rb:15:in `update'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:17:in `update'
+  [1m[36mField Update (0.3ms)[0m  [1m[33mUPDATE "fields" SET "coordinates" = ?, "updated_at" = ? WHERE "fields"."id" = ?[0m  [["coordinates", "32.989181, -81.015849"], ["updated_at", "2020-03-12 00:30:32.467188"], ["id", 1]]
+  ↳ app/controllers/api/v1/fields_controller.rb:17:in `update'
+  [1m[35m (41.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:17:in `update'
+Completed 202 Accepted in 46ms (Views: 0.2ms | ActiveRecord: 42.2ms | Allocations: 3036)
+
+
+Started PATCH "/api/v1/fields/1" for ::1 at 2020-03-11 20:30:41 -0400
+Processing by Api::V1::FieldsController#update as JSON
+  Parameters: {"name"=>"", "coordinates"=>"32.989181, -82.015849", "id"=>"1", "field"=>{"name"=>"", "coordinates"=>"32.989181, -82.015849"}}
+  [1m[36mField Load (0.1ms)[0m  [1m[34mSELECT "fields".* FROM "fields" WHERE (1) LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/v1/fields_controller.rb:15:in `update'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:17:in `update'
+  [1m[36mField Update (0.2ms)[0m  [1m[33mUPDATE "fields" SET "coordinates" = ?, "updated_at" = ? WHERE "fields"."id" = ?[0m  [["coordinates", "32.989181, -82.015849"], ["updated_at", "2020-03-12 00:30:41.498302"], ["id", 1]]
+  ↳ app/controllers/api/v1/fields_controller.rb:17:in `update'
+  [1m[35m (8.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:17:in `update'
+Completed 202 Accepted in 13ms (Views: 0.3ms | ActiveRecord: 8.8ms | Allocations: 3036)
+
+
+Started PATCH "/api/v1/fields/1" for ::1 at 2020-03-11 20:31:26 -0400
+Processing by Api::V1::FieldsController#update as JSON
+  Parameters: {"name"=>"", "coordinates"=>"32.989181, -82.015849", "id"=>"1", "field"=>{"name"=>"", "coordinates"=>"32.989181, -82.015849"}}
+  [1m[36mField Load (0.1ms)[0m  [1m[34mSELECT "fields".* FROM "fields" WHERE (1) LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/v1/fields_controller.rb:15:in `update'
+Completed 202 Accepted in 2ms (Views: 0.2ms | ActiveRecord: 0.1ms | Allocations: 1098)
+
+
+Started GET "/api/v1/fields" for ::1 at 2020-03-11 20:32:26 -0400
+Processing by Api::V1::FieldsController#index as */*
+  [1m[36mField Load (0.1ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.1ms | Allocations: 909)
+
+
+Started GET "/api/v1/fields" for ::1 at 2020-03-11 20:34:38 -0400
+Processing by Api::V1::FieldsController#index as */*
+  [1m[36mField Load (0.1ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.1ms | Allocations: 909)
+
+
+Started GET "/api/v1/fields" for ::1 at 2020-03-11 20:35:42 -0400
+Processing by Api::V1::FieldsController#index as */*
+  [1m[36mField Load (0.2ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.2ms | Allocations: 912)
+
+
+Started GET "/api/v1/fields" for ::1 at 2020-03-11 20:36:05 -0400
+Processing by Api::V1::FieldsController#index as */*
+  [1m[36mField Load (0.2ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.2ms | Allocations: 909)
+
+
+Started GET "/api/v1/fields" for ::1 at 2020-03-11 20:37:09 -0400
+Processing by Api::V1::FieldsController#index as */*
+  [1m[36mField Load (0.1ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.1ms | Allocations: 909)
+
+
+Started GET "/api/v1/fields" for ::1 at 2020-03-11 20:38:19 -0400
+Processing by Api::V1::FieldsController#index as */*
+  [1m[36mField Load (0.2ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.2ms | Allocations: 909)
+
+
+Started GET "/api/v1/fields" for ::1 at 2020-03-11 20:39:04 -0400
+Processing by Api::V1::FieldsController#index as */*
+  [1m[36mField Load (0.1ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:5:in `index'
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.1ms | Allocations: 909)
+
+
+Started GET "/api/v1/fields" for ::1 at 2020-03-11 20:40:14 -0400
+Processing by Api::V1::FieldsController#index as */*
+  [1m[36mField Load (0.1ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:5:in `index'
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.1ms | Allocations: 909)
+
+
+Started GET "/api/v1/fields" for ::1 at 2020-03-11 20:40:37 -0400
+Processing by Api::V1::FieldsController#index as */*
+  [1m[36mField Load (0.2ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.2ms | Allocations: 909)
+
+
