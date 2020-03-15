@@ -53,17 +53,18 @@
   }
 
 
-  .google-maps {
+  .map {
       position: relative;
       padding-bottom: 100%;
       height: 0;
       overflow: hidden;
   }
 
-  .google-maps iframe {
+  .map iframe {
       position: absolute;
       top: 0;
       left: 0;
       width: 200% !important;
       height: 100% !important;
   }
+

@@ -12861,3 +12861,310 @@ Processing by Api::V1::FieldsController#index as */*
 Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.3ms | Allocations: 909)
 
 
+Started GET "/api/v1/fields" for ::1 at 2020-03-14 19:14:07 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Api::V1::FieldsController#index as */*
+  [1m[36mField Load (0.4ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:5:in `index'
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.4ms | Allocations: 932)
+
+
+Started GET "/api/v1/fields" for ::1 at 2020-03-14 22:34:15 -0400
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Api::V1::FieldsController#index as */*
+  [1m[36mField Load (0.6ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:5:in `index'
+Completed 200 OK in 13ms (Views: 10.3ms | ActiveRecord: 0.6ms | Allocations: 931)
+
+
+Started GET "/api/v1/fields" for ::1 at 2020-03-14 22:38:20 -0400
+Processing by Api::V1::FieldsController#index as */*
+  [1m[36mField Load (0.1ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.1ms | Allocations: 909)
+
+
+Started GET "/api/v1/fields" for ::1 at 2020-03-14 22:40:25 -0400
+Processing by Api::V1::FieldsController#index as */*
+  [1m[36mField Load (0.1ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.1ms | Allocations: 909)
+
+
+Started GET "/api/v1/fields" for ::1 at 2020-03-14 22:41:49 -0400
+Processing by Api::V1::FieldsController#index as */*
+  [1m[36mField Load (0.1ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.1ms | Allocations: 909)
+
+
+Started GET "/api/v1/fields" for ::1 at 2020-03-14 22:42:15 -0400
+Processing by Api::V1::FieldsController#index as */*
+  [1m[36mField Load (0.1ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.1ms | Allocations: 909)
+
+
+Started GET "/api/v1/fields" for ::1 at 2020-03-14 22:56:40 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Api::V1::FieldsController#index as */*
+  [1m[36mField Load (0.4ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.4ms | Allocations: 931)
+
+
+Started GET "/api/v1/fields" for ::1 at 2020-03-14 22:57:21 -0400
+Processing by Api::V1::FieldsController#index as */*
+  [1m[36mField Load (0.1ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.1ms | Allocations: 909)
+
+
+Started GET "/api/v1/fields" for ::1 at 2020-03-14 22:58:19 -0400
+Processing by Api::V1::FieldsController#index as */*
+  [1m[36mField Load (0.1ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.1ms | Allocations: 909)
+
+
+Started GET "/api/v1/fields" for ::1 at 2020-03-14 23:02:23 -0400
+Processing by Api::V1::FieldsController#index as */*
+  [1m[36mField Load (0.1ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.1ms | Allocations: 909)
+
+
+Started GET "/api/v1/fields" for ::1 at 2020-03-14 23:03:25 -0400
+Processing by Api::V1::FieldsController#index as */*
+  [1m[36mField Load (0.1ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.1ms | Allocations: 909)
+
+
+Started GET "/api/v1/fields" for ::1 at 2020-03-14 23:09:15 -0400
+Processing by Api::V1::FieldsController#index as */*
+  [1m[36mField Load (0.1ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.1ms | Allocations: 909)
+
+
+Started GET "/api/v1/fields" for ::1 at 2020-03-14 23:17:49 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Api::V1::FieldsController#index as */*
+  [1m[36mField Load (0.7ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:5:in `index'
+Completed 200 OK in 5ms (Views: 3.7ms | ActiveRecord: 0.7ms | Allocations: 931)
+
+
+Started GET "/api/v1/fields" for ::1 at 2020-03-14 23:18:04 -0400
+Processing by Api::V1::FieldsController#index as */*
+  [1m[36mField Load (0.2ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.2ms | Allocations: 910)
+
+
+Started GET "/api/v1/fields" for ::1 at 2020-03-14 23:26:24 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Api::V1::FieldsController#index as */*
+  [1m[36mField Load (0.4ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.0ms | ActiveRecord: 0.4ms | Allocations: 931)
+
+
+Started GET "/api/v1/fields" for ::1 at 2020-03-14 23:27:34 -0400
+Processing by Api::V1::FieldsController#index as */*
+  [1m[36mField Load (0.1ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:5:in `index'
+Completed 200 OK in 1ms (Views: 0.9ms | ActiveRecord: 0.1ms | Allocations: 909)
+
+
+Started GET "/api/v1/fields" for ::1 at 2020-03-14 23:27:44 -0400
+Processing by Api::V1::FieldsController#index as */*
+  [1m[36mField Load (0.1ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.1ms | Allocations: 909)
+
+
+Started GET "/api/v1/fields" for ::1 at 2020-03-14 23:28:04 -0400
+Processing by Api::V1::FieldsController#index as */*
+  [1m[36mField Load (0.2ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:5:in `index'
+Completed 200 OK in 9ms (Views: 8.8ms | ActiveRecord: 0.2ms | Allocations: 909)
+
+
+Started GET "/api/v1/fields" for ::1 at 2020-03-14 23:28:09 -0400
+Processing by Api::V1::FieldsController#index as */*
+  [1m[36mField Load (0.1ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:5:in `index'
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.1ms | Allocations: 909)
+
+
+Started GET "/api/v1/fields" for ::1 at 2020-03-14 23:28:10 -0400
+Processing by Api::V1::FieldsController#index as */*
+  [1m[36mField Load (0.1ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:5:in `index'
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.1ms | Allocations: 909)
+
+
+Started GET "/api/v1/fields" for ::1 at 2020-03-14 23:28:11 -0400
+Processing by Api::V1::FieldsController#index as */*
+  [1m[36mField Load (0.1ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:5:in `index'
+Completed 200 OK in 1ms (Views: 0.9ms | ActiveRecord: 0.1ms | Allocations: 909)
+
+
+Started GET "/api/v1/fields" for ::1 at 2020-03-14 23:28:17 -0400
+Processing by Api::V1::FieldsController#index as */*
+  [1m[36mField Load (0.1ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.1ms | Allocations: 909)
+
+
+Started GET "/api/v1/fields" for ::1 at 2020-03-14 23:38:13 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Api::V1::FieldsController#index as */*
+  [1m[36mField Load (0.4ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.4ms | Allocations: 931)
+
+
+Started GET "/api/v1/fields" for ::1 at 2020-03-14 23:38:37 -0400
+Processing by Api::V1::FieldsController#index as */*
+  [1m[36mField Load (0.1ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:5:in `index'
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.1ms | Allocations: 909)
+
+
+Started GET "/api/v1/fields" for ::1 at 2020-03-14 23:42:36 -0400
+Processing by Api::V1::FieldsController#index as */*
+  [1m[36mField Load (0.2ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.2ms | Allocations: 909)
+
+
+Started GET "/api/v1/fields" for ::1 at 2020-03-14 23:42:46 -0400
+Processing by Api::V1::FieldsController#index as */*
+  [1m[36mField Load (0.1ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.1ms | Allocations: 909)
+
+
+Started GET "/api/v1/fields" for ::1 at 2020-03-14 23:50:49 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Api::V1::FieldsController#index as */*
+  [1m[36mField Load (0.4ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.4ms | Allocations: 931)
+
+
+Started GET "/api/v1/fields" for ::1 at 2020-03-15 00:12:52 -0400
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Api::V1::FieldsController#index as */*
+  [1m[36mField Load (0.6ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:5:in `index'
+Completed 200 OK in 9ms (Views: 6.3ms | ActiveRecord: 0.6ms | Allocations: 931)
+
+
+Started GET "/api/v1/fields" for ::1 at 2020-03-15 00:16:25 -0400
+Processing by Api::V1::FieldsController#index as */*
+  [1m[36mField Load (0.1ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.1ms | Allocations: 909)
+
+
+Started GET "/api/v1/fields" for ::1 at 2020-03-15 00:24:10 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Api::V1::FieldsController#index as */*
+  [1m[36mField Load (0.4ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.4ms | Allocations: 931)
+
+
+Started GET "/api/v1/fields" for ::1 at 2020-03-15 00:29:51 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Api::V1::FieldsController#index as */*
+  [1m[36mField Load (0.4ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.4ms | Allocations: 931)
+
+
+Started GET "/api/v1/fields" for ::1 at 2020-03-15 00:32:10 -0400
+Processing by Api::V1::FieldsController#index as */*
+  [1m[36mField Load (0.2ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.2ms | Allocations: 909)
+
+
+Started GET "/api/v1/fields" for ::1 at 2020-03-15 00:43:46 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Api::V1::FieldsController#index as */*
+  [1m[36mField Load (0.4ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:5:in `index'
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.4ms | Allocations: 931)
+
+
+Started GET "/api/v1/fields" for ::1 at 2020-03-15 00:45:28 -0400
+Processing by Api::V1::FieldsController#index as */*
+  [1m[36mField Load (0.1ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:5:in `index'
+Completed 200 OK in 1ms (Views: 1.2ms | ActiveRecord: 0.1ms | Allocations: 909)
+
+
+Started GET "/api/v1/fields" for ::1 at 2020-03-15 00:47:10 -0400
+Processing by Api::V1::FieldsController#index as */*
+  [1m[36mField Load (0.1ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 1.5ms | ActiveRecord: 0.1ms | Allocations: 909)
+
+
+Started GET "/api/v1/fields" for ::1 at 2020-03-15 00:47:29 -0400
+Processing by Api::V1::FieldsController#index as */*
+  [1m[36mField Load (0.1ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 2.9ms | ActiveRecord: 0.1ms | Allocations: 909)
+
+
+Started GET "/api/v1/fields" for ::1 at 2020-03-15 00:51:45 -0400
+Processing by Api::V1::FieldsController#index as */*
+  [1m[36mField Load (0.1ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:5:in `index'
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.1ms | Allocations: 909)
+
+
+Started GET "/api/v1/fields" for ::1 at 2020-03-15 00:58:08 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Api::V1::FieldsController#index as */*
+  [1m[36mField Load (0.4ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:5:in `index'
+Completed 200 OK in 6ms (Views: 5.7ms | ActiveRecord: 0.4ms | Allocations: 931)
+
+
+Started GET "/api/v1/fields" for ::1 at 2020-03-15 00:58:20 -0400
+Processing by Api::V1::FieldsController#index as */*
+  [1m[36mField Load (0.1ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:5:in `index'
+Completed 200 OK in 5ms (Views: 2.2ms | ActiveRecord: 0.1ms | Allocations: 909)
+
+
+Started GET "/api/v1/fields" for ::1 at 2020-03-15 01:00:47 -0400
+Processing by Api::V1::FieldsController#index as */*
+  [1m[36mField Load (0.2ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:5:in `index'
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.2ms | Allocations: 909)
+
+
+Started GET "/api/v1/fields" for ::1 at 2020-03-15 01:09:22 -0400
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Api::V1::FieldsController#index as */*
+  [1m[36mField Load (0.8ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:5:in `index'
+Completed 200 OK in 51ms (Views: 49.4ms | ActiveRecord: 0.8ms | Allocations: 935)
+
+
+Started GET "/api/v1/fields" for ::1 at 2020-03-15 01:10:22 -0400
+Processing by Api::V1::FieldsController#index as */*
+  [1m[36mField Load (0.2ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/fields_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.2ms | Allocations: 909)
+
+

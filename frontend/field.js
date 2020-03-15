@@ -16,12 +16,14 @@ class Field {
     return `
     <div class="card mb-3 shadow-lg p-3 mb-5 bg-white rounded">
     <span class="border border-light">
-    <div class="google-maps">
+    
+    <div class="map">
         <iframe
             src="https://www.google.com/maps/embed/v1/view?key=AIzaSyDyTi3j0kAbYveFAqOA_pc7NLCMWn4HI6k&center=${this.coordinates}&zoom=18&maptype=satellite"
             width="shrink-to-fit" height="shrink-to-fit">
         </iframe>
-    </div></span>
+    </div>
+    </span>
     <span class="border border-light">
             <button type="submit" class="btn btn-secondary my-2"data-id=${this.id}>Create Farm</button><br>
             <img src="https://i.ibb.co/LktdsBP/home-icon.png" width="50" height="50">
@@ -32,7 +34,8 @@ class Field {
             src="https://i.ibb.co/0MzxB8g/Money.png" width="50" height="50"><img
             src="https://i.ibb.co/X3Hmrtq/Clipboard.png" width="50" height="50">
             <br>    
-      </span>`
+      </span>   
+      `
     ;
   }
 
@@ -51,7 +54,8 @@ class Field {
         </p>
       </div>
     </div>
-    </div>`;
+    </div>
+    `;
   }
 
   static findById(id) {
@@ -60,3 +64,6 @@ class Field {
 }
 
 Field.all = [];
+
+
+

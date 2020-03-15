@@ -1,19 +1,47 @@
-       <!-- Media Card for Google Maps -->
-       
-       <div class="card mb-3">
-            <div class="google-maps">
-                <iframe
-                    src="https://www.google.com/maps/embed/v1/view?key=AIzaSyDyTi3j0kAbYveFAqOA_pc7NLCMWn4HI6k&center=32.9924145,-81.016398&zoom=18&maptype=satellite"
-                    width="shrink-to-fit" height="shrink-to-fit">
-                </iframe>
-            </div>
-            <div class="card-body">
-                <h5 class="card-title">Building a farm with Cattlelog</h5>
-                <p class="card-text">Begin above by adding the Longitude and Latitude of your Center.</p>
-                <p>
-                    <a href="#" class="btn btn-secondary my-2">Reset</a>
-                    <a href="#" class="btn btn-secondary my-2">Save</a>
-                </p>
-                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-            </div>
-        </div>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Accessing Arguments in UI Events</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 100%;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="map"></div>
+    <script>
+      function initMap() {
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: {lat: -25.363882, lng: 131.044922 }
+        });
+
+        map.addListener('click', function(e) {
+          placeMarkerAndPanTo(e.latLng, map);
+        });
+      }
+
+      function placeMarkerAndPanTo(latLng, map) {
+        var marker = new google.maps.Marker({
+          position: latLng,
+          map: map
+        });
+        map.panTo(latLng);
+      }
+    </script>
+      <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCkUOdZ5y7hMm0yrcCQoCvLwzdM6M8s5qk&callback=initMap">
+      </script>
+  </body>
+</html>
