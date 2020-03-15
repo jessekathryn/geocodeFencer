@@ -17,6 +17,7 @@
     <link href="style.css" rel="stylesheet" />
 </head>
 <!-- NavBar -->
+
 <body>
     <header>
         <div class="collapse bg-dark" id="navbarHeader">
@@ -26,7 +27,7 @@
                         <h4 class="text-white">Cattlelog</h4>
                         <p class="text-white">
                             Enter coordinates below and press submit to view your farm.
-                        <br>
+                            <br>
                         </p>
                     </div>
                     <div class="col-sm-3 offset-md-4 py-4">
@@ -56,43 +57,23 @@
             </div>
         </div>
     </header>
-<!-- NavBar End-->
+    <!-- NavBar End-->
 
-<!-- JumboTron-->
+    <!-- JumboTron-->
     <main role="main">
         <section class="jumbotron text-center">
             <img src="https://i.ibb.co/MnKzJwC/cow-background-300.png" width="70" height="70">
             <div class="container">
                 <h1 class="jumbotron-heading">Cattlelog Fields</h1>
                 <p class="lead text-muted">Build your farm. </p>
-                <div id='fields-list'></div>
-                <div id='update'></div>   
-                <div id='map'></div>
+                <div id='fields-list'></div><div id='map'></div>
+                <div id='update'></div>  
             </div>
-            <script>
-                function initMap() {
-                  var map = new google.maps.Map(document.getElementById('map'), {
-                    zoom: 4,
-                    center: {lat: -25.363882, lng: 131.044922 }
-                  });
-          
-                  map.addListener('click', function(e) {
-                    placeMarkerAndPanTo(e.latLng, map);
-                  });
-                }
-          
-                function placeMarkerAndPanTo(latLng, map) {
-                  var marker = new google.maps.Marker({
-                    position: latLng,
-                    map: map
-                  });
-                  map.panTo(latLng);
-                }
-              </script>
-            </section>
+       
+        </section>
         </div>
-    </div> 
-  
+        </div>
+
         <!-- Footer  -->
         <footer class="text-mutoped">
             <div class="container">
@@ -119,9 +100,7 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
             integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
             crossorigin="anonymous"></script>
-        <script async defer
-            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCkUOdZ5y7hMm0yrcCQoCvLwzdM6M8s5qk&callback=initMap">
-        </script>
-
+  
 </body>
+
 </html>

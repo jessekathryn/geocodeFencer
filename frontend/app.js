@@ -7,6 +7,8 @@ class App {
         this.handleFormSubmit = this.handleFormSubmit.bind(this);
         this.createFields = this.createFields.bind(this);
         this.addFields = this.addFields.bind(this);
+        this.initMap = this.initMap.bind(this);
+        this.placeMarkerAndPanTo = this.placeMarkerAndPanTo(this);
     }
 
     attachEventListeners() {
@@ -41,9 +43,27 @@ class App {
         });
       }
 
-    handleEditClick(e) {
+   handleEditClick(e) {
         const id = parseInt(e.target.dataset.id);
         const field = Field.findById(id);
         document.querySelector('#update').innerHTML = field.renderUpdateForm();
+    }
+
+    initMap() {
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 18,
+          center: {lat: 32.989181, lng:  -81.01584 }
+        });
+        map.addListener('click', function(e) {
+          placeMarkerAndPanTo(e.latLng, map);
+        });
+      }
+
+    placeMarkerAndPanTo(latLng, map) {
+        var marker = new google.maps.Marker({
+          position: latLng,
+          map: map
+        });
+        map.panTo(latLng);
     }
 }

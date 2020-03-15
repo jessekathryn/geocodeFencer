@@ -16,8 +16,8 @@ class Field {
     return `
     <div class="card mb-3 shadow-lg p-3 mb-5 bg-white rounded">
     <span class="border border-light">
-    
     <div class="map">
+    
         <iframe
             src="https://www.google.com/maps/embed/v1/view?key=AIzaSyDyTi3j0kAbYveFAqOA_pc7NLCMWn4HI6k&center=${this.coordinates}&zoom=18&maptype=satellite"
             width="shrink-to-fit" height="shrink-to-fit">
@@ -62,6 +62,7 @@ class Field {
     return this.all.find(field => field.id === id);
   }
 }
+
 
 Field.all = [];
 
