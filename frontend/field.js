@@ -14,6 +14,11 @@ class Field {
     this.coordinates = coordinates;
   }
 
+  post({ id, name, coordinates }) {
+    this. id = id;
+    this.name = name;
+    this.coordinates = coordinates;
+  }
   // addMarker(latLng) {
   //     let marker = new google.maps.Marker({
   //         map: map,
@@ -27,6 +32,8 @@ class Field {
     return `
     <div class="card mb-3 shadow-lg p-3 mb-5 bg-white rounded">
     <span class="border border-light">
+    <h5 class="card-title">Add latitude, longitude of your center.</h5>
+    <ul>${this.coordinates}</ul>
     <div class="map">
         <iframe
             src="https://www.google.com/maps/embed/v1/view?key=AIzaSyDyTi3j0kAbYveFAqOA_pc7NLCMWn4HI6k&center=${this.coordinates}&zoom=18&maptype=satellite&"
@@ -70,15 +77,12 @@ class Field {
   renderSubmitForm() {
     return `
     <form data-id=${this.id}>
-      <label>Title</label>
+      <label>Map</label>
+      <label>Coordinates</label>
       <p>
-        <input type="text" value="${this.map}" />
-      </p>
-      <label>Content</label>
-      <p>
-        <textarea>${this.coordinates}</textarea>
-      </p>
-      <button type='submit'>Save Note</button>
+      <input class="form-control-lg" name="${this.coordinates}" placeholder="32.989181, -81.01584" required=""/>
+      <br>
+      <button type="submit" class="btn btn-secondary my-2 small">Save</button>
     </form>
   `;
   }
