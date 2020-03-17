@@ -67,6 +67,22 @@ class Field {
     `;
   }
 
+  renderSubmitForm() {
+    return `
+    <form data-id=${this.id}>
+      <label>Title</label>
+      <p>
+        <input type="text" value="${this.map}" />
+      </p>
+      <label>Content</label>
+      <p>
+        <textarea>${this.coordinates}</textarea>
+      </p>
+      <button type='submit'>Save Note</button>
+    </form>
+  `;
+  }
+
   static findById(id) {
     return this.all.find(field => field.id === id);
   }
