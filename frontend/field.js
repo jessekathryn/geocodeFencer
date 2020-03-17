@@ -29,7 +29,7 @@ class Field {
     <span class="border border-light">
     <div class="map">
         <iframe
-            src="https://www.google.com/maps/embed/v1/view?key=AIzaSyDyTi3j0kAbYveFAqOA_pc7NLCMWn4HI6k&center=${this.coordinates}&zoom=18&maptype=satellite"
+            src="https://www.google.com/maps/embed/v1/view?key=AIzaSyDyTi3j0kAbYveFAqOA_pc7NLCMWn4HI6k&center=${this.coordinates}&zoom=18&maptype=satellite&"
             width="shrink-to-fit" height="shrink-to-fit">
         </iframe>
     </div>
@@ -42,9 +42,8 @@ class Field {
             src="https://i.ibb.co/Q88xYfd/Monitor.png" width="50" height="50"><img
             src="https://i.ibb.co/HXW6F3Z/Graph.png" width="50" height="50"><img
             src="https://i.ibb.co/0MzxB8g/Money.png" width="50" height="50"><img
-            src="https://i.ibb.co/X3Hmrtq/Clipboard.png" width="50" height="50">
-            <br>    
-      </span>   
+            src="https://i.ibb.co/X3Hmrtq/Clipboard.png" width="50" height="50"> 
+      </span>  
       `
     ;
   }
@@ -74,6 +73,3 @@ class Field {
 }
 
 Field.all = [];
-
-
-
