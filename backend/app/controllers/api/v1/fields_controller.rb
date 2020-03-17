@@ -1,32 +1,42 @@
 class Api::V1::FieldsController < ApplicationController
 
-    def index
-      @fields = Field.all
-      render json: @fields
-    end
-  
-    def show
-      @field = Field.find_by(params[:id])
-      render json: @field
-    end
+  def index
+    fields = Field.all
+    render json: FieldSerializer.new(fields).to_serialized_json
+  end
+ 
+  def show
+    fields = Field.find_by(id: params[:id])
+    render json: FieldSerializer.new(field).to_serialized_json
+  end
 
-    def update
+  def new
+    field = Field.new 
+  end
 
-      @field = Field.find_by(params[:id])
-      
-      @field.update(field_params)
+  def create 
+    @field = Field.new(field_params)
+    if @field.save
+      render json: FieldSerializer.new(field).to_serialized_json
+    else
+      render json: { errors: @field.errors.full_messages }, status: :unprocessible_entity
+    end
+  end
+
+  def update
+    @field = Field.find_by(params[:id])
+    @field.update(field_params)
      
-      if @field.save
-        render json: @field, status: :accepted
-      else
-        render json: { errors: @field.errors.full_messages }, status: :unprocessible_entity
-      end
+    if @field.save
+      render json: FieldSerializer.new(field).to_serialized_json
+    else
+      render json: { errors: @field.errors.full_messages }, status: :unprocessible_entity
     end
+  end
   
     private
   
     def field_params
-      params.require(:field).permit(:name, :coordinates)
+      params.require(:field).permit(:name, :coordinates, :map_id)
     end
-
 end

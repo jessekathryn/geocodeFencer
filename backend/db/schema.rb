@@ -10,13 +10,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_03_09_001905) do
+ActiveRecord::Schema.define(version: 2020_03_17_024047) do
 
   create_table "fields", force: :cascade do |t|
     t.string "name"
-    t.string "locations"
+    t.string "map_id"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "maps", force: :cascade do |t|
     t.string "coordinates"
-    t.string "field"
+    t.integer "field_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
