@@ -15,8 +15,8 @@ class Adapter {
         return this.patch(`${this.baseUrl}/fields/${id}`, input);
     }
 
-    createNewField(id, input) {
-        return this.post(`${this.baseUrl}/fields/${id}`, input);
+    createNewField(input) {
+        return this.post(`${this.baseUrl}/fields`, input);
     }
 
     get(url) {
@@ -24,13 +24,13 @@ class Adapter {
     }
 
     post(url, input) {
-        return fetch(url,{
+        return fetch(url, {
             method: 'POST',
             headers: this.headers,
             id: this.id,
             body: JSON.stringify(input),
-        }).then(res => res.json());
-    }
+        }).then((response) => response.json())
+       }
 
     patch(url, input) {
         return fetch(url, {

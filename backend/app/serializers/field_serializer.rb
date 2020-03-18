@@ -1,6 +1,4 @@
-class FieldSerializer < ActiveModel::Serializer
-  has_many :maps
-  attributes :id, :name, :coordinates
+class FieldSerializer 
 
   def initialize(field_object)
     @field = field_object
@@ -8,7 +6,7 @@ class FieldSerializer < ActiveModel::Serializer
 
   def to_serialized_json
     @field.to_json(:include => {
-      :map => {:only => [:coordinates]}
+      :maps => {:only => [:coordinates]}
     })
   end 
 

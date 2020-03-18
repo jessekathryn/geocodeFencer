@@ -7,28 +7,27 @@ class App {
         this.handleFormSubmit = this.handleFormSubmit.bind(this);
         this.createFields = this.createFields.bind(this);
         this.addFields = this.addFields.bind(this);
-        this.handleNeFormSubmit = this.handleNewFormSubmit(this);
+        this.handleNewField = this.handleNewField.bind(this);
         // this.initMap = this.initMap.bind(this);
     }
 
     attachEventListeners() {
-        document.querySelector('#update').addEventListener('submit', this.handleFormSubmit);
+        document.querySelector('#update').addEventListener('submit', this.handleFormSubmit);     
+        this.handleNewField(); 
     }
 
     addFields() {
-        document.querySelector('#fields-list').innerHTML = '';
+        document.querySelector('#fields-list').innerHTML = '';      
         Field.all.forEach(
             field => (document.querySelector('#fields-list').innerHTML += field.renderFieldItem()) 
         );
         document.querySelector('#fields-list').addEventListener('click', this.handleEditClick);
     }
 
-    createFields(fields) {
-        document.querySelector('#fields-post').innerHTML = '';
-            fields.forEach(field => { new Field(field);
+    createFields(fields) {  
+        fields.forEach(field => { new Field(field); 
         });
         this.addFields();
-        document.querySelector('#fields-post').addEventListener('submit', this.handleNewFormSubmit);
     }
 
     handleEditClick(e) {
@@ -41,7 +40,9 @@ class App {
         e.preventDefault();
         const id = parseInt(e.target.dataset.id);
         const field = Field.findById(id);
-        const coordinates= e.target.querySelector('input').value
+        const name = field.name;
+        // const coordinates = e.target.querySelector('input').value
+        const coordinates = e.target.querySelector('input').value
         const inputJSON = { name, coordinates };
         this.adapter.updateField(field.id, inputJSON).then(updatedField => {
           const field = Field.findById(updatedField.id);
@@ -49,33 +50,18 @@ class App {
           this.addFields();
         });
       }
-      
-      handleNewFormSubmit(e) {
-        e.preventDefault();
-        const id = parseInt(e.target.dataset.id);
-        const field = Field.findById(id);
-        const coordinates= e.target.querySelector('input').value
-        const inputJSON = { name, coordinates };
-        this.adapter.createNewField(field.id, inputJSON).then(postedField => {
-          const field = Field.findById(postedField.id);
-          field.post(postedField);
-          this.addFields();
-        });
-      }
 
-//    initMap() {
-//         const id = parseInt(e.target.dataset.id);
-//         const field = Field.findById(id);
-//         const map = new google.maps.Map(document.getElementById('map') = field.addMarker(), {
-//         center: {lat: 32.397, lng: -80.644},
-//         zoom: 18
-//       });
-    
-//       map.addListener('click', function(e) {
-//           console.log(e);
-//           addMarker(e.latLng);
-//       });
-//     }
-
-
+    handleNewField() {   
+       console.log(this)
+           const submitForm = document.getElementById('add');
+        submitForm.addEventListener('submit', e => {
+            e.preventDefault();
+            const name = document.getElementById('name').value
+            const coordinates = document.getElementById('input-text').value
+            const inputJSON = { name, coordinates };
+            this.adapter.createNewField(inputJSON).then(createdField => {
+            const newField = new Field(createdField);
+            this.addFields(newField); })
+    })
+}
 }

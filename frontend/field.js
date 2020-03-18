@@ -3,54 +3,30 @@ class Field {
     this.id = data.id;
     this.name = data.name;
     this.coordinates = data.coordinates;
-    // this.map = data.map;
-    // this.marker = data.marker;
+    this.maps = data.maps;
     Field.all.push(this);
   }
 
-  update({ id, name, coordinates }) {
+  update({ id, name, maps, coordinates }) {
     this.id = id;
     this.name = name;
+    this.maps = maps;
     this.coordinates = coordinates;
+    
   }
 
-  post({ id, name, coordinates }) {
+  post({ id, name, coordinates, maps}) {
     this. id = id;
     this.name = name;
     this.coordinates = coordinates;
+    this.maps = maps;
   }
-  // addMarker(latLng) {
-  //     let marker = new google.maps.Marker({
-  //         map: map,
-  //         position: latLng,
-  //         draggable: true
-  //     });
-  //   Field.push(marker);
-  // }
 
   renderFieldItem() {
     return `
-    <div class="card mb-3 shadow-lg p-3 mb-5 bg-white rounded">
-    <span class="border border-light">
-    <h5 class="card-title">Add latitude, longitude of your center.</h5>
-    <ul>${this.coordinates}</ul>
-    <div class="map">
-        <iframe
-            src="https://www.google.com/maps/embed/v1/view?key=AIzaSyDyTi3j0kAbYveFAqOA_pc7NLCMWn4HI6k&center=${this.coordinates}&zoom=18&maptype=satellite&"
-            width="shrink-to-fit" height="shrink-to-fit">
-        </iframe>
-    </div>
-    </span>
-    <span class="border border-light">
-            <button type="submit" class="btn btn-secondary my-2"data-id=${this.id}>Create Farm</button><br>
-            <img src="https://i.ibb.co/LktdsBP/home-icon.png" width="50" height="50">
-            <img src="https://i.ibb.co/C6TgVJJ/cow-copy.png" width="60" height="60"><img
-            src="https://i.ibb.co/QJvmTng/noun-Tractor-1192.png" width="52" height="52"><img
-            src="https://i.ibb.co/Q88xYfd/Monitor.png" width="50" height="50"><img
-            src="https://i.ibb.co/HXW6F3Z/Graph.png" width="50" height="50"><img
-            src="https://i.ibb.co/0MzxB8g/Money.png" width="50" height="50"><img
-            src="https://i.ibb.co/X3Hmrtq/Clipboard.png" width="50" height="50"> 
-      </span>  
+    (${this.name})
+    ${this.maps.coordinates}
+    <button type="submit" class="btn btn-secondary my-2"data-id=${this.id}>Edit</button>
       `
     ;
   }
@@ -61,12 +37,12 @@ class Field {
         <h5 class="card-title">Add latitude, longitude of your center.</h5>
         <p class="card-text"></p>
         <p>
-            <form data-id=${this.id}>
-            <input class="form-control-lg" name="${this.coordinates}" placeholder="32.989181, -81.01584" required=""/>
+            <form data-id=${this.id} ${this.name}>
+            <input class="form-control-lg" name="maps[coordinates]" ${this.maps[0].coordinates} placeholder="32.989181, -81.01584" required=""/>
+           
             <br>
             <button type="submit" class="btn btn-secondary my-2 small">Save</button>
-            <a href="index.html" class="btn btn-secondary my-2">Reset</a>
-            </form>
+          </form>
         </p>
       </div>
     </div>
@@ -74,19 +50,18 @@ class Field {
     `;
   }
 
-  renderSubmitForm() {
+  renderNewForm() {
     return `
-    <form data-id=${this.id}>
-      <label>Map</label>
-      <label>Coordinates</label>
+    <form data-id= #new>
+    ${this.name}
       <p>
-      <input class="form-control-lg" name="${this.coordinates}" placeholder="32.989181, -81.01584" required=""/>
+      <input class="form-control-lg" name="${this.maps[0].coordinates}" placeholder="32.989181, -81.01584" required=""/>
       <br>
       <button type="submit" class="btn btn-secondary my-2 small">Save</button>
     </form>
   `;
   }
-
+ 
   static findById(id) {
     return this.all.find(field => field.id === id);
   }

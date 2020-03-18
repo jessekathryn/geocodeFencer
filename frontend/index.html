@@ -61,6 +61,28 @@
     </header>
     <!-- NavBar End-->
 
+    <div class="container">
+        <form class="add-button" id = "add">
+          <h3>Create</h3>
+          <input
+          id = "name"
+          type="input-name"
+          name="name"
+          placeholder="Enter a name..."
+          class="name"
+        />
+          <input
+            id = "input-text"
+            type="input-text"
+            name="input-text"
+            placeholder="Enter a coordinates..."
+            class="input-text"
+          />
+          <br />
+          <button type="submit" id="add-button" class="btn btn-secondary my-2 small">Save</button>
+        </form>
+      </div>
+
     <!-- JumboTron-->
     <main role="main">
         <section class="jumbotron text-center">
@@ -68,7 +90,6 @@
             <div class="container">
                 <h1 class="jumbotron-heading">Cattlelog Fields</h1>
                 <p class="lead text-muted">Build your farm. </p>
-                <div id='fields-post'></div>
                 <div id='fields-list'></div>
                 <div id='update'></div>      
     <!-- Add Marker via Google API-->
