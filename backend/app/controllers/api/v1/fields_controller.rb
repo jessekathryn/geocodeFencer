@@ -17,7 +17,8 @@ class Api::V1::FieldsController < ApplicationController
 
   def create 
     field = Field.new(field_params)
-    if field.save
+ 
+    if field.save  
       render json: FieldSerializer.new(field).to_serialized_json
     else
       render json: { errors: field.errors.full_messages }, status: :unprocessible_entity
@@ -38,6 +39,6 @@ class Api::V1::FieldsController < ApplicationController
     private
   
     def field_params
-      params.require(:field).permit(:name, :coordinates, :maps, :field_id)
+      params.require(:field).permit(:name, :coordinates, :map_params)
     end
 end
