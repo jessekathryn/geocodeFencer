@@ -6,7 +6,7 @@ class FieldSerializer
 
   def to_serialized_json
     @field.to_json(:include => {
-      :maps => {:only => [:coordinates]}
+      :maps => {:only => [:coordinates, :field_name]}
     })
   end 
 

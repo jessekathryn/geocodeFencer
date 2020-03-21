@@ -11,14 +11,10 @@ class Api::V1::FieldsController < ApplicationController
     render json: FieldSerializer.new(field).to_serialized_json
   end
 
-  def new
-    field = Field.new 
-  end
-
   def create 
-    field = Field.new(field_params)
- 
-    if field.save  
+    field = Field.create(field_params)
+
+    if field.save   
       render json: FieldSerializer.new(field).to_serialized_json
     else
       render json: { errors: field.errors.full_messages }, status: :unprocessible_entity
@@ -26,10 +22,13 @@ class Api::V1::FieldsController < ApplicationController
   end
 
   def update
-    field = Field.find_by(name: params[:name])
+    field = Field.find_by(id: params[:id])
+    map = Map.find_by(id: params[:id])
+
     field.update(field_params)
+    map.update(map_params)
     
-    if field.save
+    if field.save && map.save
       render json: FieldSerializer.new(field).to_serialized_json
     else
       render json: { errors: @field.errors.full_messages }, status: :unprocessible_entity
@@ -39,6 +38,10 @@ class Api::V1::FieldsController < ApplicationController
     private
   
     def field_params
-      params.require(:field).permit(:name, :coordinates, :map_params)
+      params.require(:field).permit(:name, :maps)
+    end
+
+    def map_params
+      params.require(:map).permit(:coordinates, :id, :field_name)
     end
 end

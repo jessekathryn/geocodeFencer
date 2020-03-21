@@ -6,26 +6,29 @@ def index
 end
 
  def create 
-    field = Field.create(field_params)
-    field.save
     map = Map.create(map_params)
-    binding.pry
+ 
+    if map.field_id != 1
+        map.field_id = 1
+    else map.field_id += 1
+    end
+  
     if map.save
-        render json: map, status: :accepted
+      render json: map, status: :accepted
     else
       render json: { errors: map.errors.full_messages }, status: :unprocessible_entity
     end
   end
   
   def new
-    map = Map.new 
+    maps = Map.new 
   end
 
   def update
     field = Field.find_by(id: params[:id])
-    map = Map.find_by(field_id: params[:field_id])
+    map = Map.find_by(name: params[:name])
     map.update(map_params)
-    binding.pry
+
     if map.save
         render json: map, status: :accepted
     else
@@ -36,10 +39,6 @@ end
   private
   
   def map_params
-    params.require(:map).permit(:coordinates, :field_id)
-  end
-
-  def field_params
-    params.require(:field).permit(:name)
+    params.require(:map).permit(:coordinates, :fieldName, :field_name)
   end
 end

@@ -7,5 +7,5 @@
 #   Character.create(name: 'Luke', movie: movies.first) 
 field_1 = Field.create(name: 'Silo')
 
-map_1 = Map.create(coordinates: '32.989181, -81.015845', field_id: '1')
+map_1 = Map.create(coordinates: '32.989181, -81.015845', field_name: 'Silo', field_id: '1')
 
