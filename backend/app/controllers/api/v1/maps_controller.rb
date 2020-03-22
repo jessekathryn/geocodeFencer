@@ -5,10 +5,15 @@ def index
     render json: maps
 end
 
+def show
+end
+
+
  def create 
+    
     map = Map.create(map_params)
  
-    if map.field_id != 1
+    if map.field_id != 0
         map.field_id = 1
     else map.field_id += 1
     end
@@ -25,8 +30,9 @@ end
   end
 
   def update
-    field = Field.find_by(id: params[:id])
-    map = Map.find_by(name: params[:name])
+    binding.pry
+  
+    map = Map.find_by(id: params[:id])
     map.update(map_params)
 
     if map.save

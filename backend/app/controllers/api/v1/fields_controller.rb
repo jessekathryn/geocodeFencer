@@ -11,15 +11,15 @@ class Api::V1::FieldsController < ApplicationController
     render json: FieldSerializer.new(field).to_serialized_json
   end
 
-  def create 
-    field = Field.create(field_params)
+  # def create 
+  #   field = Field.create(field_params)
 
-    if field.save   
-      render json: FieldSerializer.new(field).to_serialized_json
-    else
-      render json: { errors: field.errors.full_messages }, status: :unprocessible_entity
-    end
-  end
+  #   if field.save   
+  #     render json: FieldSerializer.new(field).to_serialized_json
+  #   else
+  #     render json: { errors: field.errors.full_messages }, status: :unprocessible_entity
+  #   end
+  # end
 
   def update
     field = Field.find_by(id: params[:id])
