@@ -3,63 +3,50 @@ class Field {
     this.id = data.id;
     this.name = data.name;
     this.coordinates = data.coordinates;
-    this.maps = data.maps;
     Field.all.push(this);
   }
 
-  update({ id, name, maps, coordinates }) {
+  update({ id, name, coordinates }) {
     this.id = id;
     this.name = name;
-    this.maps = maps;
     this.coordinates = coordinates;
     
   }
 
-  post({ id, name, coordinates, maps}) {
+  post({ id, name, coordinates}) {
     this. id = id;
     this.name = name;
     this.coordinates = coordinates;
-    this.maps = maps;
   }
 
   renderFieldItem() {
-    return `
-    (${this.name})
-    ${this.maps.coordinates}
-    <button type="submit" class="btn btn-secondary my-2"data-id=${this.id}>Edit</button>
+    return  ` 
+    ${this.coordinates} 
+    <button type="submit" id="" class="btn btn-secondary my-2 small" data-id=${this.id}>Edit</button>
+       `
+     ;
+   }
+  renderMapItem() {
+    return  ` 
+    ${this.coordinates} 
       `
     ;
   }
 
   renderUpdateForm() {
-  return `<div class="shadow-lg p-3 mb-5 bg-info rounded"> 
-  <div class="card-body text-white bg-info border-light "> 
+    return `
+    <div class="shadow-lg p-3 mb-5 bg-info rounded"> 
+      <div class="card-body text-white bg-info border-light "> 
         <h5 class="card-title">Add latitude, longitude of your center.</h5>
         <p class="card-text"></p>
-        <p>
-            <form data-id=${this.id} ${this.name}>
-            <input class="form-control-lg" name="maps[coordinates]" ${this.maps[0].coordinates} placeholder="32.989181, -81.01584" required=""/>
-           
-            <br>
-            <button type="submit" class="btn btn-secondary my-2 small">Save</button>
+          <form data-id=${this.id}>
+            <input class="form-control-sm" name="maps[coordinates]" data-id=${this.id} ${this.name} ${this.coordinates} placeholder="32.989181, -81.01584" required=""/>
+            <button type="submit" class="btn btn-secondary my-2 small">Submit</button>
           </form>
-        </p>
       </div>
     </div>
     </div>
     `;
-  }
-
-  renderNewForm() {
-    return `
-    <form data-id= #new>
-    ${this.name}
-      <p>
-      <input class="form-control-lg" name="${this.maps[0].coordinates}" placeholder="32.989181, -81.01584" required=""/>
-      <br>
-      <button type="submit" class="btn btn-secondary my-2 small">Save</button>
-    </form>
-  `;
   }
  
   static findById(id) {

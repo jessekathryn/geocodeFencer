@@ -31,6 +31,26 @@
                             Enter coordinates below and press submit to view your farm.
                             <br>
                         </p>
+                        <div class="container">
+                            <form class="add-button" id = "add">
+                              <input
+                              id = "name"
+                              type="input-name"
+                              name="name"
+                              placeholder="Enter a name..."
+                              class="name"
+                            />
+                              <input
+                                id = "input-text"
+                                type="input-text"
+                                name="input-text"
+                                placeholder="Enter a coordinates..."
+                                class="input-text"
+                              />
+                              <br />
+                              <button type="submit" id="add-button" class="btn btn-secondary my-2 small" required="" >Save</button>
+                            </form>
+                          </div>
                     </div>
                     <div class="col-sm-3 offset-md-4 py-4">
                         <h4 class="text-white">Documentation</h4>
@@ -61,27 +81,7 @@
     </header>
     <!-- NavBar End-->
 
-    <div class="container">
-        <form class="add-button" id = "add">
-          <h3>Create</h3>
-          <input
-          id = "name"
-          type="input-name"
-          name="name"
-          placeholder="Enter a name..."
-          class="name"
-        />
-          <input
-            id = "input-text"
-            type="input-text"
-            name="input-text"
-            placeholder="Enter a coordinates..."
-            class="input-text"
-          />
-          <br />
-          <button type="submit" id="add-button" class="btn btn-secondary my-2 small">Save</button>
-        </form>
-      </div>
+
 
     <!-- JumboTron-->
     <main role="main">
@@ -90,10 +90,11 @@
             <div class="container">
                 <h1 class="jumbotron-heading">Cattlelog Fields</h1>
                 <p class="lead text-muted">Build your farm. </p>
-                <div id='fields-list'></div>
+                <div id='fields-list'></div>  
+                <div id='maps-list'></div>
                 <div id='update'></div>      
     <!-- Add Marker via Google API-->
-                <div id="map"></div>
+              
            </div>
         </section>
     </div>
