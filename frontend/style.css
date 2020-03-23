@@ -1,69 +1,73 @@
 :root {
-    --jumbotron-padding-y: 1rem;
-  }
-  
+  --jumbotron-padding-y: 1rem;
+}
+
+.jumbotron {
+  padding-top: var(--jumbotron-padding-y);
+  padding-bottom: var(--jumbotron-padding-y);
+  margin-bottom: 0;
+  background-color: rgb(255, 255, 255);
+}
+
+@media (min-width: 800px) {
   .jumbotron {
-    padding-top: var(--jumbotron-padding-y);
-    padding-bottom: var(--jumbotron-padding-y);
-    margin-bottom: 0;
-    background-color: rgb(255, 255, 255);
+    padding-top: calc(var(--jumbotron-padding-y) * 2);
+    padding-bottom: calc(var(--jumbotron-padding-y) * 2);
   }
-  @media (min-width: 800px) {
-    .jumbotron {
-      padding-top: calc(var(--jumbotron-padding-y) * 2);
-      padding-bottom: calc(var(--jumbotron-padding-y) * 2);
-    }
-  }
-  
-  .bg-dark {
-    background-color: #254945!important; 
-  }
+}
 
-  .bg-info {
-    background-color: #345B4D!important;
-  }
+.bg-dark {
+  background-color: #254945 !important;
+}
 
-  .jumbotron p:last-child {
-    margin-bottom: 0;
-  }
-  
-  .jumbotron-heading {
-    font-weight: 300;
-  }
-  
-  .jumbotron .container {
-    max-width: 50rem;
-  }
+.bg-info {
+  background-color: #345B4D !important;
+}
 
-  footer {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-  }
-  
-  footer p {
-    margin-bottom: .25rem;
-  }
-  
-  .box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
+.jumbotron p:last-child {
+  margin-bottom: 0;
+}
 
-  .album {
-      padding-top: 3rem;
-      padding-bottom: 3rem;
-      background-color: #f7f7f7;
-  }
+.jumbotron-heading {
+  font-weight: 300;
+}
 
-  .map {
-      position: relative;
-      padding-bottom: 100%;
-      height: 0;
-      overflow: hidden;
-  }
+.jumbotron .container {
+  max-width: 50rem;
+}
 
-  .map iframe {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 200% !important;
-      height: 100% !important;
-  }
+footer {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
 
+footer p {
+  margin-bottom: .25rem;
+}
+
+.box-shadow {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+.album {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  background-color: #f7f7f7;
+}
+
+#map {
+  position: relative;
+  padding-bottom: 100%;
+  height: 0;
+  overflow: hidden;
+}
+
+
+html,
+body {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+}

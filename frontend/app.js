@@ -69,9 +69,10 @@ class App {
         const field = Field.findById(id);  
         const name = document.getElementById('name').value
         const field_name = name;
-		const coordinates = e.target.querySelector("input").value;
+        const lat = e.target.querySelector('#lat').value;
+        const lng = e.target.querySelector('#lng').value;
 		const inputJSON = { name };
-		this.adapter.updateField(field.id, inputJSON, coordinates, field_name).then(updatedField => {
+		this.adapter.updateField(field.id, inputJSON, lat, lng, field_name).then(updatedField => {
 			const field = Field.findById(updatedField.id);
 			field.update(updatedField);
 			this.addFields();
@@ -85,10 +86,11 @@ class App {
 			e.preventDefault();
 			const name = document.getElementById("name").value;
 			const field_name = name;
-			const coordinates = document.getElementById("input-text").value;
+            const lat = document.getElementById("input-lat").value;
+            const lng = document.getElementById("input-lng").value;
 			const inputJSON = { name };
 			this.adapter
-				.createNewMap(inputJSON, coordinates, field_name)
+				.createNewMap(inputJSON, lat, lng, field_name)
 				.then(createdField => {
 					const newField = new Field(createdField);
 					this.addFields(newField);
