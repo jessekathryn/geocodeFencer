@@ -19,7 +19,8 @@ ActiveRecord::Schema.define(version: 2020_03_17_024047) do
   end
 
   create_table "maps", force: :cascade do |t|
-    t.string "coordinates"
+    t.string "lat"
+    t.string "lng"
     t.string "field_name"
     t.integer "field_id"
     t.datetime "created_at", precision: 6, null: false

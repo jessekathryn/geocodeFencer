@@ -18,6 +18,7 @@ end
     else map.field_id += 1
     end
   
+ 
     if map.save
       render json: map, status: :accepted
     else
@@ -30,11 +31,12 @@ end
   end
 
   def update
-    binding.pry
   
     map = Map.find_by(id: params[:id])
     map.update(map_params)
-
+    map.save
+    
+    map.save
     if map.save
         render json: map, status: :accepted
     else
@@ -45,6 +47,6 @@ end
   private
   
   def map_params
-    params.require(:map).permit(:coordinates, :fieldName, :field_name)
+    params.require(:map).permit(:lat, :lng, :field_name)
   end
 end
