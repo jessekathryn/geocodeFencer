@@ -32,6 +32,7 @@
                         </p>
                         <div class="container">
                             <form class="add-button" id="add">
+                               
                                 <input id="name" type="input-name" name="name" placeholder="Enter a name..."
                                     class="name" />
                                 <input id="input-lat" type="input-lat" name="input-lat"
@@ -43,6 +44,7 @@
                                 <button type="submit" id="add-button" class="btn btn-secondary my-2 small"
                                     required="">Save</button>
                             </form>
+                           
                         </div>
                     </div>
                     <div class="col-sm-3 offset-md-4 py-4">
@@ -74,116 +76,130 @@
     </header>
     <!-- NavBar End-->
     <!-- JumboTron-->
-        <!-- MAP -->
-        <style>
-            /* Always set the map height explicitly to define the size of the div
+    <!-- MAP -->
+    <style>
+        /* Always set the map height explicitly to define the size of the div
              * element that contains the map. */
-            #map {
+        #map {
             position: relative;
             padding-bottom: 100%;
             height: 0;
             overflow: hidden;
         }
-            /* Optional: Makes the sample page fill the window. */
-            html, body {
-              position: relative;
-              top: 0;
-              left: 0;
-              width: 100% !important;
-              height: 100% !important;
-            }
-            #floating-panel {
-              position: absolute;
-              top: 10px;
-              left: 25%;
-              z-index: 5;
-              background-color: #fff;
-              padding: 5px;
-              border: 1px solid #999;
-              text-align: center;
-              font-family: 'Roboto','sans-serif';
-              line-height: 30px;
-              padding-left: 10px;
-            }
-          </style>
- <main role="main">
-    <section class="jumbotron text-center">
-        <img src="https://i.ibb.co/MnKzJwC/cow-background-300.png" width="70" height="70">
-        <h1 class="jumbotron-heading">Cattlelog Fields</h1>
-        <p class="lead text-muted">Build your farm. </p>
-                     <img src="https://i.ibb.co/LktdsBP/home-icon.png" width="25" height="25"><img
-                    src="https://i.ibb.co/C6TgVJJ/cow-copy.png" width="30" height="30"><img
-                    src="https://i.ibb.co/QJvmTng/noun-Tractor-1192.png" width="27" height="27"><img
-                    src="https://i.ibb.co/Q88xYfd/Monitor.png" width="25" height="25"><img
-                    src="https://i.ibb.co/HXW6F3Z/Graph.png" width="25" height="25"><img
-                    src="https://i.ibb.co/0MzxB8g/Money.png" width="25" height="25"><img
-                    src="https://i.ibb.co/X3Hmrtq/Clipboard.png" width="25" height="25">
-        <div class="container">
-          <div class="shadow-lg p-3 mb-5 bg-info rounded"> 
-            <div class="card-body text-white bg-info border-light "> 
-              <h5 class="card-title">Add latitude, longitude of your center above.</h5>
-              <div id="map"></div>
-              <div id='fields-list'></div>
-              <div id='maps-list'></div>
-              <div id='update'></div>
-              <div id="floating-panel">
-                <input id="address" type="textbox" value="South Carolina, SC">
-                <input id="submit" type="button" value="Geocode">
-              </div>
-    <script>
-    function initMap() {
-      var map = new google.maps.Map(document.getElementById('map'), {
-        zoom: 16,
-        center: {lat: 32.181, lng: -81.8191}
-      });
-      var geocoder = new google.maps.Geocoder();
 
-      document.getElementById('submit').addEventListener('click', function() {
-        geocodeAddress(geocoder, map);
-      });
-    }
-
-    function geocodeAddress(geocoder, resultsMap) {
-      var address = document.getElementById('address').value;
-      geocoder.geocode({'address': address}, function(results, status) {
-        if (status === 'OK') {
-          resultsMap.setCenter(results[0].geometry.location);
-          var marker = new google.maps.Marker({
-            map: resultsMap,
-            position: results[0].geometry.location
-          });
-        } else {
-          alert('Geocode was not successful for the following reason: ' + status);
+        /* Optional: Makes the sample page fill the window. */
+        html,
+        body {
+            position: relative;
+            top: 0;
+            left: 0;
+            width: 100% !important;
+            height: 100% !important;
         }
-      });
-    }
-  </script>
-  <script async defer
-  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDyTi3j0kAbYveFAqOA_pc7NLCMWn4HI6k&callback=initMap">
-  </script>
 
-        </div>
-        </div>
-        <!-- jQuery first, then Bootstrap JS. -->
-        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
-        </script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-        </script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
-        </script>
-    </body>
+        #floating-panel {
+            position: absolute;
+            top: 100px;
+            left: 10%;
+            z-index: 1;
+            background-color: #fff;
+            padding: 5px;
+            border: 1px solid #254945;
+            text-align: center;
+            font-family: 'Roboto', 'sans-serif';
+            line-height: 30px;
+            padding-left: 5px;
+        }
+    </style>
+    <main role="main">
+        <section class="jumbotron text-center">
+            <img src="https://i.ibb.co/MnKzJwC/cow-background-300.png" width="70" height="70">
+            <h1 class="jumbotron-heading">Cattlelog Fields</h1>
+            <p class="lead text-muted">Build your farm. </p>
+            <img src="https://i.ibb.co/LktdsBP/home-icon.png" width="50" height="50"><img
+                src="https://i.ibb.co/C6TgVJJ/cow-copy.png" width="50" height="50"><img
+                src="https://i.ibb.co/QJvmTng/noun-Tractor-1192.png" width="55" height="55"><img
+                src="https://i.ibb.co/Q88xYfd/Monitor.png" width="50" height="50"><img
+                src="https://i.ibb.co/HXW6F3Z/Graph.png" width="50" height="50"><img
+                src="https://i.ibb.co/0MzxB8g/Money.png" width="50" height="50"><img
+                src="https://i.ibb.co/X3Hmrtq/Clipboard.png" width="50" height="50">
+            <div class="container">
+                <div class="shadow-lg p-3 mb-5 bg-info rounded">
+                    <div class="card-body text-white bg-info border-light ">
+                       
+                        <h5 class="card-title">Add latitude, longitude of your center above.</h5>
+                        <div id="map"></div> 
+                        <div id="floating-panel">
+                            <input id="address" type="textbox" value="South Carolina, SC">
+                            <input id="submit" type="button" value="Geocode">
+                        </div>
+                        <div id='fields-list'></div>
+                        <div id='maps-list'></div>
+                        <div id='update'></div>
+                     
+                        <script>
+                            function initMap() {
+                                var map = new google.maps.Map(document.getElementById('map'), {
+                                    zoom: 16,
+                                    mapTypeId: 'satellite',
+                                    center: {
+                                        lat: 32.181,
+                                        lng: -82.8191
+                                    }
+                                });
+                                var geocoder = new google.maps.Geocoder();
+
+                                document.getElementById('submit').addEventListener('click', function () {
+                                    geocodeAddress(geocoder, map);
+                                });
+                            }
+
+                            function geocodeAddress(geocoder, resultsMap) {
+                                var address = document.getElementById('address').value;
+                                geocoder.geocode({
+                                    'address': address
+                                }, function (results, status) {
+                                    if (status === 'OK') {
+                                        resultsMap.setCenter(results[0].geometry.location);
+                                        var marker = new google.maps.Marker({
+                                            map: resultsMap,
+                                            position: results[0].geometry.location
+                                        });
+                                    } else {
+                                        alert('Geocode was not successful for the following reason: ' + status);
+                                    }
+                                });
+                            }
+                        </script>
+                        <script async defer
+                            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDyTi3j0kAbYveFAqOA_pc7NLCMWn4HI6k&callback=initMap">
+                        </script>
+                    </div>
+                </div>
+                <!-- jQuery first, then Bootstrap JS. -->
+                <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+                    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+                    crossorigin="anonymous">
+                </script>
+                <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+                    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+                    crossorigin="anonymous">
+                </script>
+                <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+                    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+                    crossorigin="anonymous">
+                </script>
+</body>
 <!-- Footer  -->
 <footer class="text-mutoped">
     <div class="container">
         <p class="float-right">
-      
+
         </p>
         <p>
-        Cattlelog &copy; 2019
+            Cattlelog &copy; 2019
         </p>
     </div>
 </footer>
+
 </html>

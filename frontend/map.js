@@ -23,7 +23,6 @@ class Map {
       this.lng = lng;
       this.field_id = field_id;
     }
-
 }
  Map.all = [];
  
