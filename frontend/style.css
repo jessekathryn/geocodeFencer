@@ -17,11 +17,11 @@
 }
 
 .bg-dark {
-  background-color: #254945 !important;
+  background-color: #1d3835 !important;
 }
 
 .bg-info {
-  background-color: #345B4D !important;
+  background-color: rgb(35, 58, 46) !important;
 }
 
 .jumbotron p:last-child {
@@ -52,7 +52,7 @@ footer p {
 .album {
   padding-top: 3rem;
   padding-bottom: 3rem;
-  background-color: #f7f7f7;
+  background-color: #929796;
 }
 
 #map {
@@ -61,7 +61,6 @@ footer p {
   height: 0;
   overflow: hidden;
 }
-
 
 html,
 body {

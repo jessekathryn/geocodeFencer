@@ -27,18 +27,26 @@
                     <div class="col-sm-7 col-md-5 py-4">
                         <h4 class="text-white">Cattlelog</h4>
                         <p class="text-white">
-                            Enter coordinates below and press submit geocode. Press save to save.
+                            Enter coordinates below and press submit to view your farm.
                             <br>
                         </p>
                         <div class="container">
                             <form class="add-button" id="add">
-                                <hidden input id="name" type="input-name" name="name" placeholder="Enter a name..."class="name"/></hidden>
-                                <input id="input-lat" type="input-lat" placeholder="Enter a latitude..." class="form-control-sm input-lat" required=""/>
-                                <input id="input-lng" type="input-lng" name="input-lng" placeholder="Enter a longitude..." class="form-control-sm input-lng" required=""/>
-                               <br>
-                                <button type="submit" id="submit" value="Geocode" class="btn btn-secondary my-2 lg">Geocode</button>
-                                <button type="submit" id="add-button" class="btn btn-light my-2 lg"required="">Save</button>
+                                <hidden input id="name" type="input-name" name="name" placeholder="Enter a name..."
+                                    class="name"/></hidden>
+                                <input id="input-lat" type="input-lat" value="South Carolina, SC">
+                                <input id="input-lat" type="input-lat" name="input-lat"
+                                    placeholder="Enter a latitude..." class="input-lat" />
+                                    <input id="input-lat" type="textbox" value="South Carolina, SC">
+                                    <input id="submit" type="button" value="Geocode">
+                                <br />
+                                <input id="input-lng" type="input-lng" name="input-lng"
+                                    placeholder="Enter a longitude..." class="input-lng" />
+                                <br />
+                                <button type="submit" id="add-button" class="btn btn-secondary my-2 small"
+                                    required="">Save</button>
                             </form>
+                           
                         </div>
                     </div>
                     <div class="col-sm-3 offset-md-4 py-4">
@@ -53,7 +61,7 @@
         <div class="navbar navbar-dark bg-dark box-shadow">
             <div class="container d-flex justify-content-between">
                 <a href="#" class="navbar-brand d-flex align-items-center">
-                    <img src="https://i.ibb.co/MnKzJwC/cow-background-300.png" width="100" height="100"
+                    <img src="https://i.ibb.co/MnKzJwC/cow-background-300.png" width="70" height="70"
                         viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                         stroke-linejoin="round" class="mr-2">
                     <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z">
@@ -107,15 +115,29 @@
     </style>
     <main role="main">
         <section class="jumbotron text-center">
-            <img src="https://i.ibb.co/MnKzJwC/cow-background-300.png" width="200" height="200">
+            <img src="https://i.ibb.co/MnKzJwC/cow-background-300.png" width="70" height="70">
             <h1 class="jumbotron-heading">Cattlelog Fields</h1>
             <p class="lead text-muted">Build your farm. </p>
+            <img src="https://i.ibb.co/LktdsBP/home-icon.png" width="50" height="50"><img
+                src="https://i.ibb.co/C6TgVJJ/cow-copy.png" width="50" height="50"><img
+                src="https://i.ibb.co/QJvmTng/noun-Tractor-1192.png" width="55" height="55"><img
+                src="https://i.ibb.co/Q88xYfd/Monitor.png" width="50" height="50"><img
+                src="https://i.ibb.co/HXW6F3Z/Graph.png" width="50" height="50"><img
+                src="https://i.ibb.co/0MzxB8g/Money.png" width="50" height="50"><img
+                src="https://i.ibb.co/X3Hmrtq/Clipboard.png" width="50" height="50">
             <div class="container">
                 <div class="shadow-lg p-3 mb-5 bg-info rounded">
                     <div class="card-body text-white bg-info border-light ">
-                        <h6 class="card-title">Add latitude, longitude of your center with toggle in navigation. <br></h6>
-                            <br>
+                       
+                        <h5 class="card-title">Add latitude, longitude of your center above.</h5>
                         <div id="map"></div> 
+                       
+                        <h5 class="card-text">Searched Coordinates</h5>
+                        <button type="sort" id="sort" class="sort btn btn-secondary my-2 xsmall"> Sort</button>
+                        <div id='fields-list'></div>
+                        <div id='maps-list'></div>
+                        <div id='update'></div>
+                     
                         <script>
                             function initMap() {
                                 var map = new google.maps.Map(document.getElementById('map'), {
@@ -134,11 +156,7 @@
                             }
 
                             function geocodeAddress(geocoder, resultsMap) {
-                                var lat = document.getElementById("input-lat").value;
-                                var lng = document.getElementById("input-lng").value;
-                                var latLng = lat+", "+lng;
-                                var coordinates = latLng;
-                                var address = coordinates;
+                                var address = document.getElementById('address').value;
                                 geocoder.geocode({
                                     'address': address
                                 }, function (results, status) {
@@ -158,22 +176,7 @@
                             src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDyTi3j0kAbYveFAqOA_pc7NLCMWn4HI6k&callback=initMap">
                         </script>
                     </div>
-                    
                 </div>
-                <h4 class="card-text">Searched Coordinates</h4>
-                <img src="https://i.ibb.co/LktdsBP/home-icon.png" width="50" height="50"><img
-                src="https://i.ibb.co/C6TgVJJ/cow-copy.png" width="50" height="50"><img
-                src="https://i.ibb.co/QJvmTng/noun-Tractor-1192.png" width="55" height="55"><img
-                src="https://i.ibb.co/Q88xYfd/Monitor.png" width="50" height="50"><img
-                src="https://i.ibb.co/HXW6F3Z/Graph.png" width="50" height="50"><img
-                src="https://i.ibb.co/0MzxB8g/Money.png" width="50" height="50"><img
-                src="https://i.ibb.co/X3Hmrtq/Clipboard.png" width="50" height="50">    
-                        
-                <ul class="list-group list-group-horizontal.flex-fill">      
-                <div id='fields-list'></div>
-                </ul>
-                <div id='update'></div>
-                <button type="sort" id="sort" class="sort btn btn-secondary my-2">Sort</button>
                 <!-- jQuery first, then Bootstrap JS. -->
                 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
                     integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
@@ -188,16 +191,15 @@
                     crossorigin="anonymous">
                 </script>
 </body>
-</main>
 <!-- Footer  -->
-<footer class="text-muted">
-  <div class="container">
-    <p class="float-right">
-      <a href="#">Back to top</a>
-    </p>
-    <p>CattleLog &copy; </p>
-    <p>New to Bootstrap? <a href="https://getbootstrap.com/">Visit the homepage</a> or read our <a href="/docs/4.4/getting-started/introduction/">getting started guide</a>.</p>
-  </div>
+<footer class="text-mutoped">
+    <div class="container">
+        <p class="float-right">
+        </p>
+        <p>
+            Cattlelog &copy; 2019
+        </p>
+    </div>
 </footer>
 
 </html>

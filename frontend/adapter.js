@@ -15,6 +15,10 @@ class Adapter {
         return this.patch(`${this.baseUrl}/maps/${id}`, input, lat, lng, field_name);
     }
 
+    sortField(id, lat, lng, field_name) {
+        return this.patch(`${this.baseUrl}/maps/${id}`, lat, lng, field_name);
+    }
+
     createNewMap(input, lat, lng, field_id, field_name) {
         return this.post(`${this.baseUrl}/maps`, input, lat, lng, field_id, field_name);
     }

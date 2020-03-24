@@ -6,7 +6,8 @@ class App {
 		this.handleFormSubmit = this.handleFormSubmit.bind(this);
 		this.createFields = this.createFields.bind(this);
 		this.addFields = this.addFields.bind(this);
-		this.handleNewField = this.handleNewField.bind(this);
+        this.handleNewField = this.handleNewField.bind(this);
+        this.handleSortFields = this.handleSortField.bind(this);
 		// this.initMap = this.initMap.bind(this);
 	}
 
@@ -14,7 +15,8 @@ class App {
 		document
 			.querySelector("#update")
 			.addEventListener("submit", this.handleFormSubmit);
-		this.handleNewField();
+        this.handleNewField();
+        this.handleSortField();
 	}
 
 	addFields() {
@@ -77,7 +79,32 @@ class App {
 			field.update(updatedField);
 			this.addFields();
 		});
-	}
+    }
+    
+    handleSortField() {
+        const sort = document.getElementById("sort");
+        sort.addEventListener("click", e => {
+          return fetch('http://localhost:3000/api/v1/maps').then(res => res.json()).then(dataRes => {
+            dataRes.sort((a, b) => a.lng - b.lng)
+            const sorted = dataRes;
+            for(let i=0; i < sorted.length; i++) {
+                console.log(sorted[i])
+            const sortedArray = sorted[i]
+            const id = sortedArray.id;
+            const name = sortedArray.name;
+            const field_name = name;
+            const lat = sortedArray.lat;
+            const lng = sortedArray.lng;
+            const inputJSON = { name };
+                this.adapter.sortField(id, inputJSON, lat, lng, field_name).then(sortedField =>{
+                   const field = Field.findById(sortedField.id);
+                   field.update(sortedField);
+                  this.addFields(field);
+                })
+              }
+          })   
+       })
+    }
 
 	handleNewField() {
 		console.log(this);
