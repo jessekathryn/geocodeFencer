@@ -31,7 +31,6 @@ end
   end
 
   def update
-  
     map = Map.find_by(id: params[:id])
     map.update(map_params)
     map.save
