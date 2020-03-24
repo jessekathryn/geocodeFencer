@@ -35,7 +35,7 @@ end
     map = Map.find_by(id: params[:id])
     map.update(map_params)
     map.save
-    
+
     map.save
     if map.save
         render json: map, status: :accepted
@@ -47,6 +47,6 @@ end
   private
   
   def map_params
-    params.require(:map).permit(:lat, :lng, :field_name)
+    params.require(:map).permit(:lat, :lng, :field_name, :sorted)
   end
 end
