@@ -21,7 +21,6 @@ class Field {
     this.lng = lng;
   }
 
-
   renderFieldItem() {
     return `
     <a href="#" class="list-group-item list-group-item-action light">
@@ -30,12 +29,24 @@ class Field {
       <small>${Date(Date.now()).toString()}</small>
       <div class="btn-group"><button type="submit" id="submit" value="Geocode"" class="btn btn-sm btn-outline-secondary">View</button><button type="submit" class="btn btn-sm btn-outline-secondary" data-id=${this.id}>Edit</button></div>
     </div>
-    
     </li> 
-
   </a> 
      `;
   }
+
+  static renderSortedFieldItem(field) {
+    return `
+    <a href="#" class="list-group-item list-group-item-action light">
+    <div class="d-flex w-100 justify-content-between">
+      <h5 class="mb-1">${field.lat}, ${field.lng}</h5>
+      <small>${Date(Date.now()).toString()}</small>
+      <div class="btn-group"><button type="submit" id="submit" value="Geocode"" class="btn btn-sm btn-outline-secondary">View</button><button type="submit" class="btn btn-sm btn-outline-secondary" data-id=${this.id}>Edit</button></div>
+    </div>
+    </li> 
+  </a> 
+     `;
+  }
+
 
   renderUpdateForm() {
     return `

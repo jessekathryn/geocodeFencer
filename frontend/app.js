@@ -30,7 +30,20 @@ class App {
 		document
 			.querySelector("#fields-list")
 			.addEventListener("click", this.handleEditClick);
-	}
+    }
+    
+    addSortedFields(dataRes) {
+        document.querySelector("#fields-list").innerHTML = "";
+		dataRes.forEach(
+			field =>
+				(document.querySelector(
+					"#fields-list"
+				).innerHTML += Field.renderSortedFieldItem(field))
+		);
+		document
+			.querySelector("#fields-list")
+			.addEventListener("click", this.handleEditClick);
+    }
 
 	addMaps() {
 		document.querySelector("#maps-list").innerHTML = "";
@@ -80,28 +93,13 @@ class App {
 			this.addFields();
 		});
     }
-    
+
     handleSortField() {
         const sort = document.getElementById("sort");
         sort.addEventListener("click", e => {
           return fetch('http://localhost:3000/api/v1/maps').then(res => res.json()).then(dataRes => {
             dataRes.sort((a, b) => a.lng - b.lng)
-            const sorted = dataRes;
-            for(let i=0; i < sorted.length; i++) {
-                console.log(sorted[i])
-            const sortedArray = sorted[i]
-            const id = sortedArray.id;
-            const name = sortedArray.name;
-            const field_name = name;
-            const lat = sortedArray.lat;
-            const lng = sortedArray.lng;
-            const inputJSON = { name };
-                this.adapter.sortField(id, inputJSON, lat, lng, field_name).then(sortedField =>{
-                   const field = Field.findById(sortedField.id);
-                   field.update(sortedField);
-                  this.addFields(field);
-                })
-              }
+            this.addSortedFields(dataRes);
           })   
        })
     }
