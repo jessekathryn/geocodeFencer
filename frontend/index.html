@@ -32,8 +32,8 @@
                         </p>
                         <div class="container">
                             <form class="add-button" id="add">
-                                <hidden input id="name" type="input-name" name="name" placeholder="Enter a name..."
-                                    class="name" />
+                                <input id="name" type="input-name" name="name" placeholder="Enter a name..."
+                                class="form-control-sm name" />
                                 </hidden>
                                 <input id="input-lat" type="input-lat" placeholder="Enter a latitude..."
                                     class="form-control-sm input-lat" required="" />
@@ -123,6 +123,23 @@
                                     <button onclick="changeOpacity()" class="sort btn btn-light my-2">Change
                                         opacity</button>
                                 </div>
+                                <h4 class="card-text">Searched Coordinates</h4>
+                                <img src="https://i.ibb.co/LktdsBP/home-icon.png" width="50" height="50"><img
+                                    src="https://i.ibb.co/C6TgVJJ/cow-copy.png" width="50" height="50"><img
+                                    src="https://i.ibb.co/QJvmTng/noun-Tractor-1192.png" width="52" height="52"><img
+                                    src="https://i.ibb.co/Q88xYfd/Monitor.png" width="50" height="50"><img
+                                    src="https://i.ibb.co/HXW6F3Z/Graph.png" width="50" height="50"><img
+                                    src="https://i.ibb.co/0MzxB8g/Money.png" width="50" height="50"><img
+                                    src="https://i.ibb.co/X3Hmrtq/Clipboard.png" width="50" height="50">
+                                <br>
+                                <br>
+                                <ul class="list-group list-group-horizontal.flex-fill">
+                                    <div id='fields-list'></div>
+                                </ul>
+                                <div id='update'></div>
+                                <button type="sort" id="sort" class="sort btn btn-secondary my-2">Sort</button>
+        
+                            </section>
                                 <script>
                                     var map, heatMap, drawingManager;
 
@@ -532,22 +549,7 @@
                                 </script>
                             </div>
                         </div>
-                        <h4 class="card-text">Searched Coordinates</h4>
-                        <img src="https://i.ibb.co/LktdsBP/home-icon.png" width="50" height="50"><img
-                            src="https://i.ibb.co/C6TgVJJ/cow-copy.png" width="50" height="50"><img
-                            src="https://i.ibb.co/QJvmTng/noun-Tractor-1192.png" width="52" height="52"><img
-                            src="https://i.ibb.co/Q88xYfd/Monitor.png" width="50" height="50"><img
-                            src="https://i.ibb.co/HXW6F3Z/Graph.png" width="50" height="50"><img
-                            src="https://i.ibb.co/0MzxB8g/Money.png" width="50" height="50"><img
-                            src="https://i.ibb.co/X3Hmrtq/Clipboard.png" width="50" height="50">
-                        <br>
-                        <br>
-                        <ul class="list-group list-group-horizontal.flex-fill">
-                            <div id='fields-list'></div>
-                        </ul>
-                        <div id='update'></div>
-                        <button type="sort" id="sort" class="sort btn btn-secondary my-2">Sort</button>
-
+                      
                         <!-- jQuery first, then Bootstrap JS. -->
                         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
                             integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
