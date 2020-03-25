@@ -5,7 +5,7 @@ class Api::V1::FieldsController < ApplicationController
     fields = Field.all
     render json: FieldSerializer.new(fields).to_serialized_json
   end
- 
+
   def show
     field = Field.find_by(id: params[:id])
     render json: FieldSerializer.new(field).to_serialized_json

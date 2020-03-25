@@ -57971,3 +57971,352 @@ Processing by Api::V1::MapsController#index as */*
 Completed 200 OK in 4ms (Views: 4.0ms | ActiveRecord: 0.2ms | Allocations: 2720)
 
 
+Started GET "/api/v1/maps" for ::1 at 2020-03-25 01:59:13 -0400
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::MapsController#index as */*
+  [1m[36mMap Load (0.2ms)[0m  [1m[34mSELECT "maps".* FROM "maps"[0m
+  ↳ app/controllers/api/v1/maps_controller.rb:5:in `index'
+Completed 200 OK in 15ms (Views: 10.5ms | ActiveRecord: 0.7ms | Allocations: 8375)
+
+
+Started POST "/api/v1/maps" for ::1 at 2020-03-25 01:59:21 -0400
+Processing by Api::V1::MapsController#create as JSON
+  Parameters: {"field"=>{}, "map"=>{"lat"=>"32.17272", "lng"=>"-81.39393"}}
+Completed 500 Internal Server Error in 118ms (ActiveRecord: 0.0ms | Allocations: 70352)
+
+
+  
+NameError (undefined local variable or method `field' for #<Api::V1::MapsController:0x00007fa188275570>
+Did you mean?  yield):
+  
+app/controllers/api/v1/maps_controller.rb:13:in `create'
+Started GET "/api/v1/maps" for ::1 at 2020-03-25 01:59:59 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Api::V1::MapsController#index as */*
+  [1m[36mMap Load (0.3ms)[0m  [1m[34mSELECT "maps".* FROM "maps"[0m
+  ↳ app/controllers/api/v1/maps_controller.rb:5:in `index'
+Completed 200 OK in 13ms (Views: 10.1ms | ActiveRecord: 1.0ms | Allocations: 7788)
+
+
+Started GET "/api/v1/maps" for ::1 at 2020-03-25 02:00:36 -0400
+Processing by Api::V1::MapsController#index as */*
+  [1m[36mMap Load (0.2ms)[0m  [1m[34mSELECT "maps".* FROM "maps"[0m
+  ↳ app/controllers/api/v1/maps_controller.rb:5:in `index'
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.2ms | Allocations: 2737)
+
+
+Started GET "/api/v1/maps" for ::1 at 2020-03-25 02:01:08 -0400
+Processing by Api::V1::MapsController#index as */*
+  [1m[36mMap Load (0.2ms)[0m  [1m[34mSELECT "maps".* FROM "maps"[0m
+  ↳ app/controllers/api/v1/maps_controller.rb:5:in `index'
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.2ms | Allocations: 2737)
+
+
+Started POST "/api/v1/maps" for ::1 at 2020-03-25 02:01:13 -0400
+Processing by Api::V1::MapsController#create as JSON
+  Parameters: {"field"=>{"name"=>"silo_adjacent2"}, "map"=>{"lat"=>"32.17272", "lng"=>"-81.39393", "field_name"=>"silo_adjacent2"}}
+Completed 500 Internal Server Error in 112ms (ActiveRecord: 0.0ms | Allocations: 70374)
+
+
+  
+NameError (undefined local variable or method `field' for #<Api::V1::MapsController:0x00007fa1865cf9c0>
+Did you mean?  yield):
+  
+app/controllers/api/v1/maps_controller.rb:13:in `create'
+Started GET "/api/v1/maps" for ::1 at 2020-03-25 02:02:03 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Api::V1::MapsController#index as */*
+  [1m[36mMap Load (0.2ms)[0m  [1m[34mSELECT "maps".* FROM "maps"[0m
+  ↳ app/controllers/api/v1/maps_controller.rb:5:in `index'
+Completed 200 OK in 12ms (Views: 9.6ms | ActiveRecord: 0.8ms | Allocations: 7786)
+
+
+Started POST "/api/v1/maps" for ::1 at 2020-03-25 02:02:13 -0400
+Processing by Api::V1::MapsController#create as JSON
+  Parameters: {"field"=>{"name"=>"silo_adjacent2"}, "map"=>{"lat"=>"32.17272", "lng"=>"-81.39393", "field_name"=>"silo_adjacent2"}}
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms | Allocations: 1900)
+
+
+  
+NoMethodError (undefined method `name' for "Field":String):
+  
+app/controllers/api/v1/maps_controller.rb:14:in `create'
+Started GET "/api/v1/maps" for ::1 at 2020-03-25 02:03:43 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Api::V1::MapsController#index as */*
+  [1m[36mMap Load (0.2ms)[0m  [1m[34mSELECT "maps".* FROM "maps"[0m
+  ↳ app/controllers/api/v1/maps_controller.rb:5:in `index'
+Completed 200 OK in 25ms (Views: 23.2ms | ActiveRecord: 0.6ms | Allocations: 7725)
+
+
+Started POST "/api/v1/maps" for ::1 at 2020-03-25 02:03:49 -0400
+Processing by Api::V1::MapsController#create as JSON
+  Parameters: {"field"=>{"name"=>"silo_adjacent"}, "map"=>{"lat"=>"32.17272", "lng"=>"-81.39393", "field_name"=>"silo_adjacent"}}
+  [1m[36mField Load (0.2ms)[0m  [1m[34mSELECT "fields".* FROM "fields" WHERE "fields"."name" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/v1/maps_controller.rb:13:in `create'
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.4ms | Allocations: 2352)
+
+
+  
+NoMethodError (undefined method `name' for nil:NilClass):
+  
+app/controllers/api/v1/maps_controller.rb:14:in `create'
+Started GET "/api/v1/maps" for ::1 at 2020-03-25 02:04:44 -0400
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Api::V1::MapsController#index as */*
+  [1m[36mMap Load (0.2ms)[0m  [1m[34mSELECT "maps".* FROM "maps"[0m
+  ↳ app/controllers/api/v1/maps_controller.rb:5:in `index'
+Completed 200 OK in 11ms (Views: 8.7ms | ActiveRecord: 0.8ms | Allocations: 7757)
+
+
+Started POST "/api/v1/maps" for ::1 at 2020-03-25 02:04:51 -0400
+Processing by Api::V1::MapsController#create as JSON
+  Parameters: {"field"=>{"name"=>"silo_adjacent"}, "map"=>{"lat"=>"32.17272", "lng"=>"-81.39393", "field_name"=>"silo_adjacent"}}
+  [1m[36mField Load (0.1ms)[0m  [1m[34mSELECT "fields".* FROM "fields" WHERE "fields"."name" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/v1/maps_controller.rb:13:in `create'
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.3ms | Allocations: 2023)
+
+
+  
+NoMethodError (undefined method `exist?' for nil:NilClass):
+  
+app/controllers/api/v1/maps_controller.rb:14:in `create'
+Started GET "/api/v1/maps" for ::1 at 2020-03-25 02:05:40 -0400
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Api::V1::MapsController#index as */*
+  [1m[36mMap Load (0.4ms)[0m  [1m[34mSELECT "maps".* FROM "maps"[0m
+  ↳ app/controllers/api/v1/maps_controller.rb:5:in `index'
+Completed 200 OK in 11ms (Views: 8.0ms | ActiveRecord: 1.1ms | Allocations: 7758)
+
+
+Started POST "/api/v1/maps" for ::1 at 2020-03-25 02:05:47 -0400
+Processing by Api::V1::MapsController#create as JSON
+  Parameters: {"field"=>{"name"=>"silo_adjacent"}, "map"=>{"lat"=>"32.17272", "lng"=>"-81.39393", "field_name"=>"silo_adjacent"}}
+  [1m[36mField Load (0.1ms)[0m  [1m[34mSELECT "fields".* FROM "fields" WHERE "fields"."name" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/v1/maps_controller.rb:13:in `create'
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.3ms | Allocations: 2024)
+
+
+  
+NoMethodError (undefined method `include?' for nil:NilClass):
+  
+app/controllers/api/v1/maps_controller.rb:14:in `create'
+Started GET "/api/v1/maps" for ::1 at 2020-03-25 02:06:21 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Api::V1::MapsController#index as */*
+  [1m[36mMap Load (0.2ms)[0m  [1m[34mSELECT "maps".* FROM "maps"[0m
+  ↳ app/controllers/api/v1/maps_controller.rb:5:in `index'
+Completed 200 OK in 10ms (Views: 8.2ms | ActiveRecord: 0.6ms | Allocations: 7759)
+
+
+Started GET "/api/v1/maps" for ::1 at 2020-03-25 02:06:37 -0400
+Processing by Api::V1::MapsController#index as */*
+  [1m[36mMap Load (0.2ms)[0m  [1m[34mSELECT "maps".* FROM "maps"[0m
+  ↳ app/controllers/api/v1/maps_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.2ms | Allocations: 2720)
+
+
+Started POST "/api/v1/maps" for ::1 at 2020-03-25 02:06:42 -0400
+Processing by Api::V1::MapsController#create as JSON
+  Parameters: {"field"=>{"name"=>"silo_adjacent2"}, "map"=>{"lat"=>"32.17272", "lng"=>"-81.39393", "field_name"=>"silo_adjacent2"}}
+  [1m[36mField Load (0.1ms)[0m  [1m[34mSELECT "fields".* FROM "fields" WHERE "fields"."name" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/v1/maps_controller.rb:13:in `create'
+Completed 500 Internal Server Error in 174062ms (ActiveRecord: 0.3ms | Allocations: 143984)
+
+
+  
+NoMethodError (undefined method `include?' for nil:NilClass):
+  
+app/controllers/api/v1/maps_controller.rb:15:in `create'
+Started GET "/api/v1/maps" for ::1 at 2020-03-25 02:09:58 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Api::V1::MapsController#index as */*
+  [1m[36mMap Load (0.2ms)[0m  [1m[34mSELECT "maps".* FROM "maps"[0m
+  ↳ app/controllers/api/v1/maps_controller.rb:5:in `index'
+Completed 200 OK in 12ms (Views: 9.6ms | ActiveRecord: 0.7ms | Allocations: 7758)
+
+
+Started POST "/api/v1/maps" for ::1 at 2020-03-25 02:10:04 -0400
+Processing by Api::V1::MapsController#create as JSON
+  Parameters: {"field"=>{"name"=>"silo_adjacent2"}, "map"=>{"lat"=>"32.17272", "lng"=>"-81.39393", "field_name"=>"silo_adjacent2"}}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/maps_controller.rb:13:in `create'
+  [1m[36mField Create (0.3ms)[0m  [1m[32mINSERT INTO "fields" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2020-03-25 06:10:04.344528"], ["updated_at", "2020-03-25 06:10:04.344528"]]
+  ↳ app/controllers/api/v1/maps_controller.rb:13:in `create'
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/maps_controller.rb:13:in `create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/maps_controller.rb:23:in `create'
+  [1m[36mField Load (0.2ms)[0m  [1m[34mSELECT "fields".* FROM "fields" WHERE "fields"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/maps_controller.rb:23:in `create'
+  [1m[36mMap Create (0.4ms)[0m  [1m[32mINSERT INTO "maps" ("lat", "lng", "field_name", "field_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["lat", "32.17272"], ["lng", "-81.39393"], ["field_name", "silo_adjacent2"], ["field_id", 1], ["created_at", "2020-03-25 06:10:04.367579"], ["updated_at", "2020-03-25 06:10:04.367579"]]
+  ↳ app/controllers/api/v1/maps_controller.rb:23:in `create'
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/maps_controller.rb:23:in `create'
+Completed 202 Accepted in 31ms (Views: 0.3ms | ActiveRecord: 4.3ms | Allocations: 11601)
+
+
+Started GET "/api/v1/maps" for ::1 at 2020-03-25 02:10:44 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Api::V1::MapsController#index as */*
+  [1m[36mMap Load (0.3ms)[0m  [1m[34mSELECT "maps".* FROM "maps"[0m
+  ↳ app/controllers/api/v1/maps_controller.rb:5:in `index'
+Completed 200 OK in 12ms (Views: 9.2ms | ActiveRecord: 1.0ms | Allocations: 7917)
+
+
+Started POST "/api/v1/maps" for ::1 at 2020-03-25 02:10:49 -0400
+Processing by Api::V1::MapsController#create as JSON
+  Parameters: {"field"=>{"name"=>"silo_adjacent"}, "map"=>{"lat"=>"32.17272", "lng"=>"-81.39393", "field_name"=>"silo_adjacent"}}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/maps_controller.rb:20:in `create'
+  [1m[36mField Load (0.1ms)[0m  [1m[34mSELECT "fields".* FROM "fields" WHERE "fields"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/maps_controller.rb:20:in `create'
+  [1m[36mMap Create (0.3ms)[0m  [1m[32mINSERT INTO "maps" ("lat", "lng", "field_name", "field_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["lat", "32.17272"], ["lng", "-81.39393"], ["field_name", "silo_adjacent"], ["field_id", 1], ["created_at", "2020-03-25 06:10:49.765287"], ["updated_at", "2020-03-25 06:10:49.765287"]]
+  ↳ app/controllers/api/v1/maps_controller.rb:20:in `create'
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/maps_controller.rb:20:in `create'
+Completed 202 Accepted in 10ms (Views: 0.2ms | ActiveRecord: 1.6ms | Allocations: 7233)
+
+
+Started GET "/api/v1/maps" for ::1 at 2020-03-25 02:12:37 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Api::V1::MapsController#index as */*
+  [1m[36mMap Load (0.4ms)[0m  [1m[34mSELECT "maps".* FROM "maps"[0m
+  ↳ app/controllers/api/v1/maps_controller.rb:5:in `index'
+Completed 200 OK in 27ms (Views: 22.3ms | ActiveRecord: 1.3ms | Allocations: 8077)
+
+
+Started POST "/api/v1/maps" for ::1 at 2020-03-25 02:12:44 -0400
+Processing by Api::V1::MapsController#create as JSON
+  Parameters: {"field"=>{"name"=>"silo_adjacent2"}, "map"=>{"lat"=>"32.17272", "lng"=>"-81.39393", "field_name"=>"silo_adjacent2"}}
+  [1m[36mField Load (0.1ms)[0m  [1m[34mSELECT "fields".* FROM "fields" WHERE "fields"."name" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/v1/maps_controller.rb:12:in `create'
+  [1m[36mField Load (0.3ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/maps_controller.rb:13:in `create'
+  [1m[36mCACHE Field Load (0.0ms)[0m  [1m[34mSELECT "fields".* FROM "fields" WHERE "fields"."name" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ (pry):22:in `create'
+Started POST "/api/v1/maps" for ::1 at 2020-03-25 02:16:07 -0400
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Api::V1::MapsController#create as JSON
+  Parameters: {"field"=>{"name"=>"silo_adjacent2"}, "map"=>{"lat"=>"32.17272", "lng"=>"-81.39393", "field_name"=>"silo_adjacent2"}}
+  [1m[36mField Load (0.1ms)[0m  [1m[34mSELECT "fields".* FROM "fields" WHERE "fields"."name" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/v1/maps_controller.rb:12:in `create'
+  [1m[36mField Load (0.3ms)[0m  [1m[34mSELECT "fields".* FROM "fields" WHERE "fields"."name" = ? LIMIT ?[0m  [["name", "silo_adjacent2"], ["LIMIT", 1]]
+  ↳ (pry):24:in `create'
+Started GET "/api/v1/maps" for ::1 at 2020-03-25 02:17:41 -0400
+Completed 500 Internal Server Error in 101700ms (ActiveRecord: 0.4ms | Allocations: 16474)
+
+
+  
+NoMethodError (undefined method `include?' for nil:NilClass):
+  
+app/controllers/api/v1/maps_controller.rb:14:in `create'
+Started GET "/api/v1/maps" for ::1 at 2020-03-25 02:17:57 -0400
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+SyntaxError (/Users/jessebarnes/java/cattlelogFields/backend/app/controllers/api/v1/maps_controller.rb:14: syntax error, unexpected =>
+    if !field.include?(name: => field.name)
+                             ^~
+/Users/jessebarnes/java/cattlelogFields/backend/app/controllers/api/v1/maps_controller.rb:14: syntax error, unexpected ')', expecting end
+...d.include?(name: => field.name)
+...                              ^
+/Users/jessebarnes/java/cattlelogFields/backend/app/controllers/api/v1/maps_controller.rb:16: else without rescue is useless
+    else 
+    ^~~~
+/Users/jessebarnes/java/cattlelogFields/backend/app/controllers/api/v1/maps_controller.rb:60: syntax error, unexpected end, expecting end-of-input):
+  
+app/controllers/api/v1/maps_controller.rb:14: syntax error, unexpected =>
+app/controllers/api/v1/maps_controller.rb:14: syntax error, unexpected ')', expecting end
+app/controllers/api/v1/maps_controller.rb:16: else without rescue is useless
+app/controllers/api/v1/maps_controller.rb:60: syntax error, unexpected end, expecting end-of-input
+app/controllers/api/v1/maps_controller.rb:14: syntax error, unexpected =>
+app/controllers/api/v1/maps_controller.rb:14: syntax error, unexpected ')', expecting end
+app/controllers/api/v1/maps_controller.rb:16: else without rescue is useless
+app/controllers/api/v1/maps_controller.rb:60: syntax error, unexpected end, expecting end-of-input
+Started GET "/api/v1/maps" for ::1 at 2020-03-25 02:19:40 -0400
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::MapsController#index as */*
+  [1m[36mMap Load (0.3ms)[0m  [1m[34mSELECT "maps".* FROM "maps"[0m
+  ↳ app/controllers/api/v1/maps_controller.rb:5:in `index'
+Completed 200 OK in 15ms (Views: 10.9ms | ActiveRecord: 0.9ms | Allocations: 8691)
+
+
+Started POST "/api/v1/maps" for ::1 at 2020-03-25 02:19:47 -0400
+Processing by Api::V1::MapsController#create as JSON
+  Parameters: {"field"=>{"name"=>"silo_adjacent"}, "map"=>{"lat"=>"32.17272", "lng"=>"-81.39393", "field_name"=>"silo_adjacent"}}
+  [1m[36mField Load (0.1ms)[0m  [1m[34mSELECT "fields".* FROM "fields" WHERE "fields"."name" = ? LIMIT ?[0m  [["name", "silo_adjacent"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/maps_controller.rb:12:in `create'
+  [1m[36mCACHE Field Load (0.0ms)[0m  [1m[34mSELECT "fields".* FROM "fields" WHERE "fields"."name" = ? LIMIT ?[0m  [["name", "silo_adjacent"], ["LIMIT", 1]]
+  ↳ (pry):2:in `create'
+  [1m[36mField Load (0.3ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ (pry):7:in `include?'
+Started GET "/api/v1/maps" for ::1 at 2020-03-25 02:23:42 -0400
+Completed 500 Internal Server Error in 241616ms (ActiveRecord: 0.9ms | Allocations: 38330)
+
+
+  
+NoMethodError (undefined method `include?' for nil:NilClass):
+  
+app/controllers/api/v1/maps_controller.rb:14:in `create'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Api::V1::MapsController#index as */*
+  [1m[36mMap Load (0.2ms)[0m  [1m[34mSELECT "maps".* FROM "maps"[0m
+  ↳ app/controllers/api/v1/maps_controller.rb:5:in `index'
+Completed 200 OK in 18ms (Views: 16.0ms | ActiveRecord: 0.7ms | Allocations: 8091)
+
+
+Started GET "/api/v1/maps" for ::1 at 2020-03-25 02:23:56 -0400
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::MapsController#index as */*
+  [1m[36mMap Load (0.3ms)[0m  [1m[34mSELECT "maps".* FROM "maps"[0m
+  ↳ app/controllers/api/v1/maps_controller.rb:5:in `index'
+Completed 200 OK in 16ms (Views: 12.5ms | ActiveRecord: 1.3ms | Allocations: 8694)
+
+
+Started POST "/api/v1/maps" for ::1 at 2020-03-25 02:24:06 -0400
+Processing by Api::V1::MapsController#create as JSON
+  Parameters: {"field"=>{"name"=>"silo_adjacent24"}, "map"=>{"lat"=>"32.17272", "lng"=>"-81.39393", "field_name"=>"silo_adjacent24"}}
+  [1m[36mField Load (0.1ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/maps_controller.rb:13:in `include?'
+Completed 500 Internal Server Error in 119ms (ActiveRecord: 0.5ms | Allocations: 74455)
+
+
+  
+NameError (undefined local variable or method `field' for #<Api::V1::MapsController:0x00007fa7b3478ee0>
+Did you mean?  yield):
+  
+app/controllers/api/v1/maps_controller.rb:14:in `create'
+Started GET "/api/v1/maps" for ::1 at 2020-03-25 02:24:33 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Api::V1::MapsController#index as */*
+  [1m[36mMap Load (0.2ms)[0m  [1m[34mSELECT "maps".* FROM "maps"[0m
+  ↳ app/controllers/api/v1/maps_controller.rb:5:in `index'
+Completed 200 OK in 11ms (Views: 8.5ms | ActiveRecord: 0.8ms | Allocations: 8106)
+
+
+Started POST "/api/v1/maps" for ::1 at 2020-03-25 02:24:41 -0400
+Processing by Api::V1::MapsController#create as JSON
+  Parameters: {"field"=>{"name"=>"silo_adjacent3"}, "map"=>{"lat"=>"32.17272", "lng"=>"-81.39393", "field_name"=>"silo_adjacent3"}}
+  [1m[36mField Load (0.1ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/maps_controller.rb:13:in `include?'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/maps_controller.rb:14:in `create'
+  [1m[36mField Create (0.4ms)[0m  [1m[32mINSERT INTO "fields" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "silo_adjacent3"], ["created_at", "2020-03-25 06:24:41.373150"], ["updated_at", "2020-03-25 06:24:41.373150"]]
+  ↳ app/controllers/api/v1/maps_controller.rb:14:in `create'
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/maps_controller.rb:14:in `create'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/maps_controller.rb:25:in `create'
+  [1m[36mField Load (0.2ms)[0m  [1m[34mSELECT "fields".* FROM "fields" WHERE "fields"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/maps_controller.rb:25:in `create'
+  [1m[36mMap Create (0.3ms)[0m  [1m[32mINSERT INTO "maps" ("lat", "lng", "field_name", "field_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["lat", "32.17272"], ["lng", "-81.39393"], ["field_name", "silo_adjacent3"], ["field_id", 1], ["created_at", "2020-03-25 06:24:41.383843"], ["updated_at", "2020-03-25 06:24:41.383843"]]
+  ↳ app/controllers/api/v1/maps_controller.rb:25:in `create'
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/maps_controller.rb:25:in `create'
+Completed 202 Accepted in 19ms (Views: 0.3ms | ActiveRecord: 3.6ms | Allocations: 12516)
+
+
