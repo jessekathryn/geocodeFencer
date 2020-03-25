@@ -58320,3 +58320,193 @@ Processing by Api::V1::MapsController#create as JSON
 Completed 202 Accepted in 19ms (Views: 0.3ms | ActiveRecord: 3.6ms | Allocations: 12516)
 
 
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (9.7ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (1.4ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateFields (20200309001905)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "fields" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mprimary::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20200309001905"]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateMaps (20200317024047)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "maps" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "lat" varchar, "lng" varchar, "field_name" varchar, "field_id" integer, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mprimary::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20200317024047"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-03-25 06:26:09.393254"], ["updated_at", "2020-03-25 06:26:09.393254"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mField Create (0.4ms)[0m  [1m[32mINSERT INTO "fields" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Silo"], ["created_at", "2020-03-25 06:26:14.361281"], ["updated_at", "2020-03-25 06:26:14.361281"]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/api/v1/maps" for ::1 at 2020-03-25 02:26:19 -0400
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::MapsController#index as */*
+  [1m[36mMap Load (0.2ms)[0m  [1m[34mSELECT "maps".* FROM "maps"[0m
+  ↳ app/controllers/api/v1/maps_controller.rb:5:in `index'
+Completed 200 OK in 5ms (Views: 2.0ms | ActiveRecord: 0.5ms | Allocations: 2125)
+
+
+Started POST "/api/v1/maps" for ::1 at 2020-03-25 02:26:43 -0400
+Processing by Api::V1::MapsController#create as JSON
+  Parameters: {"field"=>{"name"=>"silo_adjacent2"}, "map"=>{"lat"=>"32.17272", "lng"=>"-81.39393", "field_name"=>"silo_adjacent2"}}
+  [1m[36mField Load (0.1ms)[0m  [1m[34mSELECT "fields".* FROM "fields"[0m
+  ↳ app/controllers/api/v1/maps_controller.rb:13:in `include?'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/maps_controller.rb:14:in `create'
+  [1m[36mField Create (0.3ms)[0m  [1m[32mINSERT INTO "fields" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "silo_adjacent2"], ["created_at", "2020-03-25 06:26:43.414633"], ["updated_at", "2020-03-25 06:26:43.414633"]]
+  ↳ app/controllers/api/v1/maps_controller.rb:14:in `create'
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/maps_controller.rb:14:in `create'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/maps_controller.rb:25:in `create'
+  [1m[36mField Load (0.1ms)[0m  [1m[34mSELECT "fields".* FROM "fields" WHERE "fields"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/maps_controller.rb:25:in `create'
+  [1m[36mMap Create (0.2ms)[0m  [1m[32mINSERT INTO "maps" ("lat", "lng", "field_name", "field_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["lat", "32.17272"], ["lng", "-81.39393"], ["field_name", "silo_adjacent2"], ["field_id", 1], ["created_at", "2020-03-25 06:26:43.429350"], ["updated_at", "2020-03-25 06:26:43.429350"]]
+  ↳ app/controllers/api/v1/maps_controller.rb:25:in `create'
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/maps_controller.rb:25:in `create'
+Completed 202 Accepted in 24ms (Views: 0.3ms | ActiveRecord: 3.8ms | Allocations: 17092)
+
+
+Started GET "/api/v1/maps" for ::1 at 2020-03-25 02:27:39 -0400
+Processing by Api::V1::MapsController#index as */*
+  [1m[36mMap Load (0.2ms)[0m  [1m[34mSELECT "maps".* FROM "maps"[0m
+  ↳ app/controllers/api/v1/maps_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.2ms | Allocations: 930)
+
+
+Started GET "/api/v1/maps" for ::1 at 2020-03-25 02:28:38 -0400
+Processing by Api::V1::MapsController#index as */*
+  [1m[36mMap Load (0.1ms)[0m  [1m[34mSELECT "maps".* FROM "maps"[0m
+  ↳ app/controllers/api/v1/maps_controller.rb:5:in `index'
+Completed 200 OK in 1ms (Views: 0.9ms | ActiveRecord: 0.1ms | Allocations: 919)
+
+
+Started GET "/api/v1/maps" for ::1 at 2020-03-25 02:28:52 -0400
+Processing by Api::V1::MapsController#index as */*
+  [1m[36mMap Load (0.1ms)[0m  [1m[34mSELECT "maps".* FROM "maps"[0m
+  ↳ app/controllers/api/v1/maps_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.1ms | Allocations: 919)
+
+
+Started GET "/api/v1/maps" for ::1 at 2020-03-25 02:29:12 -0400
+Processing by Api::V1::MapsController#index as */*
+  [1m[36mMap Load (0.2ms)[0m  [1m[34mSELECT "maps".* FROM "maps"[0m
+  ↳ app/controllers/api/v1/maps_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.2ms | Allocations: 902)
+
+
+Started GET "/api/v1/maps" for ::1 at 2020-03-25 02:29:37 -0400
+Processing by Api::V1::MapsController#index as */*
+  [1m[36mMap Load (0.1ms)[0m  [1m[34mSELECT "maps".* FROM "maps"[0m
+  ↳ app/controllers/api/v1/maps_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.1ms | Allocations: 902)
+
+
+Started GET "/api/v1/maps" for ::1 at 2020-03-25 02:29:56 -0400
+Processing by Api::V1::MapsController#index as */*
+  [1m[36mMap Load (0.1ms)[0m  [1m[34mSELECT "maps".* FROM "maps"[0m
+  ↳ app/controllers/api/v1/maps_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.1ms | Allocations: 902)
+
+
+Started GET "/api/v1/maps" for ::1 at 2020-03-25 02:30:20 -0400
+Processing by Api::V1::MapsController#index as */*
+  [1m[36mMap Load (0.2ms)[0m  [1m[34mSELECT "maps".* FROM "maps"[0m
+  ↳ app/controllers/api/v1/maps_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.2ms | Allocations: 902)
+
+
+Started GET "/api/v1/maps" for ::1 at 2020-03-25 02:30:38 -0400
+Processing by Api::V1::MapsController#index as */*
+  [1m[36mMap Load (0.2ms)[0m  [1m[34mSELECT "maps".* FROM "maps"[0m
+  ↳ app/controllers/api/v1/maps_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.2ms | Allocations: 902)
+
+
+Started GET "/api/v1/maps" for ::1 at 2020-03-25 02:30:53 -0400
+Processing by Api::V1::MapsController#index as */*
+  [1m[36mMap Load (0.2ms)[0m  [1m[34mSELECT "maps".* FROM "maps"[0m
+  ↳ app/controllers/api/v1/maps_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.2ms | Allocations: 902)
+
+
+Started GET "/api/v1/maps" for ::1 at 2020-03-25 02:31:20 -0400
+Processing by Api::V1::MapsController#index as */*
+  [1m[36mMap Load (0.2ms)[0m  [1m[34mSELECT "maps".* FROM "maps"[0m
+  ↳ app/controllers/api/v1/maps_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.2ms | Allocations: 902)
+
+
+Started GET "/api/v1/maps" for ::1 at 2020-03-25 02:31:26 -0400
+Processing by Api::V1::MapsController#index as */*
+  [1m[36mMap Load (0.3ms)[0m  [1m[34mSELECT "maps".* FROM "maps"[0m
+  ↳ app/controllers/api/v1/maps_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.3ms | Allocations: 902)
+
+
+Started GET "/api/v1/maps" for ::1 at 2020-03-25 02:31:41 -0400
+Processing by Api::V1::MapsController#index as */*
+  [1m[36mMap Load (0.1ms)[0m  [1m[34mSELECT "maps".* FROM "maps"[0m
+  ↳ app/controllers/api/v1/maps_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.1ms | Allocations: 902)
+
+
+Started GET "/api/v1/maps" for ::1 at 2020-03-25 02:32:23 -0400
+Processing by Api::V1::MapsController#index as */*
+  [1m[36mMap Load (0.2ms)[0m  [1m[34mSELECT "maps".* FROM "maps"[0m
+  ↳ app/controllers/api/v1/maps_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.2ms | Allocations: 902)
+
+
+Started GET "/api/v1/maps" for ::1 at 2020-03-25 02:32:49 -0400
+Processing by Api::V1::MapsController#index as */*
+  [1m[36mMap Load (0.1ms)[0m  [1m[34mSELECT "maps".* FROM "maps"[0m
+  ↳ app/controllers/api/v1/maps_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.1ms | Allocations: 902)
+
+
+Started GET "/api/v1/maps" for ::1 at 2020-03-25 02:33:06 -0400
+Processing by Api::V1::MapsController#index as */*
+  [1m[36mMap Load (0.2ms)[0m  [1m[34mSELECT "maps".* FROM "maps"[0m
+  ↳ app/controllers/api/v1/maps_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.2ms | Allocations: 902)
+
+
+Started GET "/api/v1/maps" for ::1 at 2020-03-25 02:33:22 -0400
+Processing by Api::V1::MapsController#index as */*
+  [1m[36mMap Load (0.2ms)[0m  [1m[34mSELECT "maps".* FROM "maps"[0m
+  ↳ app/controllers/api/v1/maps_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.2ms | Allocations: 902)
+
+
+Started GET "/api/v1/maps" for ::1 at 2020-03-25 02:33:38 -0400
+Processing by Api::V1::MapsController#index as */*
+  [1m[36mMap Load (0.1ms)[0m  [1m[34mSELECT "maps".* FROM "maps"[0m
+  ↳ app/controllers/api/v1/maps_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.1ms | Allocations: 902)
+
+
+Started GET "/api/v1/maps" for ::1 at 2020-03-25 02:33:55 -0400
+Processing by Api::V1::MapsController#index as */*
+  [1m[36mMap Load (0.1ms)[0m  [1m[34mSELECT "maps".* FROM "maps"[0m
+  ↳ app/controllers/api/v1/maps_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.1ms | Allocations: 902)
+
+
+Started GET "/api/v1/maps" for ::1 at 2020-03-25 02:34:15 -0400
+Processing by Api::V1::MapsController#index as */*
+  [1m[36mMap Load (0.1ms)[0m  [1m[34mSELECT "maps".* FROM "maps"[0m
+  ↳ app/controllers/api/v1/maps_controller.rb:5:in `index'
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.1ms | Allocations: 902)
+
+
