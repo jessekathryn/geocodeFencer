@@ -9,12 +9,9 @@ def show
 end
 
 def create 
+    Field.find_or_create_by(field_params)
 
-    if !Field.all.include?(name: params[:name])
-      Field.create(field_params)
-    else 
-      Field.find_by(name: params[:name])
-    end
+    binding.pry
     map = Map.create(map_params)
  
     if map.field_id != 0
