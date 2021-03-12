@@ -1,4 +1,4 @@
-# CattleLog Farm Maker
+# geoCodeFencer
 Field Maker SAP with JavaScript ES6 inside Rails API 
 
 A single page Javascript application for creating and saving field locations with a Google API enabling user to create farm attributes.
